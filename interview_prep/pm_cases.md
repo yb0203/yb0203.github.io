@@ -1,0 +1,73 @@
+# PM Case Prep & AI Product Management Guide
+
+This document contains standard frameworks and custom preparation guides for Product Management (PM) case studies and Founder's Office strategy exercises.
+
+---
+
+## 🎨 1. Product Sense & Design Framework (CIRCLES Method)
+
+When asked to design a new product (e.g., "Design an AI tool for corporate auditors"), use the **CIRCLES** framework, but keep it high-agency and business-driven:
+
+```
+C - Comprehend Situation ──► I - Identify Users ──► R - Report Needs ──► C - Cut/Prioritize ──► L - List Solutions ──► E - Evaluate Trade-offs ──► S - Summarize Plan
+```
+
+*   **Comprehend Situation**: Ask clarifying questions. What is the business goal? (Engagement? Revenue? Market entry?). What are the constraints? (Time, budget, regulations).
+*   **Identify Users**: Segment the audience. Who uses this? (e.g., for GitaBae: spiritual seekers, busy professionals, distressed users in crisis).
+*   **Report Needs (Pain Points)**: Identify what problems these users face.
+*   **Cut & Prioritize**: Select one user segment and their top 1-2 pain points based on impact and viability.
+*   **List Solutions**: Brainstorm 3 distinct solutions. 
+    *   *Tip*: For AI PM roles, make one solution a simple heuristic, one an agentic/RAG workflow, and one a platform/ecosystem play.
+*   **Evaluate Trade-offs**: Discuss complexity, latency, API costs, security, and user experience.
+*   **Summarize**: Pitch the recommended MVP, the target success metrics, and the next steps.
+
+---
+
+## 📊 2. Metrics & Execution Framework (AARRR & North Star)
+
+For execution or metrics cases (e.g., "Our platform's user retention dropped by 10%, what do you do?"), structure your diagnostic process:
+
+1.  **Clarify the Metric**: How is retention calculated? What time period are we looking at? Is it a gradual decline or a sudden drop?
+2.  **External Factors (Rule Out First)**: Did competitors launch a new feature? Was there a change in market regulations (especially relevant for banking)? Was there an internet outage?
+3.  **Internal Factors (Funnel Analysis)**: Use the **AARRR** (Pirate Metrics) funnel:
+    *   *Acquisition*: Are we getting the same quality of traffic?
+    *   *Activation*: Are users getting stuck during onboarding?
+    *   *Retention*: Are they leaving after the first use?
+    *   *Referral*: Is word of mouth slowing down?
+    *   *Revenue*: Is pricing/billing causing drop-offs?
+4.  **Platform Metrics (For Developer Tools)**:
+    *   *Adoption Rate*: % of target engineers utilizing the self-serve CI templates.
+    *   *Time-to-Value*: How long does it take for a developer to run their first test using your BDD framework?
+    *   *Infrastructure Cost per User*: Log space utilization (which you optimized by 99%!).
+
+---
+
+## 🤖 3. AI Product Management & Trust/Safety Primer
+
+Since you have built **GitaBae** and **Vibe Check**, you are uniquely positioned for AI/LLM PM roles. You must be able to discuss AI product design strategically:
+
+### A. RAG (Retrieval-Augmented Generation) Design Decisions
+*   **Problem**: LLMs hallucinate, which is unacceptable in domains like religion or banking.
+*   **Product Solution**: RAG provides a ground truth. We feed the model verified text (e.g., Gita verses or banking terms) via vector similarity search.
+*   **PM Decision Point**: Chunks & Context. How big should chunks be? Too small = loss of context; too large = noisy context and high token costs.
+*   **Evaluation (DeepEval)**: PMs must define quantitative evaluation metrics (Faithfulness, Answer Relevance, Context Recall) rather than just looking at qualitative feedback.
+
+### B. Developer Tools & Model Context Protocol (MCP)
+*   **What is it?**: MCP is an open standard that allows LLMs to safely connect to external tools (like databases, Slack, or GitHub).
+*   **The PM Angle**: Think of MCP as an "API layer for AI Agents."
+*   **Vibe Check Case Study**: Explain that Git CLI is a massive barrier for non-technical teammates. By building an MCP server, you allowed the AI agent to execute git commands safely behind the scenes based on conversational requests, lowering organizational friction and accelerating release cycles.
+
+---
+
+## 💼 4. Founder's Office Strategy & Operations Cases
+
+Founder's Office roles evaluate how you handle ambiguity and scale operational structures:
+
+### Framework: Goal ──► Bottleneck ──► Strategy ──► Execution
+1.  **Goal**: Align with the founder's objective (e.g., "We need to set up customer success workflows for our new AI agent SaaS").
+2.  **Bottleneck**: Where is the friction? (e.g., developers are spending 50% of their time answering customer bug queries instead of coding).
+3.  **Solution**: Leverage automation + process structure.
+    *   *Level 1*: Set up an automated triage dashboard (similar to your Centralized Reporting Platform & AI Triage Agent).
+    *   *Level 2*: Document common solutions and build a RAG-based search tool for support reps (similar to GitaBae).
+    *   *Level 3*: Outsource Tier-1 support while maintaining QA controls.
+4.  **Impact Analysis**: Compute time saved, cost savings, and customer satisfaction (CSAT) improvements.
