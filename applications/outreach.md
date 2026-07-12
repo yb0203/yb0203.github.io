@@ -15,16 +15,15 @@ The tone of these templates is **grounded, humble, respectful, and thankful**, f
 ```text
 Hey everyone! 👋
 
-I’m *Yashvi Bansal*, an IIT-BHU alum and developer at Kotak Mahindra Bank. I’m currently working on transitioning towards *Product Management & Founder's Office* roles, and I am looking for *freelance, contract, or side projects* to help build my practical experience.
+I’m *Yashvi Bansal*, an IIT-BHU alum and SDE at Kotak Mahindra Bank. I’m currently transitioning towards *Applied AI & Founder's Office* roles. I am looking for *full-time opportunities*, but I'm completely open to *starting contractually* to show immediate value.
 
-*Areas where I can help support your team:*
-📝 *Product Specs & Mapping*: Collaborating with stakeholders to draft PRDs, wireframes, or workflow logic.
-🤖 *AI Agents & Trust Guardrails*: Researching prompt adjustments, LLM safety checks (DeepEval), and human-in-the-loop validation flows (like the "approve-before-act" primitive I built for my latest project).
-⚙️ *Data Sync & Automation*: Setting up API pipelines (recently built Legal Owl, an AI case-management tool with live eCourts India API sync, nightly event diffing, and a citation-grounded assistant).
+My focus is on designing and deploying *Applied AI-Native workflows and agentic automation*—helping optimize processes anywhere from pre-sales journeys to post-sales customer success, and other internal team operations.
 
-If your team is stretched thin and could use an extra set of hands for product writing, prompt tuning, workflow mapping, or database tasks, I would be incredibly grateful for the opportunity to help out.
+*What I bring to the table:*
+🤝 *The Human/Emotional Angle*: Aligning stakeholders, understanding team dynamics, and coordinating cross-functional execution.
+🤖 *The Technical AI Angle*: Hands-on experience building multi-agent systems, live API integrations (e.g., eCourts India API for my latest project), and prompt evaluation/safety frameworks (DeepEval).
 
-Thank you so much for your time and any leads!
+If your team is looking to automate workflows with AI and could use someone to write specs, test agentic chains, or coordinate the rollout, I would be incredibly grateful for any leads or chats!
 
 📱 WA: +91 62831 62131
 📧 Email: bansaly0203@gmail.com
@@ -41,22 +40,21 @@ Hi community,
 
 I hope you're all doing well.
 
-I’m Yashvi Bansal, a Software Development Engineer at Kotak Mahindra Bank and an IIT-BHU alum.
+I’m Yashvi Bansal, an IIT-BHU alum and Software Development Engineer at Kotak Mahindra Bank.
 
-I am currently working towards transitioning into Product Management and Founder's Office roles. To help bridge my technical background with product execution, I am eager to take on short-term freelance, contract, or side projects where I can support early-stage startups and product teams.
+I am currently working towards transitioning into full-time roles in Applied AI Product Management and Founder's Office spaces. While I am looking for a full-time position, I am highly open to starting contractually or on a project-to-hire basis to demonstrate capability and fit first.
 
-My experience so far covers:
-• AI Product Architecture: Architected a 4-subpart legal-tech platform (Legal Owl) with a live eCourts India API sync, nightly event diffing, and a cite-grounded AI assistant that abstains unless traceable to a case-file source span.
-• Multi-Agent Coordination: Designed a schema-locked agent layer (Court Scout, Intake Registrar, Limitation Clerk) with an "approve-before-act" trust primitive to keep humans in the loop.
-• Internal Tooling: Helping build developer reporting platforms and testing setups at Kotak (reducing build-to-validation cycles by 90% and log storage cost by 99%).
+My focus lies at the intersection of team dynamics and Applied AI implementation. I specialize in designing AI-native workflows and agentic processes that automate workflows across the organization—from pre-sales customer journeys to post-sales customer success and internal operational bottlenecks.
 
-I am very keen to roll up my sleeves, learn your processes quickly, and handle the daily execution tasks that might be taking up your team's core focus.
+What I bring to early-stage teams:
+• The Collaborative Lens: Managing the human and emotional dynamics of working with cross-functional teams, resolving alignment friction, and driving rollout adoption.
+• The Applied AI Lens: Hands-on experience building multi-agent systems (like my recent Legal Owl platform utilizing Court Scout and Intake Registrar agents), live API integrations, and LLM trust and evaluation guardrails (using DeepEval).
 
-If you have any leads, advice on making this transition, or just want to connect, I would be deeply grateful for your support.
+If your team is looking for a technical operator to design, test, and implement agentic processes, I would love to connect. I am very keen to learn, adapt, and help take some of the execution load off your plate.
 
-Thank you so much for your time!
+Thank you so much for your time and any leads!
 
-#ProductManagement #FoundersOffice #TechnicalPM #AIEngineering #StartupOps
+#AppliedAI #FoundersOffice #TechnicalPM #AIOps #AgenticWorkflows #StartupOps
 ```
 
 ---
@@ -65,20 +63,21 @@ Thank you so much for your time!
 *Structured like a professional newsletter/forum post with a clear subject line and formatted signature.*
 
 ```text
-Subject: Looking to support early-stage teams with side projects (Tech PM / Founder's Office transition)
+Subject: Seeking Applied AI / Founder's Office Roles (IIT-BHU Alum, open to contract/full-time)
 
 Dear Alums / Community Members,
 
 I hope this email finds you well.
 
-My name is Yashvi Bansal (IIT-BHU, Class of 2023), and I am currently working as a Software Development Engineer at Kotak Mahindra Bank. I am writing to request your guidance and share that I am looking for freelance, contract, or side-project opportunities to support my transition into Product Management and Founder's Office roles.
+My name is Yashvi Bansal (IIT-BHU, Class of 2023), and I am currently working as a Software Development Engineer at Kotak Mahindra Bank. I am writing to request your guidance and share that I am seeking full-time opportunities (open to starting contractually) to support my transition into Applied AI PM and Founder's Office roles.
 
-During my time working on banking systems and building 0-to-1 projects, I’ve had the privilege of:
-• Coordinating across teams: Bridging operations, compliance, and engineering to ship transaction capabilities under strict standards.
-• Designing AI Workflows: Architecting a legal-tech platform (Legal Owl) integrating live eCourts API syncing, nightly event diffing, and a multi-agent layer (Court Scout, Intake Registrar, Limitation Clerk) to reduce manual case monitoring for solo litigators to near-zero.
-• Optimizing systems: Scaling internal developer dashboards to streamline verification workflows (cutting validation cycles by 90% and log storage cost by 99%).
+I specialize in designing Applied AI-native workflows and agentic processes. I am eager to collaborate on automating and optimizing workflows across the business—whether that involves streamlining the pre-sales journey, setting up post-sales customer success agents, or optimizing internal team operations.
 
-I am eager to learn and help take some of the workload off your plate—whether that means drafting PRDs, testing RAG flows, configuring multi-agent systems, or database cleaning. I know how valuable a founder's or PM's time is, and I would love to be of assistance.
+I bring a dual perspective to early-stage teams:
+• The Human & Team Dynamic: Experience coordinating cross-functional groups, bridging engineering with compliance, and managing the collaborative aspects of product adoption.
+• The Technical AI Implementation: Hands-on experience building multi-agent systems (e.g., Legal Owl, which integrates eCourts API and features a schema-locked agent layer) and evaluating LLMs against safety standards (DeepEval).
+
+I know how valuable a founder's or manager's time is, and I would love to roll up my sleeves and help your team deploy agentic workflows. 
 
 Thank you sincerely for your time, support, and any guidance or leads you might be able to share.
 
@@ -101,11 +100,11 @@ B.Tech, IIT-BHU (2019-2023)
 ```text
 Hi [Name]! Hope you're doing well.
 
-I'm Yashvi Bansal, a developer at Kotak (IIT-BHU graduate). I'm currently looking to transition into Product Management / Founder's Office roles.
+I'm Yashvi Bansal, a developer at Kotak (IIT-BHU graduate). I'm currently looking for full-time opportunities in Applied AI PM or Founder's Office spaces, and am open to starting on a contract basis.
 
-To gain practical experience and learn the ropes, I'm hoping to find small freelance or side projects. I have experience with technical specs, database tasks, API integrations, and multi-agent AI platforms (recently built a legal-tech platform with live eCourts API sync and nightly case diffing).
+I focus on designing Applied AI-native workflows and agentic processes—automating workflows anywhere from pre-sales setups to post-sales customer success, and internal team operations. My goal is to bridge the team collaboration side of shipping products with the technical reality of building with LLMs.
 
-If your team at [Company Name] is busy and needs help with any unowned tasks—like drafting product notes, prompt engineering, or data cleanup—I'd love to help out and support you guys.
+If your team at [Company Name] is busy and needs an extra hand testing agentic chains, mapping workflow logic, or coordinating AI rollouts, I'd love to help support you guys.
 
 Please don't feel pressured if things are too busy right now, but if you're open to it, I'd be very grateful to connect for a quick call sometime for your advice on the transition. Thank you so much! 🙌
 ```
@@ -120,11 +119,11 @@ Hi [Name],
 
 Hope you're having a good week. I've been following [Company Name]'s updates and really admire [mention a feature/launch/news].
 
-I am a developer at Kotak Mahindra Bank (IIT-BHU alum) working on transitioning to Technical PM/Founder's Office roles. To learn and build a portfolio, I'm looking for small freelance or side-projects.
+I am a developer at Kotak Mahindra Bank (IIT-BHU alum) transitioning to full-time roles in Applied AI and Founder's Office spaces. I am open to starting contractually to demonstrate value.
 
-My background is in platform engineering, cross-functional coordination, and AI building (such as my recent Legal Owl platform involving eCourts API sync, nightly case diffs, and a schema-locked agent layer). If you have any backlog tasks—like drafting specs, prompt tuning, or workflow mapping—I would love to help support your team.
+My focus is on designing Applied AI-native workflows and agentic processes (such as my recent Legal Owl multi-agent project with eCourts API sync). I specialize in combining the team collaboration side of product shipping with technical AI implementations—helping automate processes from pre-sales journeys to customer success.
 
-I know you're busy, so please don't feel pressured to respond immediately. If you have a few minutes sometime, I'd be very grateful to connect. Thank you for your time!
+If you have any backlog tasks—like mapping workflow logic, prompt tuning, or testing agents—I would love to help support your team. I know you're busy, so no rush to reply. I'd be very grateful to connect whenever you have a moment. Thank you!
 
 Best,
 Yashvi Bansal
@@ -137,22 +136,23 @@ linkedin.com/in/yb0203
 *Detailed, structured, and focused entirely on the recipient's business leverage. Includes a specific subject line and signature.*
 
 ```text
-Subject: Humbly offering product & ops support for [Company Name]
+Subject: Humbly offering Applied AI & ops support for [Company Name]
 
 Hi [Name],
 
 I hope this email finds you well. I’ve been following [Company Name] and really appreciate [mention a recent update or focus area].
 
-My name is Yashvi Bansal, an IIT-BHU graduate and Software Development Engineer at Kotak Mahindra Bank. I am currently working on transitioning into Technical Product Management or Founder’s Office roles, and I am looking for freelance or side-project opportunities to gain hands-on experience.
+My name is Yashvi Bansal, an IIT-BHU graduate and Software Development Engineer at Kotak Mahindra Bank. I am currently looking to transition into full-time Applied AI Product Management or Founder’s Office roles, and I am highly open to starting on a contract basis to prove value.
 
-I would love to offer my support to [Company Name] on a contract or project basis. My experience includes:
-• AI Product Architecture: Architected a 4-subpart legal-tech platform (Legal Owl) featuring live eCourts API sync, nightly event diffing, and a cite-grounded assistant that abstains unless traceable to a source span. I also designed a multi-agent layer (Court Scout, Intake Registrar, Limitation Clerk) with an "approve-before-act" trust primitive.
-• Cross-Functional Coordination: Collaborating between operations, business, and compliance teams to deliver critical platforms.
-• Workflow Efficiency: Building developer dashboard tools and optimizing log storage data (cut log storage costs by 99% at my bank).
+I specialize in designing and deploying Applied AI-native workflows and agentic processes. I am keen to help your team automate workflows—whether that involves optimizing pre-sales journeys, configuring post-sales customer success agents, or streamlining internal team operations.
 
-I am keen to take care of time-consuming tasks—such as drafting PRDs, testing RAG systems, organizing project trackers, or database cleanup—so your team can stay focused on core features. I am eager to learn your processes and adapt quickly to be of assistance.
+I bring a unique combination of strengths to early-stage teams:
+• The Collaborative Lens: Managing the emotional/human dynamics of working with cross-functional teams, aligning compliance with engineering, and driving rollout adoption.
+• The Applied AI Lens: Hands-on experience building multi-agent systems (e.g., Legal Owl, featuring live eCourts API sync, nightly event diffing, and "approve-before-act" agent primitives) and LLM evaluation guardrails (using DeepEval).
 
-Thank you sincerely for your time and consideration. If you're open to it, I would be very grateful for a 10-minute chat to learn more about your journey and see if I can be of help.
+I would love to help take some of the execution load off your plate. I am eager to learn your processes and adapt quickly.
+
+Thank you sincerely for your time and consideration. If you're open to it, I would be very grateful for a 10-minute chat to learn more about your journey and see if I can be of assistance.
 
 Warm regards,
 
