@@ -2,7 +2,7 @@
 
 This document contains tailored outreach templates for **WhatsApp (WA)**, **LinkedIn (LI)**, and **Email (Mail)** for both bulk community sharing and direct individual outreach.
 
-The tone of these templates is **direct, professional, grounded, and bullet-point oriented**, optimized for rapid scanning and clear value communication. Each template is enclosed in a copyable code block to preserve line breaks and punctuation exactly.
+The tone of these templates is **direct, professional, grounded, and reader-focused**, highlighting applied AI capabilities and business outcomes rather than internal project names (like Legal Owl or GitaBae) that a recipient would not recognize. Each template is enclosed in a copyable code block to preserve line breaks and punctuation exactly.
 
 ---
 
@@ -15,16 +15,16 @@ The tone of these templates is **direct, professional, grounded, and bullet-poin
 ```text
 Hey everyone! 👋
 
-I’m *Yashvi Bansal*, an IIT-BHU alum and SDE at Kotak Mahindra Bank. I am looking for a *full-time position in Applied AI PM or Founder's Office* (open to starting contractually to prove value).
+I’m *Yashvi Bansal*, an IIT-BHU alum and SDE at Kotak Mahindra Bank. I am looking for a *full-time position in Applied AI PM or Founder's Office* (open to starting contractually to show value).
 
-My focus is on *Applied AI-Native workflows and agentic automation*—optimizing processes anywhere from pre-sales to post-sales customer success.
+My focus is on *Applied AI-Native workflows and agentic automation*—optimizing workflows from pre-sales journeys to post-sales customer success to save teams manual hours.
 
-*Key points on what I bring:*
-• *AI Execution*: Built a multi-agent platform (Legal Owl) with live eCourts API sync, nightly event diffing, and "approve-before-act" trust primitives.
-• *Stakeholder Alignment*: Bridged operations, business, and compliance to deliver bank-grade cash transaction systems.
-• *Dual Angle*: I combine the emotional/human aspect of coordinating teams with the technical ability to ship AI.
+*How I can help support your team:*
+• *AI Workflow Automation*: Experience building multi-agent systems with live API syncs, nightly event updates, and human-in-the-loop validation tools to safely automate operations.
+• *Safe LLM Deployments*: Experience setting up prompt guardrails and LLM response evaluations (DeepEval) to protect against business liability.
+• *Stakeholder Alignment*: Bridging operations, business, and compliance teams to ensure new tech rollouts ship smoothly.
 
-If your team is looking to automate workflows with AI and could use an extra hand to design, test, and roll out agentic systems, I'd love to connect.
+If your team is looking to automate manual processes using AI agents and needs someone to coordinate the setup, test workflows, and write specs, I'd love to help!
 
 📱 WA: +91 62831 62131
 📧 Email: bansaly0203@gmail.com
@@ -43,14 +43,14 @@ I hope you're all doing well.
 
 I’m Yashvi Bansal, an IIT-BHU alum and Software Development Engineer at Kotak Mahindra Bank. I am seeking a full-time position in Applied AI Product Management or Founder's Office roles, and am open to starting contractually.
 
-My focus is on designing and deploying AI-native workflows and agentic processes to optimize pipelines across pre-sales, post-sales customer success, and internal operations.
+My focus is on helping teams design and deploy AI-native workflows and agentic processes to optimize pipelines across pre-sales, post-sales customer success, and internal operations.
 
 What I bring to early-stage teams:
-• Applied AI Delivery: Hands-on experience architecting multi-agent systems (e.g., Legal Owl), live API syncing, and LLM safety testing (DeepEval).
-• Cross-Functional Coordination: Experienced in bridging engineering, operations, and compliance constraints in high-stakes environments.
-• The Human & Tech Blend: Combining the emotional dynamics of coordinating teams with the technical execution of AI workflows.
+• Applied AI Delivery: Hands-on experience architecting multi-agent workflows, integrating live database syncs, and setting up prompt evaluation frameworks (DeepEval).
+• Cross-Functional Coordination: Experienced in bridging engineering, operations, and compliance constraints in high-stakes banking environments.
+• The Human & Tech Blend: Combining the team coordination side of shipping products with the technical execution of AI workflows.
 
-If your team has operational bottlenecks or AI workflows that need execution and testing, I’d love to connect. I am keen to learn your systems quickly and help take some of the workload off your plate.
+If your team has manual operational bottlenecks or AI workflows that need implementation and testing, I’d love to connect. I am keen to learn your processes quickly and help take some of the workload off your plate.
 
 Thank you so much for your time and any leads!
 
@@ -74,11 +74,11 @@ My name is Yashvi Bansal (IIT-BHU, Class of 2023), and I am currently working as
 I focus on optimizing business processes using Applied AI-native workflows and agentic automation—from pre-sales journeys to customer success pipelines.
 
 A quick summary of my profile:
-• AI Implementation: Architected a multi-agent legal workflow platform (Legal Owl) integrating live eCourts API syncing, nightly event diffing, and citation-grounded LLM responses.
+• AI Implementation: Architected multi-agent workflows integrating live API syncing, nightly event diffing, and citation ledgers to ensure LLM responses are traceable back to source documents.
 • Technical & Operational Impact: Built centralized reporting dashboards and testing frameworks at Kotak Bank, cutting validation cycles by 90% and database log storage cost by 99%.
 • Collaborative Execution: Experienced in managing the human, emotional, and organizational dynamics of working across multiple stakeholder teams.
 
-If your team is deploying AI features or automating processes and needs a technical operator to write specs, test agentic chains, or coordinate rollouts, I would love to support you.
+If your team is deploying AI features or automating processes and needs an operator to write specs, test agentic chains, or coordinate rollouts, I would love to support you.
 
 Thank you sincerely for your time, support, and any leads.
 
@@ -103,12 +103,12 @@ Hi [Name]! Hope you're doing well.
 
 I'm Yashvi Bansal, a developer at Kotak (IIT-BHU graduate). I'm currently looking for full-time opportunities in Applied AI PM or Founder's Office roles, and am open to starting contractually.
 
-My focus is on designing Applied AI-native workflows and agentic processes (pre-sales, customer success, and internal team ops). I specialize in:
-• Building multi-agent systems and live API integrations (e.g., my recent Legal Owl project).
+I focus on designing Applied AI-native workflows and agentic processes (pre-sales, customer success, and internal team ops). I specialize in:
+• Building multi-agent systems that sync live APIs and automate manual tracking workflows.
 • Coordinating team dynamics and aligning engineering with operational goals.
 • Streamlining workflow automation and testing LLM safety.
 
-If your team at [Company Name] needs help drafting specs, prompt engineering, or testing agentic workflows, I'd love to help out and learn from your team. 
+If your team at [Company Name] needs help drafting specs, prompt engineering, or testing agentic workflows to save team bandwidth, I'd love to help out and support you guys.
 
 No pressure at all if things are busy right now, but if you're open to it, I'd love to jump on a quick call sometime for your advice on the transition. Thank you so much! 🙌
 ```
@@ -126,7 +126,7 @@ Hope you're having a good week. I've been following [Company Name]'s updates and
 I am a developer at Kotak Mahindra Bank (IIT-BHU alum) transitioning to full-time roles in Applied AI PM or Founder's Office. I am open to starting contractually.
 
 My focus is on designing Applied AI-native workflows and agentic processes to optimize pipelines across pre-sales, customer success, and operations. My background includes:
-• Architecting multi-agent systems (e.g., Legal Owl with live eCourts API sync).
+• Architecting multi-agent workflows (e.g., systems that sync live APIs and use citation ledgers to ensure LLM accuracy).
 • Leading cross-functional team coordination (engineering, ops, compliance).
 • Streamlining operational validation pipelines.
 
@@ -151,16 +151,16 @@ I hope this email finds you well. I’ve been following [Company Name] and reall
 
 My name is Yashvi Bansal, an IIT-BHU graduate and Software Development Engineer at Kotak Mahindra Bank. I am currently seeking full-time roles in Applied AI PM or Founder’s Office, and am open to starting contractually.
 
-My focus is on designing and deploying Applied AI-native workflows and agentic processes—automating pipelines across pre-sales, customer success, and operations.
+I focus on designing and deploying Applied AI-native workflows and agentic processes—automating pipelines across pre-sales, customer success, and operations.
 
 A summary of what I can help your team with:
-• AI Implementation: Experience architecting multi-agent systems (e.g., Legal Owl, which features live eCourts API sync, nightly diffing, and "approve-before-act" agent primitives) and LLM safety checks (DeepEval).
+• AI Implementation: Experience building multi-agent workflows (including live database syncing, automated event alerts, and human-in-the-loop "approve-before-act" primitives) and LLM evaluation checks (DeepEval).
 • Operational Efficiency: Streamlining backend workflows (cut database storage cost by 99% and developer validation cycles by 90% at my bank).
 • Team Alignment: Bridging operations, compliance, and engineering stakeholder dynamics to ship complex systems.
 
-I would love to help take some of the workflow execution load off your plate. I am eager to learn your processes and adapt quickly.
+I would love to help take some of the workflow execution load off your plate. I am eager to learn your processes and adapt quickly to be of assistance.
 
-Thank you sincerely for your time and consideration. If you're open to it, I would be very grateful for a 10-minute chat to learn more about your journey and see if I can be of assistance.
+Thank you sincerely for your time and consideration. If you're open to it, I would be very grateful for a 10-minute chat to learn more about your journey and see if I can be of help.
 
 Warm regards,
 
