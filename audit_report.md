@@ -27,6 +27,7 @@ However, a standard SDE resume emphasizes **execution details** (technologies us
 *   **0-to-1 & Intrapreneurial Execution**: Creating a centralized reporting platform from scratch at a bank, building an automated AI error triage agent, and shipping standalone AI tools (GitaBae, Vibe Check) prove you don't just wait for instructions; you identify gaps and ship solutions.
 *   **AI/LLM Trust & Safety Expertise**: Building an organizational AI security evaluation standard and using DeepEval for banking metrics is a highly unique skill in 2026. This is a massive leverage point for AI PM roles.
 *   **Bank-Grade Complexity & Compliance**: Operating within Kotak Mahindra Bank means you understand ISO8583/FIXML standards, audit compliance, security, and complex multi-stakeholder alignments. You know how to get things shipped in highly regulated environments.
+*   **Active AI-Native Product Architecture (Legal Owl)**: Architecting a multi-agent system with live API integrations (eCourts) and building trust-primitives (approve-before-act, citation ledgers) proves your capacity to build AI products for complex, high-stakes domains.
 
 ---
 
@@ -64,6 +65,7 @@ However, a standard SDE resume emphasizes **execution details** (technologies us
 ### C. Key Projects
 *   **GitaBae**: Explain the product-market fit/user motivation. Why Pinecone/LangChain? (To prevent hallucination in sacred texts, which is a major product requirement).
 *   **Vibe Check**: Emphasize the user interface design (MCP server) that democratizes engineering operations for non-technical members (e.g., product managers, designers, operations staff).
+*   **Legal Owl**: Highlight the user-centricity (solo litigators facing massive court tracking backlogs) and the trust-first design principles. Explain *why* "approve-before-act" and the "citation ledger" were essential product features (legal decisions have severe consequences, so the product prioritizes absolute traceability and safety over fully autonomous generation).
 
 ### D. Skills Grouping
 *   Rearrange skills to put **Product & Cross-Functional** and **AI/LLM Product Fluency** first. Move technical details (Java, C++, Spring Boot) below to signal that you are a product first, coder second.

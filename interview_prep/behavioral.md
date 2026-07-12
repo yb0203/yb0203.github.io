@@ -47,6 +47,19 @@ Use these templates to prepare for behavioral interviews. For PM and Founder's O
 
 ---
 
+## ⚖️ Story 4: Legal Owl – AI-Native Legal Workflow Platform
+**Core Competencies**: High-Trust AI Product Design, API Integration, Risk Mitigation
+
+*   **Situation (S)**: Solo litigators in India lose significant billable hours manually tracking court dates on government portals and analyzing case files. However, in legal environments, LLM hallucinations carry severe professional liabilities; there is zero tolerance for false citations or incorrect court tracking information.
+*   **Task (T)**: My goal was to architect an AI-native case management and workflow platform (Legal Owl) that automates tracking while ensuring absolute factual accuracy and client safety.
+*   **Action (A)**:
+    1.  *Seamless Data Integration*: I integrated the live eCourts India API based on Case Number Record (CNR) lookup, engineering a nightly diffing engine to capture court events and alert users.
+    2.  *Multi-Agent Trust Primitive*: I designed a schema-locked multi-agent system (Court Scout, Intake Registrar, Limitation Clerk) using an "approve-before-act" primitive. This ensures that autonomous agents cannot execute actions or alert clients without human-in-the-loop review.
+    3.  *Zero-Hallucination Guardrails*: I built a citation ledger and cite-grounded assistant that strictly abstains from answering queries unless assertions are directly traceable to specific text spans in the uploaded case files.
+*   **Result (R)**: Successfully launched the platform, reducing manual court-monitoring effort for solo litigators to near-zero while maintaining a 100% audit trail for every AI-generated assertion.
+
+---
+
 ## 💡 Key Behavioral Themes for "Founder's Office"
 
 Founder's Office roles are less about structured engineering processes and more about **problem-solving velocity**. When answering questions for these roles, always emphasize:

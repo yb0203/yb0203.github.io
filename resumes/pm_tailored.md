@@ -43,6 +43,12 @@ High-agency builder with 3+ years of experience shipping 0-to-1 products, core b
 
 ## Key Projects (0-to-1 Builds)
 
+### **Legal Owl – AI-Native Legal Workflow Platform** | *June 2026 – Present*  
+*TypeScript, Next.js, Supabase (pgvector), Vercel AI SDK, eCourts India API* | [GitHub Link](https://github.com/yb0203/LegalOwl)
+*   **Product-architected a legal-tech platform** syncing live court databases (eCourts API) and automating case monitoring, reducing manual tracking work for solo litigators to near-zero.
+*   **Designed a schema-locked multi-agent system** (Court Scout, Intake Registrar, Limitation Clerk) featuring a human-in-the-loop "approve-before-act" trust primitive for critical operations.
+*   **Implemented a citation ledger and grounded assistant** that strictly abstains from generating output unless assertions are traceable to specific text spans in case files, mitigating legal liability risks.
+
 ### **GitaBae – AI Wisdom Chatbot** | *Jan 2026*  
 *Python, LangChain, Pinecone, OpenAI, Streamlit* | [GitHub Link](https://github.com/yb0203/GitaBae)
 *   **Designed and launched** a RAG-based AI platform that utilizes multi-turn memory to provide contextual, verse-grounded religious wisdom.
