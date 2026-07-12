@@ -15,11 +15,11 @@ This document contains tailored outreach templates for **WhatsApp (WA)**, **Link
 > I’m *Yashvi Bansal*, an IIT-BHU alum and developer at Kotak Mahindra Bank. I’m currently working on transitioning towards *Product Management & Founder's Office* roles, and I am looking for *freelance, contract, or side projects* to help build my practical experience.
 > 
 > *Areas where I can help support your team:*
-> 📝 *Product Specs (PRDs)*: Collaborating with stakeholders to write down requirements.
-> 🤖 *AI Agents & Guardrails*: Designing prompt chains, safety evaluation checks (DeepEval), and human-in-the-loop agent workflows.
-> ⚙️ *Ops & API Integrations*: Streamlining manual data workflows (recently built a legal-tech platform integrating live eCourts APIs, and cut database reporting costs at my bank by 99%).
+> 📝 *Product Specs & Mapping*: Collaborating with stakeholders to draft PRDs, wireframes, or workflow logic.
+> 🤖 *AI Agents & Trust Guardrails*: Researching prompt adjustments, LLM safety checks (DeepEval), and human-in-the-loop validation flows (like the "approve-before-act" primitive I built for my latest project).
+> ⚙️ *Data Sync & Automation*: Setting up API pipelines (recently built Legal Owl, an AI case-management tool with live eCourts India API sync, nightly event diffing, and a citation-grounded assistant).
 > 
-> If your team is stretched thin and could use an extra set of hands for product writing, prompt tuning, workflow mapping, or API setups, I would be incredibly grateful for the opportunity to help out. 
+> If your team is stretched thin and could use an extra set of hands for product writing, prompt tuning, workflow mapping, or database tasks, I would be incredibly grateful for the opportunity to help out. 
 > 
 > Thank you so much for your time and any leads!
 > 
@@ -39,9 +39,9 @@ This document contains tailored outreach templates for **WhatsApp (WA)**, **Link
 > I am currently working towards transitioning into **Product Management and Founder's Office** roles. To help bridge my technical background with product execution, I am eager to take on **short-term freelance, contract, or side projects** where I can support early-stage startups and product teams.
 > 
 > **My experience so far covers:**
-> *   **AI Product Architecture**: Built a multi-agent legal-tech platform (Legal Owl) integrating live eCourts APIs, employing a citation ledger to prevent hallucinations and an "approve-before-act" trust primitive for safety.
-> *   **Cross-Functional Delivery**: Coordinating across engineering, operations, and compliance teams to deliver core banking capabilities.
-> *   **Internal Tooling**: Helping build developer reporting platforms and testing setups that improve team validation times.
+> *   **AI Product Architecture**: Architected a 4-subpart legal-tech platform (Legal Owl) with a live eCourts India API sync, nightly event diffing, and a cite-grounded AI assistant that abstains unless traceable to a case-file source span.
+> *   **Multi-Agent Coordination**: Designed a schema-locked agent layer (Court Scout, Intake Registrar, Limitation Clerk) with an "approve-before-act" trust primitive to keep humans in the loop.
+> *   **Internal Tooling**: Helping build developer reporting platforms and testing setups at Kotak (reducing build-to-validation cycles by 90% and log storage cost by 99%).
 > 
 > I am very keen to roll up my sleeves, learn your processes quickly, and handle the daily execution tasks that might be taking up your team's core focus. 
 > 
@@ -63,8 +63,8 @@ This document contains tailored outreach templates for **WhatsApp (WA)**, **Link
 > My name is Yashvi Bansal (IIT-BHU, Class of 2023), and I am currently working as a Software Development Engineer at Kotak Mahindra Bank. I am writing to request your guidance and share that I am looking for freelance, contract, or side-project opportunities to support my transition into Product Management and Founder's Office roles.
 > 
 > During my time working on banking systems and building 0-to-1 projects, I’ve had the privilege of:
-> *   **Coordinating across teams**: Bridging operations, compliance, and engineering to ship transaction capabilities.
-> *   **Designing AI Primitives**: Architecting a legal-tech platform (Legal Owl) with a live eCourts API integration and a schema-locked agent layer to automate case tracking for litigators.
+> *   **Coordinating across teams**: Bridging operations, compliance, and engineering to ship transaction capabilities under strict standards.
+> *   **Designing AI Workflows**: Architecting a legal-tech platform (Legal Owl) integrating live eCourts API syncing, nightly event diffing, and a multi-agent layer (Court Scout, Intake Registrar, Limitation Clerk) to reduce manual case monitoring for solo litigators to near-zero.
 > *   **Optimizing systems**: Scaling internal developer dashboards to streamline verification workflows (cutting validation cycles by 90% and log storage cost by 99%).
 > 
 > I am eager to learn and help take some of the workload off your plate—whether that means drafting PRDs, testing RAG flows, configuring multi-agent systems, or database cleaning. I know how valuable a founder's or PM's time is, and I would love to be of assistance.
@@ -86,9 +86,9 @@ This document contains tailored outreach templates for **WhatsApp (WA)**, **Link
 
 > Hi [Name]! Hope you're doing well. 
 > 
-> I'm Yashvi Bansal, a developer at Kotak Mahindra (IIT-BHU graduate). I'm currently looking to transition into Product Management / Founder's Office roles.
+> I'm Yashvi Bansal, a developer at Kotak (IIT-BHU graduate). I'm currently looking to transition into Product Management / Founder's Office roles.
 > 
-> To gain practical experience and learn the ropes, I'm hoping to find small freelance or side projects. I have experience with technical specs, database tasks, API integrations, and multi-agent AI testing (like a legal workflow project I recently shipped).
+> To gain practical experience and learn the ropes, I'm hoping to find small freelance or side projects. I have experience with technical specs, database tasks, API integrations, and multi-agent AI platforms (recently built a legal-tech platform with live eCourts API sync and nightly case diffing).
 > 
 > If your team at [Company Name] is busy and needs help with any unowned tasks—like drafting product notes, prompt engineering, or data cleanup—I'd love to help out and support you guys.
 > 
@@ -103,7 +103,7 @@ This document contains tailored outreach templates for **WhatsApp (WA)**, **Link
 > 
 > I am a developer at Kotak Mahindra Bank (IIT-BHU alum) working on transitioning to Technical PM/Founder's Office roles. To learn and build a portfolio, I'm looking for small freelance or side-projects.
 > 
-> My background is in platform engineering, cross-functional coordination, and AI building (such as my recent Legal Owl multi-agent project involving eCourts API integration). If you have any backlog tasks—like drafting specs, prompt tuning, or workflow mapping—I would love to help support your team.
+> My background is in platform engineering, cross-functional coordination, and AI building (such as my recent Legal Owl platform involving eCourts API sync, nightly case diffs, and a schema-locked agent layer). If you have any backlog tasks—like drafting specs, prompt tuning, or workflow mapping—I would love to help support your team.
 > 
 > I know you're busy, so please don't feel pressured to respond immediately. If you have a few minutes sometime, I'd be very grateful to connect. Thank you for your time!
 > 
@@ -123,7 +123,7 @@ This document contains tailored outreach templates for **WhatsApp (WA)**, **Link
 > My name is Yashvi Bansal, an IIT-BHU graduate and Software Development Engineer at Kotak Mahindra Bank. I am currently working on transitioning into Technical Product Management or Founder’s Office roles, and I am looking for freelance or side-project opportunities to gain hands-on experience.
 > 
 > I would love to offer my support to [Company Name] on a contract or project basis. My experience includes:
-> *   **AI Product Architecture**: Architected a legal-tech workspace (Legal Owl) that integrates live eCourts API syncing. I designed a multi-agent layer with a human-in-the-loop "approve-before-act" trust primitive and citation ledger to prevent hallucinations.
+> *   **AI Product Architecture**: Architected a 4-subpart legal-tech platform (Legal Owl) featuring live eCourts API sync, nightly event diffing, and a cite-grounded assistant that abstains unless traceable to a source span. I also designed a multi-agent layer (Court Scout, Intake Registrar, Limitation Clerk) with an "approve-before-act" trust primitive.
 > *   **Cross-Functional Coordination**: Collaborating between operations, business, and compliance teams to deliver critical platforms.
 > *   **Workflow Efficiency**: Building developer dashboard tools and optimizing log storage data (cut log storage costs by 99% at my bank).
 > 
