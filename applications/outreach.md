@@ -10,7 +10,7 @@ The tone of these templates is **direct, professional, grounded, and reader-focu
 *Use these when sharing to community lists, alumni groups, or chat channels.*
 
 ### 🟢 1A. WhatsApp (WA) Group Variant
-*Formatted with asterisks (`*`) for bold text in WhatsApp, emojis for readability, and single-line spacing for mobile screens.*
+*Formatted with double linebreaks between bullet points for comfortable reading on WhatsApp chat screens.*
 
 ```text
 Hey everyone! 👋
@@ -20,8 +20,11 @@ I’m *Yashvi Bansal*, an IIT-BHU alum and SDE at Kotak Mahindra Bank. I am look
 My focus is on *Applied AI-Native workflows and agentic automation*—optimizing workflows from pre-sales journeys to post-sales customer success to save teams manual hours.
 
 *How I can help support your team:*
+
 • *AI Workflow Automation*: Experience building multi-agent systems with live API syncs, nightly event updates, and human-in-the-loop validation tools to safely automate operations.
+
 • *Safe LLM Deployments*: Experience setting up prompt guardrails and LLM response evaluations (DeepEval) to protect against business liability.
+
 • *Stakeholder Alignment*: Bridging operations, business, and compliance teams to ensure new tech rollouts ship smoothly.
 
 If your team is looking to automate manual processes using AI agents and needs someone to coordinate the setup, test workflows, and write specs, I'd love to help!
@@ -74,7 +77,7 @@ My name is Yashvi Bansal (IIT-BHU, Class of 2023), and I am currently working as
 I focus on optimizing business processes using Applied AI-native workflows and agentic automation—from pre-sales journeys to customer success pipelines.
 
 A quick summary of my profile:
-• AI Implementation: Architected multi-agent workflows integrating live API syncing, nightly event diffing, and citation ledgers to ensure LLM responses are traceable back to source documents.
+• AI Implementation: Architected multi-agent workflows integrating live API syncing, nightly event diffing, and citation leders to ensure LLM responses are traceable back to source documents.
 • Technical & Operational Impact: Built centralized reporting dashboards and testing frameworks at Kotak Bank, cutting validation cycles by 90% and database log storage cost by 99%.
 • Collaborative Execution: Experienced in managing the human, emotional, and organizational dynamics of working across multiple stakeholder teams.
 
@@ -96,7 +99,7 @@ B.Tech, IIT-BHU (2019-2023)
 *Use these when reaching out directly to specific founders, PMs, or investors.*
 
 ### 🟢 2A. WhatsApp (WA) DM Variant
-*Casual, respectful, short, and highly conversational. Great for warm connections.*
+*Casual, respectful, short, and highly conversational. Formatted with linebreaks between bullet points for easy mobile reading.*
 
 ```text
 Hi [Name]! Hope you're doing well.
@@ -104,8 +107,11 @@ Hi [Name]! Hope you're doing well.
 I'm Yashvi Bansal, a developer at Kotak (IIT-BHU graduate). I'm currently looking for full-time opportunities in Applied AI PM or Founder's Office roles, and am open to starting contractually.
 
 I focus on designing Applied AI-native workflows and agentic processes (pre-sales, customer success, and internal team ops). I specialize in:
+
 • Building multi-agent systems that sync live APIs and automate manual tracking workflows.
+
 • Coordinating team dynamics and aligning engineering with operational goals.
+
 • Streamlining workflow automation and testing LLM safety.
 
 If your team at [Company Name] needs help drafting specs, prompt engineering, or testing agentic workflows to save team bandwidth, I'd love to help out and support you guys.
