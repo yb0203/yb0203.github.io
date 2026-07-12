@@ -1,36 +1,62 @@
-# Application Pipeline Tracker
+# Job Application Board (Kanban style)
 
-Use this document to track your target companies, active pipeline statuses, customized resumes, and outreach pitches.
-
----
-
-## 📊 1. Active Applications Tracker
-
-| Company | Role | Status | Source/Contact | Date Applied | Pitch / Customized Resume Link | Next Step |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| *Example Co.* | *Founder's Office (AI)* | *Applied* | *Cold DM to Founder* | *Jul 12, 2026* | [Custom Pitch](#3-cold-pitch-templates) | Follow up on Jul 19 |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-
-*Status options: Target, Applied, Screening, Interviewing, Offer, Inactive*
+Use this document to track your active applications. Move cards (opportunity blocks) between the pipeline sections as you progress.
 
 ---
 
-## 🎯 2. Target Startups & Teams (Brainstorm List)
+## 🎯 1. Target (Wishlist)
+*Opportunities you are researching, preparing custom pitches for, or plan to apply to.*
 
-For Founder's Office & AI PM roles, prioritize companies at the intersection of AI, Developer Experience, and Fintech:
-
-1.  **AI DevTools / DevEx Startups**: (e.g., Cursor, Cosine, Double.bot, MCP server hosting platforms, BDD automation tooling).
-2.  **AI Trust, Safety & Compliance**: (e.g., DeepEval/Confident AI, Giskard, Arthur, Patronus AI, or compliance-heavy startups).
-3.  **Fintech Infrastructure**: (e.g., Decentro, Signzy, Razorpay, M2P, Setu, or emerging zero-to-one B2B fintechs).
+### 🏢 Confident AI — 🚀 AI Platform Product Manager (Example)
+> **Status**: Target | **Date Added**: Jul 12, 2026 | **Source**: Found on LinkedIn  
+> **Prep Materials**: [resume_pm.md](file:///Users/hkc/Documents/job-prep/resume_pm.md)  
+> 
+> **Context & Target Angle**:  
+> Creators of DeepEval. I have hands-on experience integrating DeepEval at Kotak Mahindra Bank to validate LLM models against 100+ metrics. This is a massive selling point.
+> 
+> **Next Action**:  
+> - [ ] Write custom pitch highlighting DeepEval deployment and send cold email to the founders.
 
 ---
 
-## ✉️ 3. Cold Outreach Pitch Templates
+## 📤 2. Applied
+*Applications submitted, awaiting initial response.*
 
-Founder's Office and high-agency PM roles are often unlisted. Cold outreaches using short, high-agency messages are highly effective.
+*(No active cards)*
+
+---
+
+## 📞 3. Screening
+*First-round HR calls, recruiter screenings, or short initial chats.*
+
+*(No active cards)*
+
+---
+
+## 💬 4. Interviewing
+*Deep-dive technical rounds, product design sessions, or founder chats.*
+
+*(No active cards)*
+
+---
+
+## 🏆 5. Offer
+*Active offers being negotiated or accepted.*
+
+*(No active cards)*
+
+---
+
+## ❌ 6. Inactive / Rejected
+*Applications that didn't move forward or roles you decided not to pursue.*
+
+*(No active cards)*
+
+---
+
+## ✉️ Cold Outreach Pitch Templates
+
+Use these pre-drafted templates for cold messages on LinkedIn or email.
 
 ### Template A: Founder's Office (High-Agency Builder)
 > **Subject**: Engineer-adjacent builder for [Company Name] (IIT-BHU / Fintech Core Dev)
