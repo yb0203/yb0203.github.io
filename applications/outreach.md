@@ -2,7 +2,7 @@
 
 This document contains tailored outreach templates for **WhatsApp (WA)**, **LinkedIn (LI)**, and **Email (Mail)** for both bulk community sharing and direct individual outreach.
 
-The tone of these templates is **direct, professional, grounded, and reader-focused**, highlighting applied AI capabilities and business outcomes rather than internal project names (like Legal Owl or GitaBae) that a recipient would not recognize. Each template is enclosed in a copyable code block to preserve line breaks and punctuation exactly.
+The tone of these templates is **direct, professional, grounded, and reader-focused**, highlighting applied AI capabilities and business outcomes. Each template is enclosed in a copyable code block to preserve line breaks and punctuation exactly, and all templates include your complete contact details.
 
 ---
 
@@ -26,9 +26,7 @@ My focus is on *Applied AI-Native workflows and agentic automation*—optimizing
 
 If your team is looking to automate manual processes using AI agents and needs someone to coordinate the setup, test workflows, and write specs, I'd love to help!
 
-📱 WA: +91 62831 62131
-📧 Email: bansaly0203@gmail.com
-🔗 LinkedIn: linkedin.com/in/yb0203
+📱 +91 62831 62131 | 📧 bansaly0203@gmail.com | 🔗 LinkedIn: linkedin.com/in/yb0203
 ```
 
 ---
@@ -53,6 +51,8 @@ What I bring to early-stage teams:
 If your team has manual operational bottlenecks or AI workflows that need implementation and testing, I’d love to connect. I am keen to learn your processes quickly and help take some of the workload off your plate.
 
 Thank you so much for your time and any leads!
+
+Contact: +91 62831 62131 | bansaly0203@gmail.com | LinkedIn: linkedin.com/in/yb0203
 
 #AppliedAI #FoundersOffice #TechnicalPM #AIOps #AgenticWorkflows #StartupOps
 ```
@@ -86,7 +86,7 @@ Warm regards,
 
 Yashvi Bansal
 B.Tech, IIT-BHU (2019-2023)
-+91 62831 62131 | bansaly0203@gmail.com
++91 62831 62131 | bansaly0203@gmail.com | LinkedIn: linkedin.com/in/yb0203
 ```
 
 ---
@@ -111,6 +111,8 @@ I focus on designing Applied AI-native workflows and agentic processes (pre-sale
 If your team at [Company Name] needs help drafting specs, prompt engineering, or testing agentic workflows to save team bandwidth, I'd love to help out and support you guys.
 
 No pressure at all if things are busy right now, but if you're open to it, I'd love to jump on a quick call sometime for your advice on the transition. Thank you so much! 🙌
+
+Contact: +91 62831 62131 | bansaly0203@gmail.com | LinkedIn: linkedin.com/in/yb0203
 ```
 
 ---
@@ -134,7 +136,8 @@ If you have any backlog tasks—like mapping workflow logic, prompt tuning, or t
 
 Best,
 Yashvi Bansal
-linkedin.com/in/yb0203
+
+Contact: +91 62831 62131 | bansaly0203@gmail.com | LinkedIn: linkedin.com/in/yb0203
 ```
 
 ---
@@ -166,7 +169,6 @@ Warm regards,
 
 Yashvi Bansal
 B.Tech, IIT-BHU
-+91 62831 62131 | bansaly0203@gmail.com
-LinkedIn: linkedin.com/in/yb0203
++91 62831 62131 | bansaly0203@gmail.com | LinkedIn: linkedin.com/in/yb0203
 GitHub: github.com/yb0203
 ```
