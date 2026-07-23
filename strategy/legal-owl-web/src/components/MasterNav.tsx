@@ -4,16 +4,17 @@ export const MasterNav = () => {
       <div className="flex items-center gap-2 pr-4 border-r border-white/20 whitespace-nowrap">
         <span className="w-2.5 h-2.5 rounded-full bg-[#c59e5f] inline-block"></span>
         <span className="text-white font-bold tracking-wider">LEGAL OWL</span>
-        <span className="text-white/40 text-[10px] uppercase">US Banking Strategy</span>
+        <span className="text-white/40 text-[10px] uppercase">6-Layer Strategy</span>
       </div>
       <div className="flex items-center gap-1 sm:gap-2 flex-nowrap">
-        <a href="#ch1" className="px-3 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">01. Overview</a>
-        <a href="#ch2" className="px-3 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">02. 7 Divisions</a>
-        <a href="#ch3" className="px-3 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">03. 3 Solutions</a>
-        <a href="#ch4" className="px-3 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">04. GTM & SIs</a>
-        <a href="#ch5" className="px-3 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">05. Objections</a>
-        <a href="#ch6" className="px-3 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">06. Pod Realignment</a>
-        <a href="#ch7" className="px-3 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">07. Use Case Matrix</a>
+        <a href="#overview" className="px-2.5 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">00. Hierarchy</a>
+        <a href="#layer1" className="px-2.5 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">L1. Market & Regs</a>
+        <a href="#layer2" className="px-2.5 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">L2. Problem Space</a>
+        <a href="#layer3" className="px-2.5 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">L3. Solution Space</a>
+        <a href="#layer4" className="px-2.5 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">L4. Stakeholders</a>
+        <a href="#layer5" className="px-2.5 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">L5. Business & GTM</a>
+        <a href="#layer6" className="px-2.5 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">L6. Product Lifecycle</a>
+        <a href="#ch7" className="px-2.5 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">Master Use Cases</a>
       </div>
     </nav>
   );
