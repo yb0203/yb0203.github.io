@@ -6,7 +6,7 @@ import path from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: process.env.NODE_ENV === 'production' ? '/job-prep/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/lyzr-bfsi-prep/' : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
