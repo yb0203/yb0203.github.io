@@ -35,8 +35,8 @@ export function App() {
       <footer className="bg-[#121b18] text-white/50 py-12 px-6 sm:px-16 border-t border-white/10 text-xs mt-16">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
-            <div className="font-bold text-white mb-1">Legal Owl AI — US Banking Product Strategy</div>
-            <div>Exhaustively grounded in the 6 strategy layers of <code className="text-xs text-[#c59e5f]">/strategy/legal-owl</code> & <code className="text-xs text-[#c59e5f]">understand_banking.md</code>.</div>
+            <div className="font-bold text-white mb-1">Lyzr BFSI — US Banking Strategy & Legal Operations</div>
+            <div>Exhaustively grounded in the 6 strategy layers of <code className="text-xs text-[#c59e5f]">/strategy</code> & <code className="text-xs text-[#c59e5f]">understand_banking.md</code>.</div>
           </div>
           <div className="text-right text-white/40">
             <div>Confidential · Internal Strategy Reference</div>

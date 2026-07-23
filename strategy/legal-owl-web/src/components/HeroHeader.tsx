@@ -10,13 +10,13 @@ export const HeroHeader = () => {
         </div>
         
         <h1 className="text-3xl sm:text-5xl font-serif leading-tight font-normal mb-4">
-          Legal Owl — <em className="italic text-[#e8a382]">US Banking Strategy</em> & Legal Operations
+          Lyzr BFSI — <em className="italic text-[#e8a382]">US Banking Strategy</em> & Legal Operations
         </h1>
         
         <p className="text-white/70 max-w-3xl text-sm sm:text-base leading-relaxed mb-10 font-sans">
           An exhaustive, MECE product strategy mapping 7 core banking divisions, 20+ legal touchpoints, 
           a 3-solution build order (S1 Land → S2 Expand → S3 Platform), and forward-deployed pod realignment 
-          built natively for on-prem VPC data security and OCC 2011-12 compliance.
+          built natively on Lyzr Agent primitives for on-prem VPC data security and OCC 2011-12 compliance.
         </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 border-t border-white/10">

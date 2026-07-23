@@ -17,7 +17,7 @@ export const Layer3SolutionSpace = () => {
           Layer 3 · Solution Space
         </span>
         <h2 className="text-2xl sm:text-3xl font-serif text-[#121b18]">
-          Legal Owl Capabilities & 20-Item MoSCoW Product Backlog
+          Lyzr BFSI Capabilities & 20-Item MoSCoW Product Backlog
         </h2>
         <p className="text-slate-600 text-sm max-w-2xl mt-1">
           Translating pain points into explicit software features prioritized using the MoSCoW framework and mapped to build phases.

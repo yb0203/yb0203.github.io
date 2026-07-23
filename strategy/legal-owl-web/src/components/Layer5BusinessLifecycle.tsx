@@ -74,7 +74,7 @@ export const Layer5BusinessLifecycle = () => {
         </h3>
         <div className="p-4 bg-white border border-slate-200 rounded-xl shadow-sm text-xs text-slate-700 space-y-2">
           <p>
-            Large banks work through preferred IT vendors for software deployment. Legal Owl builds co-sell programs with GSIs serving US banking accounts:
+            Large banks work through preferred IT vendors for software deployment. Lyzr BFSI builds co-sell programs with GSIs serving US banking accounts:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
             <div className="p-2.5 bg-slate-50 border border-slate-200 rounded font-semibold text-[#121b18]">

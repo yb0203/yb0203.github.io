@@ -18,7 +18,7 @@ export interface RegulatoryItem {
   name: string;
   authority: string;
   rule: string;
-  legalOwlMoat: string;
+  lyzrMoat: string;
 }
 
 export interface CompetitorItem {
@@ -126,7 +126,7 @@ export interface UseCaseItem {
 export const STRATEGY_LAYERS: StrategyLayer[] = [
   { layer: "Layer 1", name: "Market Intelligence", focus: "US Banking Landscape & Regulatory Frameworks", output: "Target ICP & Security Compliance Moats" },
   { layer: "Layer 2", name: "Problem Space", focus: "5 MECE Workflows & 15 Pain-Point Decompositions", output: "Prioritized Pain-Point Matrix (P1-P15)" },
-  { layer: "Layer 3", name: "Solution Space", focus: "Legal Owl Capabilities & Gap Analysis", output: "20-Item MoSCoW Product Backlog" },
+  { layer: "Layer 3", name: "Solution Space", focus: "Lyzr BFSI Capabilities & Gap Analysis", output: "20-Item MoSCoW Product Backlog" },
   { layer: "Layer 4", name: "Stakeholder Map", focus: "Buying Committee, DACI & Objection Playbook", output: "IT Security Veto Mitigation & Scripts" },
   { layer: "Layer 5", name: "Business Lifecycle", focus: "6-Stage Sales Pipeline & $250K ACV Pricing Tiers", output: "Land-and-Expand GTM & SI Channels" },
   { layer: "Layer 6", name: "Product Lifecycle", focus: "MVP Scope, KPIs & Vertical Pod Realignment", output: "4-Phase Roadmap & Pod Org Structure" }
@@ -141,11 +141,11 @@ export const BANK_ARCHETYPES: BankArchetype[] = [
 ];
 
 export const REGULATORY_FRAMEWORKS: RegulatoryItem[] = [
-  { name: "OCC Bulletin 2011-12", authority: "OCC / Federal Reserve", rule: "Requires explicit model validation, audit trails, and risk controls for AI models.", legalOwlMoat: "Pre-built OCC 2011-12 validation pack shipped as product." },
-  { name: "OCC Bulletin 2023-17", authority: "OCC / FDIC", rule: "Third-Party Risk Management (TPRM) guidelines for cloud software.", legalOwlMoat: "Deployable 100% inside bank private VPC with zero public API leaks." },
-  { name: "NYDFS 23 NYCRR 504", authority: "NY Dept of Financial Services", rule: "Mandates transaction monitoring and sanctions screening accuracy audits.", legalOwlMoat: "Traceable source citation ledger ensuring zero ungrounded claims." },
-  { name: "Uniform Commercial Code (UCC-1)", authority: "State Commercial Law", rule: "Strict filing rules for perfecting liens on business collateral.", legalOwlMoat: "Automated UCC-1 filing checks preventing unperfected security losses." },
-  { name: "UCP 600 Trade Rules", authority: "International Chamber of Commerce", rule: "Strict compliance for Letters of Credit (LC) shipping paper discrepancy audits.", legalOwlMoat: "Automated discrepancy auditor enforcing UCP 600 clause checks." }
+  { name: "OCC Bulletin 2011-12", authority: "OCC / Federal Reserve", rule: "Requires explicit model validation, audit trails, and risk controls for AI models.", lyzrMoat: "Pre-built OCC 2011-12 validation pack shipped as product." },
+  { name: "OCC Bulletin 2023-17", authority: "OCC / FDIC", rule: "Third-Party Risk Management (TPRM) guidelines for cloud software.", lyzrMoat: "Deployable 100% inside bank private VPC with zero public API leaks." },
+  { name: "NYDFS 23 NYCRR 504", authority: "NY Dept of Financial Services", rule: "Mandates transaction monitoring and sanctions screening accuracy audits.", lyzrMoat: "Traceable source citation ledger ensuring zero ungrounded claims." },
+  { name: "Uniform Commercial Code (UCC-1)", authority: "State Commercial Law", rule: "Strict filing rules for perfecting liens on business collateral.", lyzrMoat: "Automated UCC-1 filing checks preventing unperfected security losses." },
+  { name: "UCP 600 Trade Rules", authority: "International Chamber of Commerce", rule: "Strict compliance for Letters of Credit (LC) shipping paper discrepancy audits.", lyzrMoat: "Automated discrepancy auditor enforcing UCP 600 clause checks." }
 ];
 
 export const COMPETITORS: CompetitorItem[] = [
@@ -156,7 +156,7 @@ export const COMPETITORS: CompetitorItem[] = [
   { name: "Eltropy", targetMarket: "Credit Unions", jurisdictionSupport: "CU Comms", deploymentModel: "SaaS", pricing: "Mid", keyDeficit: "Focused on CX comms; lacks deep lending & contract audit capabilities." },
   { name: "Bretton AI", targetMarket: "Compliance & FinCrime", jurisdictionSupport: "US Banking Compliance", deploymentModel: "VPC", pricing: "High ($150K+)", keyDeficit: "Focused exclusively on EDD/AML; lacks cross-department legal ops suite." },
   { name: "Manual Status Quo", targetMarket: "Internal Legal", jurisdictionSupport: "Internal Playbooks", deploymentModel: "On-Prem MS Word/Excel", pricing: "Internal salary cost", keyDeficit: "High error rates; massive document review backlogs; missed court dates." },
-  { name: "Legal Owl", targetMarket: "US Banking Legal Ops", jurisdictionSupport: "US Federal & State Banking", deploymentModel: "Private VPC / On-Prem", pricing: "$75K - $250K Tiered", keyDeficit: "Differentiated: Built for banking legal ops with grounded citation ledgers." }
+  { name: "Lyzr BFSI", targetMarket: "US Banking Legal Ops", jurisdictionSupport: "US Federal & State Banking", deploymentModel: "Private VPC / On-Prem", pricing: "$75K - $250K Tiered", keyDeficit: "Differentiated: Built natively on Lyzr Agent primitives with grounded citation ledgers." }
 ];
 
 export const PAIN_POINTS: PainPointItem[] = [
@@ -206,7 +206,7 @@ export const PERSONAS: StakeholderPersona[] = [
 export const SALES_STAGES: SalesStage[] = [
   { stage: "Stage 1", name: "Discovery & Qualification", activity: "Identify bank size, legal team setup, and core pain points (Transactional vs. Litigation).", exitCriteria: "CLO agrees to schedule a technical product demo with their team.", duration: "1 - 2 weeks" },
   { stage: "Stage 2", name: "Technical Demo & Scoping", activity: "Demonstrate template deviation checker and PACER Court Scout. Share security package.", exitCriteria: "Agreement on a 30-day paid pilot scope and signed pilot agreement.", duration: "2 - 3 weeks" },
-  { stage: "Stage 3", name: "Paid Pilot (30 Days)", activity: "Deploy Legal Owl inside bank sandbox. Upload approved playbooks and active case list.", exitCriteria: "System achieves 70%+ daily active usage with 95%+ date scraping accuracy.", duration: "4 weeks (Fixed)" },
+  { stage: "Stage 3", name: "Paid Pilot (30 Days)", activity: "Deploy Lyzr BFSI inside bank sandbox. Upload approved playbooks and active case list.", exitCriteria: "System achieves 70%+ daily active usage with 95%+ date scraping accuracy.", duration: "4 weeks (Fixed)" },
   { stage: "Stage 4", name: "IT Security & Compliance Audit", activity: "Security review by bank's IT Risk team. Verify data isolation, logging, and access control.", exitCriteria: "Formally signed-off IT security compliance approval.", duration: "3 - 6 weeks" },
   { stage: "Stage 5", name: "Enterprise MSA & Commercials", activity: "Finalize seat licensing tiers, SLA response times, support terms, and pricing.", exitCriteria: "Signed Master Services Agreement (MSA) and Purchase Order (PO).", duration: "2 - 4 weeks" },
   { stage: "Stage 6", name: "Customer Success & Expansion", activity: "Onboard remaining legal team members; monitor usage and pitch secondary modules.", exitCriteria: "Expand user seats by 50% or secure secondary module upsell.", duration: "Continuous" }
@@ -250,7 +250,7 @@ export const ROADMAP_PHASES: RoadmapPhase[] = [
     phase: "Phase 4",
     title: "Enterprise Ecosystem",
     timeline: "18 Months+",
-    goal: "Establish Legal Owl as the standard legal operations infrastructure.",
+    goal: "Establish Lyzr BFSI as the standard legal operations infrastructure.",
     features: ["Automated document ingestion API integrations", "Advanced collaborative editing suite", "Multi-tenant compliance networks"],
     metrics: "Over 100 enterprise customers; 95% retention rate.",
     businessMilestone: "International expansion scoping (UK/EU markets)."
@@ -336,8 +336,8 @@ export const BANKING_DIVISIONS: BankingDivision[] = [
 ];
 
 export const OBJECTIONS: ObjectionItem[] = [
-  { id: "security", title: "1. IT Security & Data Privacy", persona: "Chief Risk Officer / Head of IT Security", objection: "We cannot allow our legal documents or customer records to leave our firewall for LLM processing.", response: "Legal Owl runs 100% inside your bank's secure network perimeter (AWS VPC or on-premise container cluster). No document, query, or metadata ever leaves your secure firewall. We do not use public APIs like OpenAI." },
-  { id: "hallucination", title: "2. LLM Hallucination Risk", persona: "Chief Legal Officer (CLO)", objection: "AI models hallucinate. If our team misses a clause deviation in a commercial contract, financial damage is massive.", response: "Legal Owl operates on a strict 'Approve-Before-Act' paradigm paired with a Grounded Citation Ledger. Every identified deviation or compliance risk points directly to exact page and line coordinates in your approved playbook. If information is missing, the engine explicitly abstains." },
+  { id: "security", title: "1. IT Security & Data Privacy", persona: "Chief Risk Officer / Head of IT Security", objection: "We cannot allow our legal documents or customer records to leave our firewall for LLM processing.", response: "Lyzr BFSI runs 100% inside your bank's secure network perimeter (AWS VPC or on-premise container cluster). No document, query, or metadata ever leaves your secure firewall. We do not use public APIs like OpenAI." },
+  { id: "hallucination", title: "2. LLM Hallucination Risk", persona: "Chief Legal Officer (CLO)", objection: "AI models hallucinate. If our team misses a clause deviation in a commercial contract, financial damage is massive.", response: "Lyzr BFSI operates on a strict 'Approve-Before-Act' paradigm paired with a Grounded Citation Ledger. Every identified deviation or compliance risk points directly to exact page and line coordinates in your approved playbook. If information is missing, the engine explicitly abstains." },
   { id: "tracking", title: "3. Court Date Scraping Reliability", persona: "Head of Litigation", objection: "We track thousands of foreclosure cases on PACER and state court dockets. If scraping fails, we could miss a critical court date.", response: "Our Court Scout engine uses redundant indexing pipelines with automated health monitoring. If a court portal updates its schema, the system alerts legal ops immediately and falls back to manual verification alerts, eliminating silent failures." },
   { id: "procurement", title: "4. Software Abandonment & Friction", persona: "Head of Legal Operations / Procurement", objection: "We don't want to buy another complex platform that our legal team abandons after a month.", response: "Our pilots begin with a paid 30-day trial focused on a single high-pain workflow (e.g., eCourts date tracking or commercial loan markups). We track daily active usage during the pilot and only transition to an enterprise license once user adoption hits 70%+." }
 ];

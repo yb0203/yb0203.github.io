@@ -57,7 +57,7 @@ export const ObjectionAccordion = () => {
             <div className="p-5 rounded-xl bg-[#fdfbf7] border border-[#466c5b]/30 text-slate-800 text-xs leading-relaxed">
               <div className="flex items-center gap-2 text-[#466c5b] font-bold mb-2 uppercase tracking-wider text-[10px]">
                 <CheckCircle className="w-4 h-4" />
-                Legal Owl's Proven Counter:
+                Lyzr BFSI's Proven Counter:
               </div>
               <p className="text-slate-700 text-sm font-sans">{activeObjection.response}</p>
             </div>

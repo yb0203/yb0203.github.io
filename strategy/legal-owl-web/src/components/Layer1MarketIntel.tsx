@@ -12,7 +12,7 @@ export const Layer1MarketIntel = () => {
           US Banking Landscape & Regulatory Security Moats
         </h2>
         <p className="text-slate-600 text-sm max-w-2xl mt-1">
-          Grounding Legal Owl's market focus across bank tiers, federal compliance mandates (OCC, Fed, NYDFS), and competitive positioning.
+          Grounding Lyzr BFSI's market focus across bank tiers, federal compliance mandates (OCC, Fed, NYDFS), and competitive positioning.
         </p>
       </div>
 
@@ -73,7 +73,7 @@ export const Layer1MarketIntel = () => {
               </div>
               <p className="text-xs text-slate-600 mb-2">{r.rule}</p>
               <div className="text-[11px] text-emerald-800 bg-emerald-50 border border-emerald-200 p-2 rounded font-medium">
-                🛡️ <strong>Legal Owl Moat:</strong> {r.legalOwlMoat}
+                🛡️ <strong>Lyzr Moat:</strong> {r.lyzrMoat}
               </div>
             </div>
           ))}
@@ -99,12 +99,12 @@ export const Layer1MarketIntel = () => {
             </thead>
             <tbody className="divide-y divide-slate-100 text-slate-700">
               {COMPETITORS.map((c, i) => (
-                <tr key={i} className={c.name === 'Legal Owl' ? 'bg-[#fdfbf7] font-semibold border-l-4 border-l-[#466c5b]' : 'hover:bg-slate-50'}>
+                <tr key={i} className={c.name === 'Lyzr BFSI' ? 'bg-[#fdfbf7] font-semibold border-l-4 border-l-[#466c5b]' : 'hover:bg-slate-50'}>
                   <td className="p-3 font-bold text-slate-900">{c.name}</td>
                   <td className="p-3">{c.targetMarket}</td>
                   <td className="p-3 font-mono text-[11px]">{c.deploymentModel}</td>
                   <td className="p-3 font-mono">{c.pricing}</td>
-                  <td className={`p-3 text-[11px] ${c.name === 'Legal Owl' ? 'text-[#466c5b] font-bold' : 'text-slate-600'}`}>{c.keyDeficit}</td>
+                  <td className={`p-3 text-[11px] ${c.name === 'Lyzr BFSI' ? 'text-[#466c5b] font-bold' : 'text-slate-600'}`}>{c.keyDeficit}</td>
                 </tr>
               ))}
             </tbody>

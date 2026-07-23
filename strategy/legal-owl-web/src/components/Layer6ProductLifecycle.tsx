@@ -12,7 +12,7 @@ export const Layer6ProductLifecycle = () => {
           4-Phase Roadmap & Quantitative Success Metrics
         </h2>
         <p className="text-slate-600 text-sm max-w-2xl mt-1">
-          Scaling Legal Owl from initial MVP verification to multi-market segment expansion and enterprise ecosystem dominance.
+          Scaling Lyzr BFSI from initial MVP verification to multi-market segment expansion and enterprise ecosystem dominance.
         </p>
       </div>
 
