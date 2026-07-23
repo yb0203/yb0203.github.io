@@ -1,7 +1,7 @@
 # Layer 3: Solution Space — Executive Summary
 
 ## ⚡ TL;DR
-- Legal Owl addresses top banking pain points with three core modules: eCourts Sync, Template Deviation Checker, and Policy Auditor.
+- The Platform addresses top banking pain points with three core modules: Docket Sync, Template Deviation Checker, and Policy Auditor.
 - A critical technical principle is "Approve-Before-Act" workflows and citation-grounded LLM layers to prevent hallucinations and compliance errors.
 - The product backlog is structured to support local secure private cloud deployment (VPC) out-of-the-box.
 
@@ -11,7 +11,7 @@
 ## 📖 Full Detail
 
 ### Solution Architecture Summary
-Legal Owl uses a multi-agent system combined with local vector databases to execute tasks. By utilizing small, domain-specialized language models hosted inside the bank's secure network, it ensures zero external data leakages while maintaining low latency.
+The Platform uses a multi-agent system combined with local vector databases to execute tasks. By utilizing small, domain-specialized language models hosted inside the bank's secure network, it ensures zero external data leakages while maintaining low latency.
 
 ### Priority Document Callout
 **MANDATORY READ**: [3A_capability_mapping.md](./3A_capability_mapping.md) shows how the top prioritized pain points are resolved by specific product capabilities, explaining the mechanics of the citation system.

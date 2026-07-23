@@ -1,9 +1,9 @@
 # 2B. Pain Point Decomposition
 
 ## ⚡ TL;DR
-- Legal teams waste significant time manually tracking eCourts websites for hearing dates and orders.
+- Legal teams waste significant time manually tracking PACER & state court dockets websites for hearing dates and orders.
 - Loan document reviews stall because officers manually compare variations against approved templates.
-- Regulatory changes from the RBI require legal teams to manually scan hundreds of internal policies to find affected clauses.
+- Regulatory changes from federal regulators require legal teams to manually scan hundreds of internal policies to find affected clauses.
 
 ## 🗺️ Where This Fits
 [Layer 2 Pain Points → Feeds into Layer 2C Prioritization and Layer 3A Capability Mapping]
@@ -15,9 +15,9 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **P1** | W1 (Trans) | Manual comparison of third-party contract drafts against standard bank templates | Legal Manager | Daily | High | MS Word "Compare Documents" + line-by-line review |
 | **P2** | W1 (Trans) | Critical deviations in vendor contracts are missed, leading to operational risk | CFO / GC | Weekly | High | Relying on the memory of senior lawyers |
-| **P3** | W2 (Reg) | Manually auditing old credit manuals when new RBI circulars are released | CCO / Auditor | Monthly | High | Keyword searching PDFs; manual checklist creation |
-| **P4** | W2 (Reg) | Missing compliance timelines due to delay in analyzing complex RBI regulatory text | Compliance Head | Monthly | Med | Paying external consultancies to summarize updates |
-| **P5** | W3 (Lit) | Missing court hearings or order updates due to manual tracking on eCourts | Litigation Head | Daily | High | Interns check eCourts case numbers manually |
+| **P3** | W2 (Reg) | Manually auditing old credit manuals when new federal regulatory guidelines are released | CCO / Auditor | Monthly | High | Keyword searching PDFs; manual checklist creation |
+| **P4** | W2 (Reg) | Missing compliance timelines due to delay in analyzing complex federal regulatory text | Compliance Head | Monthly | Med | Paying external consultancies to summarize updates |
+| **P5** | W3 (Lit) | Missing court hearings or order updates due to manual tracking on PACER & state court dockets | Litigation Head | Daily | High | Interns check court case docket numbers manually |
 | **P6** | W3 (Lit) | Drafting repetitive written statements for consumer disputes from scratch | Legal Officer | Weekly | Med | Copy-pasting from older drafts |
 | **P7** | W3 (Lit) | Lack of visibility into panel lawyers' performance and case status | Head of Litigation| Monthly | Med | Follow-up phone calls and monthly Excel reporting |
 | **P8** | W4 (Risk) | Providing legal opinion on complex land titles requires reading hundreds of pages of deeds | Credit Officer | Daily | High | Outside title search report providers (takes 7-10 days)|

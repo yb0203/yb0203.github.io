@@ -3,7 +3,7 @@
 ## ⚡ TL;DR
 - Five roles control the budget and approval of legal technology inside a bank.
 - The Chief Legal Officer cares about overall budget, risk exposure, and speed of delivery.
-- Risk and compliance heads focus heavily on preventing data leaks and meeting RBI requirements.
+- Risk and compliance heads focus heavily on preventing data leaks and meeting federal regulatory requirements.
 
 ## 🗺️ Where This Fits
 [Layer 4 Functional Map → Feeds into Layer 5B GTM Motion]
@@ -25,9 +25,9 @@
 
 3. **Chief Compliance Officer (CCO)**
    - **Workflows Owned**: W2 (Regulatory & Compliance).
-   - **Key Motivation**: Maintain clean audits with RBI; identify compliance gaps across internal policy manuals.
+   - **Key Motivation**: Maintain clean audits with federal regulators; identify compliance gaps across internal policy manuals.
    - **Success Metric**: Number of audit findings per quarter; speed of circular implementation.
-   - **Primary Fear**: Getting fined by the RBI for missing a regulatory update.
+   - **Primary Fear**: Getting fined by federal regulators for missing a regulatory update.
 
 4. **Chief Risk Officer (CRO)**
    - **Workflows Owned**: W4 (Risk & Advisory).

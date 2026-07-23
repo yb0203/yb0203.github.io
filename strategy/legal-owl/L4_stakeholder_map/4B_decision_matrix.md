@@ -16,7 +16,7 @@
 - **End User**: Legal Managers, Litigation Officers, Compliance Auditors.
 - **Influencer**: External Law Firms / Panel Counsel.
 
-### DACI Matrix for Legal Owl Purchase
+### DACI Matrix for the Platform Purchase
 | Stage | Driver (D) | Approver (A) | Contributor (C) | Informed (I) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Initial Pilot Approval** | Head of Legal Ops | Chief Legal Officer | Litigation Head | Legal Teams |
@@ -28,7 +28,7 @@
 IT Security is the most common source of deal slippage in banking sales cycles. To prevent delays, we introduce a standardized **"Security Deployment Package"** during the first discovery call. This package details our offline containerized VPC model, satisfying IT requirements before they request a formal review.
 
 ## 🔑 Key Decisions / Open Questions
-- [ ] Define the checklist items needed to pass a standard Indian bank's third-party risk assessment.
+- [ ] Define the checklist items needed to pass a standard US bank's third-party risk assessment.
 
 ## 🔗 Cross-Links
 - Upstream: [L4_stakeholder_map/4A_functional_head_mapping.md](./4A_functional_head_mapping.md)
