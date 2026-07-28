@@ -241,7 +241,7 @@ Madison turns native Lyzr enterprise primitives directly into high-value banking
 Madison's product strategy incorporates the following **4 recommended strategic positions**:
 
 1. **[RECOMMENDED] Standalone Product Suite Packaging**:
-   * Madison is packaged as a **configurable standalone software suite** (the *Lyzr Banking Engine*) equipped with native banking mainframe connectors, rather than a passive template inside Lyzr Studio.
+   * Madison is packaged as a **configurable standalone agentic AI software suite** (the *Lyzr Banking Engine*) equipped with native banking mainframe connectors, rather than a passive template inside Lyzr Studio.
 
 2. **[RECOMMENDED] 20% R&D / 80% FDE Resource Flywheel**:
    * **Phase 1 Launch**: Resource split is **20% Core Product R&D / 80% Forward-Deployed Engineering (FDE)**. FDEs capture real-world problem-solution feedback directly from client bank deployments and feed edge cases back to R&D.
