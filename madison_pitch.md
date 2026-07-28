@@ -93,12 +93,42 @@ Product Madison is built directly on top of official **Lyzr Enterprise Modules a
 
 ---
 
-## 💎 3. Core Product Differentiators (The 4 WOW Features)
+## 💎 3. Core Product Differentiators Grounded in Lyzr
 
-1. **Approve-Before-Act Co-Pilot UI**: AI agents run in the background and surface interactive action cards with `[ Approve ]`, `[ Edit ]`, and `[ Reject ]` controls. Bank legal/credit officers retain 100% decision authority.
-2. **Grounded Bounding-Box Citation Ledger**: Visual coordinate links on PDFs. Clicking any assertion (e.g., *"Unpaid Tax Lien $12k"*) opens the PDF and **draws a highlighted bounding box** directly over the exact line item on the original document (0% hallucination risk).
-3. **Hybrid LLM + Deterministic Rule Fallback**: LLMs extract unstructured PDF text; hardcoded Python rule engines calculate statutory cure windows (FDCPA 30-day rules, UK 21-day Companies House charge deadlines) and financial ratios ($\text{DSCR} \ge 1.25\times$) to guarantee zero math errors.
-4. **Bank-Grade Data Isolation**: Edge PII anonymization + single-tenant Private VPC deployment via Lyzr Helm/Terraform scripts (OCC Bulletin 2023-17 & GLBA compliant).
+Product Madison turns native Lyzr enterprise primitives directly into high-value banking differentiators:
+
+```
+ ┌──────────────────────────────────────────────────────────────────────────────────┐
+ │               6 KILLER DIFFERENTIATORS (LYZR FEATURE ➔ BANKING VALUE)            │
+ ├─────────────────────────┬───────────────────────────┬────────────────────────────┤
+ │ LYZR NATIVE FEATURE     │ PRODUCT MADISON MODULE    │ BANKING BUSINESS VALUE     │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 1. Lyzr KB +            │ Grounded Bounding-Box     │ 0% LLM Hallucination Risk; │
+ │    Structured Outputs   │ Citation Ledger           │ Verifiable PDF Proof       │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 2. Lyzr Superflow Node  │ Approve-Before-Act        │ Human Officer Governance   │
+ │    Approvals            │ Co-Pilot Action Cards     │ for High-Stakes Actions    │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 3. Lyzr Governor        │ SR 11-7 Model Risk        │ Out-of-the-Box Fed Audit   │
+ │    Observability        │ Audit Ledger              │ Approval for Bank MVGs     │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 4. Lyzr Responsible AI  │ Edge PII Isolation &      │ GLBA & OCC 2023-17         │
+ │    (RAI Engine)         │ Data Privacy Shield       │ Data Privacy Compliance    │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 5. Lyzr Git-for-Agents  │ Enterprise Promotion      │ Safe Dev ➔ Staging ➔ Prod  │
+ │    Control Plane        │ Pipeline (`bank-manifest`)│ VPC Deployment Engine      │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 6. Lyzr Simulation      │ Pre-Deployment Banking    │ Stress-Testing Workflows   │
+ │    Engine               │ Scenario Sandbox          │ Against 1,000+ Cases       │
+ └─────────────────────────┴───────────────────────────┴────────────────────────────┘
+```
+
+1. **Grounded Bounding-Box Citation Ledger** *(Powered by Lyzr KB & Structured Outputs)*: Visual coordinate links on PDFs ($x, y, w, h$). Clicking any assertion (e.g., *"Unpaid Tax Lien $12k"*) opens the PDF and **draws a highlighted bounding box** directly over the exact line item on the original bank document (0% hallucination risk).
+2. **"Approve-Before-Act" Co-Pilot Action Cards** *(Powered by Lyzr Superflow Node Approvals)*: AI agents run in the background and pause at decision gates, surfacing interactive action cards with `[ Approve ]`, `[ Edit ]`, and `[ Reject ]` controls. Bank legal/credit officers retain 100% decision authority.
+3. **Native SR 11-7 Model Governance & Audit Ledger** *(Powered by Lyzr Governor)*: Maintains an immutable execution audit log (`Execution ID`, `Prompt Version`, `Model & Temp`, `Context Hash`, `Tool Parameters`, `Guardrail Flags`, `Human Sign-Off ID`) to pass Federal Reserve Model Validation Group (MVG) audits out-of-the-box.
+4. **Edge PII/NPI Isolation & Privacy Shield** *(Powered by Lyzr RAI Engine)*: Uses Lyzr RAI policies (`create_policy`) to scrub SSNs, Tax IDs, and account numbers at the local boundary before LLM inference (GLBA & OCC Bulletin 2023-17 compliant).
+5. **Git-for-Agents Enterprise Promotion Pipeline** *(Powered by Lyzr Agent Studio)*: Enables strict Dev $\rightarrow$ Staging $\rightarrow$ Production Private VPC promotion pipelines with version rollback for bank Forward-Deployed Engineers (`bank-manifest.json`).
+6. **Pre-Deployment Banking Scenario Sandbox** *(Powered by Lyzr Agent Simulation Engine)*: Pre-tests multi-agent banking workflows against thousands of synthetic stress-test scenarios before live client VPC deployment.
 
 ---
 

@@ -44,22 +44,28 @@ We are building **Product Madison** (the **Lyzr BFSI Enterprise Agent Workspace*
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                       4 PILLARS OF PRODUCT DIFFERENTIATION                  │
+│                       6 PILLARS OF LYZR PRODUCT DIFFERENTIATION             │
 ├─────────────────────────┬───────────────────────────────────────────────────┤
-│ 1. Approve-Before-Act   │ AI agents run in the background and surface       │
-│    Co-Pilot Model       │ interactive action cards; human bank officers     │
+│ 1. Approve-Before-Act   │ AI agents pause at decision gates via Lyzr        │
+│    Superflow Co-Pilot   │ Superflow node approvals; human bank officers     │
 │                         │ retain 100% final decision authority.             │
 ├─────────────────────────┼───────────────────────────────────────────────────┤
-│ 2. Grounded Bounding-   │ Visual coordinate links on PDFs; clicking any     │
-│    Box Citation Ledger  │ assertion highlights the exact line item on the   │
-│                         │ original document (0% LLM hallucination risk).    │
+│ 2. Grounded Bounding-   │ Visual coordinate links on PDFs via Lyzr KB &     │
+│    Box Citation Ledger  │ Structured Outputs; clicking any assertion        │
+│                         │ highlights exact line on original PDF (0% risk).  │
 ├─────────────────────────┼───────────────────────────────────────────────────┤
-│ 3. Hybrid LLM +         │ LLMs parse unstructured PDFs; hardcoded rule      │
-│    Deterministic Rules  │ engines calculate legal cure windows & financial  │
-│                         │ ratios (SR 11-7 Model Risk Management compliant). │
+│ 3. Native SR 11-7       │ Lyzr Governor records immutable audit trails log  │
+│    Governor Audit Log   │ context hashes, prompt versions, & human sign-off │
+│                         │ IDs (Fed Model Validation Group MVG compliant).   │
 ├─────────────────────────┼───────────────────────────────────────────────────┤
-│ 4. Bank-Grade Security  │ Edge PII/NPI redaction; single-tenant Private VPC │
-│    & Data Isolation     │ deployment (OCC Bulletin 2023-17 & GLBA).        │
+│ 4. Bank-Grade Security  │ Lyzr RAI Edge PII/NPI redaction; single-tenant    │
+│    & Data Isolation     │ Private VPC deployment (OCC 2023-17 & GLBA).      │
+├─────────────────────────┼───────────────────────────────────────────────────┤
+│ 5. Git-for-Agents       │ Lyzr Agent Studio branching & promotion pipeline  │
+│    Control Plane        │ for safe Dev ➔ Staging ➔ Prod VPC deployments.    │
+├─────────────────────────┼───────────────────────────────────────────────────┤
+│ 6. Scenario Sandbox     │ Lyzr Agent Simulation Engine stress-tests workflows│
+│    Pre-Testing          │ against 1,000+ synthetic cases before go-live.   │
 └─────────────────────────┴───────────────────────────────────────────────────┘
 ```
 
