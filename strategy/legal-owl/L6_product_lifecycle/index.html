@@ -83,6 +83,33 @@
       mask-composite: exclude;
       pointer-events: none;
     }
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 10mm;
+      }
+      body {
+        background-color: #070a12 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      header {
+        position: static !important;
+      }
+      section {
+        page-break-inside: avoid;
+        margin-bottom: 20px !important;
+      }
+      .glass-card {
+        background: rgba(15, 23, 42, 0.85) !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      nav, a[href="madison_pitch.md"] {
+        display: none !important;
+      }
+    }
   </style>
 </head>
 <body class="min-h-screen antialiased selection:bg-indigo-500/30 selection:text-indigo-200">
