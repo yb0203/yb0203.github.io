@@ -36,27 +36,34 @@ To establish **Madison** as the premier enterprise agentic product suite for ban
 
 ## 🚀 2. Grounded Architecture: Powered by Lyzr Enterprise SDK & ADK
 
-> **TL;DR**: Madison's architecture is engineered around an **Agentic Harness Loop** (Model Brain $\rightarrow$ Tools/Sandbox $\rightarrow$ Context & Memory $\rightarrow$ Observation Grounding), entirely wrapped inside the **Lyzr Governor & Agent Studio Harness**. Every phase maps 1-to-1 with official Lyzr enterprise SDK modules.
+> **TL;DR**: Madison combines an **Agentic Harness Loop** (Model Brain $\rightarrow$ Tools/Sandbox $\rightarrow$ Context & Memory $\rightarrow$ Observation Grounding) with **Templatized BFSI Application Modules** (Commercial Lending, Commercial Sales/RM, Risk/AML, Retail Ops), all enclosed within the **Lyzr Governor & Agent Studio Private VPC Harness**.
 
 Madison is constructed directly around the **Agentic Harness Loop Paradigm**, powered by official **Lyzr Enterprise Modules and SDK Primitives**:
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────┐
-│                            MADISON AGENTIC HARNESS ARCHITECTURE                          │
-│                      (Powered by Lyzr Enterprise Platform & SDK)                         │
+│                               MADISON ENTERPRISE ARCHITECTURE                            │
+│                  (Agentic Harness Loop + BFSI Application Skill Engine)                  │
 ├──────────────────────────────────────────────────────────────────────────────────────────┤
 │                                                                                          │
 │ ┌──────────────────────────────────────────────────────────────────────────────────────┐ │
-│ │                         LYZR GOVERNOR & PRIVATE VPC HARNESS                          │ │
-│ │  • SR 11-7 MRM Immutable Audit Ledger  • Lyzr Agent Studio Git-for-Agents Promotion  │ │
-│ │  • Single-Tenant AWS/Azure/GCP VPC Boundary  • Core Banking Connectors (Fiserv/FIS)  │ │
+│ │ LAYER 4: TEMPLATIZED BFSI APPLICATION SKILL MODULES                                  │ │
+│ │ ┌──────────────────────┐   ┌──────────────────────┐   ┌────────────────────────────┐ │ │
+│ │ │  Commercial Lending  │   │  Commercial Sales/RM │   │ Risk, AML & Retail Ops     │ │ │
+│ │ │ (Title/DSCR/Spreading)│   │  (Pre-Meeting Dossier)│   │ (UBO/SAR/Garnishments)     │ │ │
+│ │ └──────────────────────┘   └──────────────────────┘   └────────────────────────────┘ │ │
+│ └──────────────────────────────────────────▲───────────────────────────────────────────┘ │
+│                                            │ (Executes Skill Workflows)                  │
+│ ┌──────────────────────────────────────────┴───────────────────────────────────────────┐ │
+│ │ LYZR GOVERNOR & PRIVATE VPC HARNESS (AGENTIC REASONING & EXECUTION LOOP)              │ │
+│ │  • Fed SR 11-7 MRM Audit Ledger         • Lyzr Agent Studio Git-for-Agents Control    │ │
+│ │  • Single-Tenant AWS/Azure/GCP VPC      • Core Banking Connectors (Fiserv/FIS/FSC)   │ │
 │ │                                                                                      │ │
 │ │  ┌────────────────────────┐                    ┌──────────────────────────────────┐  │ │
-│ │  │      MODEL (BRAIN)     │ ──── Action ─────> │          TOOLS / SANDBOX         │  │ │
-│ │  │                        │                    │  • Lyzr Superflow Approvals      │  │ │
-│ │  │ • Lyzr ADK Agent()     │                    │  • E2B Code Execution Sandbox    │  │ │
-│ │  │ • Multi-LLM Router     │                    │  • Deterministic Rule Fallbacks  │  │ │
-│ │  │   (Claude, GPT-4o)     │                    │  • Mainframe Core APIs (Fiserv)  │  │ │
+│ │  │     MODEL (BRAIN)      │ ──── Action ─────> │          TOOLS / SANDBOX         │  │ │
+│ │  │ • Lyzr ADK Agent()     │                    │ • Lyzr Superflow Node Approvals  │  │ │
+│ │  │ • Multi-LLM Router     │                    │ • E2B Code Execution Sandbox     │  │ │
+│ │  │   (Claude 3.5/GPT-4o)  │                    │ • Deterministic DSCR Rule Math   │  │ │
 │ │  └────────────────────────┘                    └────────────────┬─────────────────┘  │ │
 │ │              ▲                                                  │                    │ │
 │ │              │                                               Result                  │ │
@@ -71,26 +78,31 @@ Madison is constructed directly around the **Agentic Harness Loop Paradigm**, po
 └──────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 1. Model (The Brain) — Powered by `Lyzr ADK` & `Lyzr Automata`
+### 1. Templatized BFSI Application Modules (Top Layer)
+* **Commercial Lending & Credit**: Title Exception Vetting, Financial Spreading (DSCR $\ge 1.25\times$), Court Scout (PACER/foreclosures), LSTA/LMA Contract Reconciliation.
+* **Commercial Sales & RM**: Pre-Meeting Customer Dossiers (SEC 10-K & news synthesis), Deal Structuring Co-Pilot, Cross-Sell Next-Best-Action.
+* **Risk, AML & Retail Operations**: UBO Tracing (unwrapping offshore shell webs to $\ge 10\%$ owners), SAR Narrative Writing, Garnishment & Levy Execution, Deceased Account Probate.
+
+### 2. Model (The Brain) — Powered by `Lyzr ADK` & `Lyzr Automata`
 * **Agent Personas (`lyzr-automata`)**: Instantiates specialized banking agents configured with specific `role`, `goal`, `instructions`, and foundation model providers (`Agent()`).
 * **Dynamic Multi-LLM Router**: Dynamic task routing across Claude 3.5 Sonnet, GPT-4o, and AWS Bedrock with automatic rate-limit failovers.
 * **Task Nodes (`Task()`)**: Defines discrete operational steps (e.g. *Title Exception Analysis*, *DSCR Spreading*, *UBO Tracing*).
 
-### 2. Action $\rightarrow$ Tools / Sandbox — Powered by `Lyzr Superflow` & Code Sandbox
+### 3. Action $\rightarrow$ Tools / Sandbox — Powered by `Lyzr Superflow` & Code Sandbox
 * **Approve-Before-Act Gate (`Lyzr Superflow`)**: Execution pauses at decision gates via Superflow Node Approvals (`running-and-approvals`), surfacing interactive **Action Cards** (`[ Approve ]`, `[ Edit ]`, `[ Reject ]`) for human bank officers.
 * **Code Sandbox (`E2B`)**: Executes complex python scripts in isolated sandboxes for data processing.
 * **Deterministic Fallback Engine**: Hardcoded Python rule engines calculate statutory legal date math (FDCPA 30-day cure, UK 21-day deadlines) and financial ratios ($\text{DSCR} \ge 1.25\times$) with zero math error.
 * **Mainframe Integration Connectors**: Direct read/write API access to legacy mainframes (**Fiserv, FIS, Jack Henry**) and CRMs (**Salesforce FSC**).
 
-### 3. Result $\rightarrow$ Context & Memory — Powered by `Lyzr ADK KB` & `Lyzr Cognis`
+### 4. Result $\rightarrow$ Context & Memory — Powered by `Lyzr ADK KB` & `Lyzr Cognis`
 * **`KnowledgeBase()` Hybrid RAG Core**: Parses, chunks, and embeds 300-page bank dossiers (commercial title commitments, financial audits, LSTA credit agreements) into vector stores.
 * **`Cognis` Memory Engine**: Uses `add_memories()`, `search_memories()`, and `get_memories()` to manage episodic memory, long-term knowledge graphs, and multi-day state tracking across loan lifecycles.
 
-### 4. Observation $\rightarrow$ Grounding & Safety — Powered by PDF Bounding-Box & `Lyzr RAI`
+### 5. Observation $\rightarrow$ Grounding & Safety — Powered by PDF Bounding-Box & `Lyzr RAI`
 * **Grounded Bounding-Box Overlay**: Formats tool observations into precise visual coordinate links ($x, y, w, h$). Clicking any assertion highlights the exact line item on the original PDF (0% hallucination risk).
 * **Edge PII Redaction (`Lyzr RAI Engine`)**: Redacts Non-Public Personal Information (SSNs, Tax IDs, account numbers) via `create_policy` at the API boundary before LLM inference.
 
-### 5. The Surrounding HARNESS — Powered by `Lyzr Governor` & `Lyzr Agent Studio`
+### 6. The Surrounding HARNESS — Powered by `Lyzr Governor` & `Lyzr Agent Studio`
 * **SR 11-7 MRM Audit Ledger (`Lyzr Governor`)**: Records an immutable audit log of every reasoning cycle (`Execution ID`, `Prompt Version`, `Context Hash`, `Tool Parameters`, `Guardrail Flags`, `Human Sign-Off ID`) for Federal Reserve MVG compliance.
 * **Single-Tenant Private VPC Boundary**: Deploys the entire harness inside the bank's isolated AWS, Azure, GCP, or OpenShift VPC.
 * **Git-for-Agents Control Plane (`Lyzr Agent Studio`)**: Governs environment branching and promotion pipelines across Dev, Staging, and Production Private VPCs.
