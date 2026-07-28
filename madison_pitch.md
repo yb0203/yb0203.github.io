@@ -20,7 +20,7 @@
 - [🏗️ 5. Modular Assembly & FDE Delivery Engine (`bank-manifest.json`)](#%EF%B8%8F-5-modular-assembly--fde-delivery-engine-bank-manifestjson)
 - [💼 6. Go-To-Market (GTM) Enterprise Sales Motions](#-6-go-to-market-gtm-enterprise-sales-motions)
 - [🗓️ 7. 30-60-90 Day Execution Roadmap](#%EF%B8%8F-7-30-60-90-day-execution-roadmap)
-- [❓ 8. Strategic Queries for the Founder Meeting](#-8-strategic-queries-for-the-founder-meeting)
+- [🎯 8. Strategic Founder Alignment & Executive Directives](#-8-strategic-founder-alignment--executive-directives)
 
 ---
 
@@ -231,17 +231,21 @@ The script provisions a client-isolated Lyzr Agent Workspace, maps core mainfram
 
 ---
 
-## ❓ 8. Strategic Queries for the Founder Meeting
+## 🎯 8. Strategic Founder Alignment & Executive Directives
 
-1. **Platform Strategy vs. Vertical Packaging**:
-   > *"Do we position Product Madison as a standalone product suite ('Lyzr Banking Engine') with native banking connectors, or as a pre-configured vertical template layer on top of Lyzr Studio?"*
+Product Madison's product strategy is aligned around the following 4 core executive principles:
 
-2. **R&D vs. Forward-Deployed Engineering (FDE) Split**:
-   > *"To scale past our first 5 bank pilots without growing headcount linearly, what is our target ratio for Core Product R&D vs. FDE VPC customization efforts?"*
+1. **Standalone Product Packaging**:
+   * Product Madison is packaged as a **configurable standalone software suite** (the *Lyzr Banking Engine*) equipped with native banking mainframe connectors, rather than a passive template inside Lyzr Studio.
 
-3. **Model Risk Management (SR 11-7) & Compliance Strategy**:
-   > *"US banks have strict Model Validation Groups (MVGs). How deep should our out-of-the-box auditability, deterministic guardrails, and Lyzr Governor tracing logs go to pass bank MVG audits on Day 1?"*
+2. **20% R&D / 80% FDE Resource Flywheel**:
+   * **Phase 1 Execution**: Resource split is **20% Core Product R&D / 80% Forward-Deployed Engineering (FDE)**. FDEs capture real-world problem-solution feedback directly from client bank deployments and feed edge cases back to R&D.
+   * **Phase 2 Scale**: As banking domain skills are progressively templatized, the ratio shifts toward **R&D-dominant scaling**, where FDEs exclusively handle low-code YAML/JSON configurations (`bank-manifest.json`).
 
-4. **Strategic System Integrator (SI) Partner Motion**:
-   > *"Should we partner with banking SIs (e.g., Accenture Financial Services, Capgemini Banking) to handle custom mainframe API integrations while Lyzr owns the agentic product core?"*
+3. **Inherited SOC-2 Type-2 & SR 11-7 Compliance Readiness**:
+   * Lyzr natively possesses **SOC-2 Type-2 and HIPAA/Enterprise Security certifications**. Because Product Madison is built directly on top of the Lyzr Enterprise Stack (Lyzr Governor + Lyzr RAI), Product Madison **inherits SOC-2 Type-2 compliance out-of-the-box** and passes bank Model Validation Group (MVG) & Federal Reserve SR 11-7 audits on Day 1.
+
+4. **System Integrator (SI) Partner Motion**:
+   * Active co-selling with global banking SIs (Accenture Financial Services, Capgemini Banking, PwC, EY). SIs handle complex legacy core mainframe API integrations (Fiserv/FIS/Jack Henry), while Lyzr owns and licenses the Product Madison agentic software core.
+
 
