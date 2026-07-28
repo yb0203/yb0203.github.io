@@ -25,6 +25,7 @@ The Platform evolves by deploying high-precision AI agents directly into high-fr
 | [6D_roadmap.md](./6D_roadmap.md) | Maps 4-phase Agentic expansion timeline | Year 1 & 2 roadmap from MVP to Global Banking Ecosystem |
 | [6E_showcase_product_lifecycle.md](./6E_showcase_product_lifecycle.md) | Defines Showcase Demo Lifecycle & FDE Handoff | Lyzr agent setup, 21-day timeline, 4-person team & FDE workflow |
 | [7A_bfsi_agentic_master_pitch.md](./7A_bfsi_agentic_master_pitch.md) | Founder Master Pitch & Strategic Blueprint | Goal, motto, architecture, 6-pillar taxonomy & 30-60-90 day plan |
+| [8A_enterprise_agentic_os_architecture.md](./8A_enterprise_agentic_os_architecture.md) | Technical Architecture Spec for Agentic OS | 3-tier guardrails, SR 11-7 ledger, runtime harness & VPC deployment |
 
 ## 🔑 Key Decisions / Open Questions
 - [ ] Determine weekly telemetry review cadence with pilot bank legal team leads during Phase 1 launches.
