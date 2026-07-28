@@ -1,6 +1,6 @@
-# 🏛️ Product Madison — Executive Master Pitch & Strategy
+# 🏛️ Madison — Executive Master Pitch & Strategy
 
-> **Project Codename**: Product Madison  
+> **Project Codename**: Madison  
 > **Target Role**: Lead Product Manager & Architect — BFSI Vertical  
 > **Target Markets**: United States, Canada, United Kingdom & Europe  
 > **Grounded Infrastructure**: Lyzr Enterprise ADK, Lyzr Automata, Lyzr Cognis Memory, Lyzr RAI Guardrails, Lyzr Governor & Lyzr Agent Studio
@@ -26,10 +26,10 @@
 
 ## 🎯 1. Executive Summary & Vision
 
-> **TL;DR**: Product Madison is an Enterprise Agentic Operating System built natively on the Lyzr Enterprise Stack. It transforms slow, document-heavy banking operations into autonomous, zero-hallucination, human-governed workflows—starting with high-value Commercial Lending and expanding horizontally into Commercial Sales, Marketing Compliance, Retail Ops, and AML/KYC across the US, Canada, and Europe ($10B–$50B+ AUM banks).
+> **TL;DR**: Madison is an Enterprise Agentic Operating System built natively on the Lyzr Enterprise Stack. It transforms slow, document-heavy banking operations into autonomous, zero-hallucination, human-governed workflows—starting with high-value Commercial Lending and expanding horizontally into Commercial Sales, Marketing Compliance, Retail Ops, and AML/KYC across the US, Canada, and Europe ($10B–$50B+ AUM banks).
 
 ### Vision
-To establish **Product Madison** as the premier enterprise agentic product suite for banking—leveraging **Lyzr’s full-stack AI infrastructure** to automate high-friction financial workflows with 100% auditability, bank-grade PII isolation, and zero-hallucination PDF coordinate grounding.
+To establish **Madison** as the premier enterprise agentic product suite for banking—leveraging **Lyzr’s full-stack AI infrastructure** to automate high-friction financial workflows with 100% auditability, bank-grade PII isolation, and zero-hallucination PDF coordinate grounding.
 
 ### Core Motto
 > **"Build the Core Once, Templatize Domain Skills, Deploy to Private VPCs in Days."**
@@ -40,7 +40,7 @@ To establish **Product Madison** as the premier enterprise agentic product suite
 
 > **TL;DR**: A 4-layer modular architecture directly leveraging official Lyzr SDK primitives: `lyzr-automata` for DAG pipelines, `Lyzr ADK KnowledgeBase` & `Cognis` for vector/graph memory, `Lyzr RAI` for edge PII redaction, `Lyzr Governor` for Fed SR 11-7 compliance, and `Lyzr Agent Studio` for Private VPC deployment.
 
-Product Madison is constructed directly on top of official **Lyzr Enterprise Modules and SDK Primitives**:
+Madison is constructed directly on top of official **Lyzr Enterprise Modules and SDK Primitives**:
 
 ```
  ┌──────────────────────────────────────────────────────────────────────────────────┐
@@ -100,7 +100,7 @@ Product Madison is constructed directly on top of official **Lyzr Enterprise Mod
 
 > **TL;DR**: 6 killer differentiators mapping Lyzr features to banking value: zero-hallucination PDF coordinate grounding, Approve-Before-Act Superflow cards, native Fed SR 11-7 Governor audit logging, Lyzr RAI edge PII redaction, Git-for-Agents VPC promotion, and Agent Simulation stress-testing.
 
-Product Madison turns native Lyzr enterprise primitives directly into high-value banking differentiators:
+Madison turns native Lyzr enterprise primitives directly into high-value banking differentiators:
 
 ```
  ┌──────────────────────────────────────────────────────────────────────────────────┐
@@ -156,11 +156,11 @@ Product Madison turns native Lyzr enterprise primitives directly into high-value
 
 > **TL;DR**: Templatizes micro-skill primitives into a single declarative deployment manifest (`bank-manifest.json`). Enables Forward-Deployed Engineers (FDEs) to execute `./scripts/clone-client.sh` and provision client-isolated Lyzr agent instances into private bank VPCs within 7 days.
 
-Product Madison treats every banking capability as a **Micro-Skill Primitive**. Bank administrators activate solution modules out-of-the-box via a single manifest (`bank-manifest.json`):
+Madison treats every banking capability as a **Micro-Skill Primitive**. Bank administrators activate solution modules out-of-the-box via a single manifest (`bank-manifest.json`):
 
 ```json
 {
-  "project": "Product Madison",
+  "project": "Madison",
   "bank_id": "us-regional-bank-01",
   "deployment_mode": "private_vpc",
   "lyzr_core_version": "2.4.0",
@@ -189,7 +189,7 @@ The script provisions a client-isolated Lyzr Agent Workspace, maps core mainfram
 
 ## 💼 6. Go-To-Market (GTM) Enterprise Sales Motions
 
-> **TL;DR**: Product Madison scales across US, Canadian, and European commercial banks ($10B–$50B+ AUM) using 4 complementary sales channels: System Integrators (SIs), Hyperscaler Marketplace Co-Selling (AWS/Azure), Direct Outbound ABM, and Marketing Inbound Thought Leadership.
+> **TL;DR**: Madison scales across US, Canadian, and European commercial banks ($10B–$50B+ AUM) using 4 complementary sales channels: System Integrators (SIs), Hyperscaler Marketplace Co-Selling (AWS/Azure), Direct Outbound ABM, and Marketing Inbound Thought Leadership.
 
 ```
  ┌──────────────────────────────────────────────────────────────────────────────────┐
@@ -211,8 +211,8 @@ The script provisions a client-isolated Lyzr Agent Workspace, maps core mainfram
  └─────────────────────────┴───────────────────────────┴────────────────────────────┘
 ```
 
-1. **Via System Integrators (SIs & Banking Consultancies)**: Partner with global banking System Integrators (Accenture Financial Services, Capgemini Banking, PwC, EY, Infosys). SIs handle custom legacy core mainframe API integrations (Fiserv, FIS, Jack Henry), while Product Madison delivers the templatized agentic AI software engine.
-2. **Via Hyperscaler Co-Sell & Cloud Marketplace (AWS / Azure / GCP)**: Co-sell with AWS Financial Services, Microsoft Azure for Financial Services, and GCP Banking. Listing Product Madison on AWS/Azure Marketplace allows bank CIOs to purchase software using pre-committed cloud spending accounts (AWS EDP / Azure MACC commits), shortening procurement cycles from 9 months to 3 weeks.
+1. **Via System Integrators (SIs & Banking Consultancies)**: Partner with global banking System Integrators (Accenture Financial Services, Capgemini Banking, PwC, EY, Infosys). SIs handle custom legacy core mainframe API integrations (Fiserv, FIS, Jack Henry), while Madison delivers the templatized agentic AI software engine.
+2. **Via Hyperscaler Co-Sell & Cloud Marketplace (AWS / Azure / GCP)**: Co-sell with AWS Financial Services, Microsoft Azure for Financial Services, and GCP Banking. Listing Madison on AWS/Azure Marketplace allows bank CIOs to purchase software using pre-committed cloud spending accounts (AWS EDP / Azure MACC commits), shortening procurement cycles from 9 months to 3 weeks.
 3. **Direct Outbound Account-Based Marketing (ABM)**: High-touch outreach targeting Chief Credit Officers (CCOs), Chief Risk Officers (CROs), General Counsels, and Heads of Commercial Lending at $10B–$50B AUM regional banks with tailored benchmark reports.
 4. **Marketing Inbound Engine**: Executive thought leadership whitepapers, bank ROI calculators, SR 11-7 Model Risk Management compliance guides, and interactive web showcase demos driving inbound C-suite meeting requests.
 
@@ -243,19 +243,19 @@ The script provisions a client-isolated Lyzr Agent Workspace, maps core mainfram
 
 ## ❓ 8. Open Discussions & Strategic Alignment
 
-> **TL;DR**: Four core recommended strategic principles for founder review: Product Madison as a standalone suite, initial 20% R&D / 80% FDE flywheel shifting to R&D-dominant scaling, inherited SOC-2 Type-2 & SR 11-7 compliance readiness, and active SI co-selling.
+> **TL;DR**: Four core recommended strategic principles for founder review: Madison as a standalone suite, initial 20% R&D / 80% FDE flywheel shifting to R&D-dominant scaling, inherited SOC-2 Type-2 & SR 11-7 compliance readiness, and active SI co-selling.
 
-Product Madison's product strategy incorporates the following **4 recommended strategic positions**:
+Madison's product strategy incorporates the following **4 recommended strategic positions**:
 
 1. **[RECOMMENDED] Standalone Product Suite Packaging**:
-   * Product Madison is packaged as a **configurable standalone software suite** (the *Lyzr Banking Engine*) equipped with native banking mainframe connectors, rather than a passive template inside Lyzr Studio.
+   * Madison is packaged as a **configurable standalone software suite** (the *Lyzr Banking Engine*) equipped with native banking mainframe connectors, rather than a passive template inside Lyzr Studio.
 
 2. **[RECOMMENDED] 20% R&D / 80% FDE Resource Flywheel**:
    * **Phase 1 Launch**: Resource split is **20% Core Product R&D / 80% Forward-Deployed Engineering (FDE)**. FDEs capture real-world problem-solution feedback directly from client bank deployments and feed edge cases back to R&D.
    * **Phase 2 Scale**: As banking domain skills are progressively templatized, the ratio shifts toward **R&D-dominant scaling**, where FDEs exclusively handle low-code YAML/JSON configurations (`bank-manifest.json`).
 
 3. **[RECOMMENDED] Inherited SOC-2 Type-2 & SR 11-7 Compliance Readiness**:
-   * Lyzr natively possesses **SOC-2 Type-2 and HIPAA/Enterprise Security certifications**. Because Product Madison is built directly on top of the Lyzr Enterprise Stack (Lyzr Governor + Lyzr RAI), Product Madison **inherits SOC-2 Type-2 compliance out-of-the-box** and passes bank Model Validation Group (MVG) & Federal Reserve SR 11-7 audits on Day 1.
+   * Lyzr natively possesses **SOC-2 Type-2 and HIPAA/Enterprise Security certifications**. Because Madison is built directly on top of the Lyzr Enterprise Stack (Lyzr Governor + Lyzr RAI), Madison **inherits SOC-2 Type-2 compliance out-of-the-box** and passes bank Model Validation Group (MVG) & Federal Reserve SR 11-7 audits on Day 1.
 
 4. **[RECOMMENDED] System Integrator (SI) Partner Motion**:
-   * Active co-selling with global banking SIs (Accenture Financial Services, Capgemini Banking, PwC, EY). SIs handle complex legacy core mainframe API integrations (Fiserv/FIS/Jack Henry), while Lyzr owns and licenses the Product Madison agentic software core.
+   * Active co-selling with global banking SIs (Accenture Financial Services, Capgemini Banking, PwC, EY). SIs handle complex legacy core mainframe API integrations (Fiserv/FIS/Jack Henry), while Lyzr owns and licenses the Madison agentic software core.

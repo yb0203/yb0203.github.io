@@ -1,8 +1,8 @@
-# 🏛️ Product Madison — Enterprise Agentic Operating System (OS) Architecture
+# 🏛️ Madison — Enterprise Agentic Operating System (OS) Architecture
 
-> **Project Codename**: Product Madison  
+> **Project Codename**: Madison  
 > **Document Type**: Master Software Product Architecture & Technical Specification  
-> **Platform Name**: Product Madison (Lyzr BFSI Enterprise Agentic OS)  
+> **Platform Name**: Madison (Lyzr BFSI Enterprise Agentic OS)  
 > **Deployment Target**: Customer Private VPCs (AWS, Azure, GCP, On-Premise Kubernetes/OpenShift)  
 > **Compliance Benchmarks**: SR 11-7 (Fed MRM), OCC Bulletin 2023-17 (TPRM), GLBA, GDPR, DPDP Act  
 

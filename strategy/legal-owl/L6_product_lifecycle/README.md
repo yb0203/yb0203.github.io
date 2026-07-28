@@ -1,7 +1,7 @@
-# Layer 6: Product Lifecycle — Product Madison Executive Summary
+# Layer 6: Product Lifecycle — Madison Executive Summary
 
 ## ⚡ TL;DR
-- Governs the product evolution of **Product Madison** from a showcase MVP into an enterprise-wide **Agentic Legal & Banking Operations Infrastructure** for US Regional & Commercial Banks ($10B–$50B AUM).
+- Governs the product evolution of **Madison** from a showcase MVP into an enterprise-wide **Agentic Legal & Banking Operations Infrastructure** for US Regional & Commercial Banks ($10B–$50B AUM).
 - Phase 1 MVP centers around 3 autonomous AI agents operating under an **Approve-Before-Act** paradigm: **Court Scout Agent** (PACER/foreclosures), **Title Vetting Agent** (Schedule B exceptions), and **Financial Spreading Agent** (DSCR/covenants).
 - Establishes quantitative agentic KPIs (>99.5% citation accuracy, 0 missed court dates, 75% review speedup) and an in-app telemetry feedback loop.
 

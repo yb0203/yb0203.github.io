@@ -1,7 +1,7 @@
 # 5B. Go-To-Market (GTM) Sales Motions & Strategy
 
 ## ⚡ TL;DR
-- Product Madison executes a 4-channel enterprise sales strategy targeting US, Canadian, and European commercial banks ($10B–$50B+ AUM).
+- Madison executes a 4-channel enterprise sales strategy targeting US, Canadian, and European commercial banks ($10B–$50B+ AUM).
 - Core motions: **Via System Integrators (SIs)**, **Via Hyperscalers (AWS/Azure/GCP Co-Sell)**, **Direct Outbound ABM**, and **Marketing Inbounds**.
 - Accelerates enterprise procurement cycles from 9 months down to 3 weeks via cloud marketplace commitments and templatized private VPC deployments.
 
@@ -10,7 +10,7 @@
 
 ## 📖 Full Detail
 
-### 💼 Product Madison 4-Channel Enterprise Sales Engine
+### 💼 Madison 4-Channel Enterprise Sales Engine
 
 ```
  ┌──────────────────────────────────────────────────────────────────────────────────┐
@@ -34,11 +34,11 @@
 
 ### 1. Via System Integrators (SIs & Banking Consultancies)
 * **Target Partners**: Accenture Financial Services, Capgemini Banking, PwC, EY, Infosys Banking, Wipro.
-* **Co-Selling Strategy**: Global SIs maintain deep relationships with bank CIOs. SIs manage custom legacy core mainframe API integrations (Fiserv, FIS, Jack Henry), while Product Madison delivers the templatized agentic AI software engine.
+* **Co-Selling Strategy**: Global SIs maintain deep relationships with bank CIOs. SIs manage custom legacy core mainframe API integrations (Fiserv, FIS, Jack Henry), while Madison delivers the templatized agentic AI software engine.
 
 ### 2. Via Hyperscaler Co-Sell & Cloud Marketplace (AWS / Azure / GCP)
 * **Target Channels**: AWS Financial Services, Microsoft Cloud for Financial Services, Google Cloud Banking.
-* **Co-Selling Strategy**: Listing Product Madison on AWS Marketplace and Azure Marketplace. Bank CIOs can purchase software licenses using pre-committed cloud spending accounts (AWS EDP / Azure MACC commits), completely bypassing long traditional procurement cycles.
+* **Co-Selling Strategy**: Listing Madison on AWS Marketplace and Azure Marketplace. Bank CIOs can purchase software licenses using pre-committed cloud spending accounts (AWS EDP / Azure MACC commits), completely bypassing long traditional procurement cycles.
 
 ### 3. Direct Outbound Account-Based Marketing (ABM)
 * **Target Personas**: Chief Credit Officers (CCOs), Chief Risk Officers (CROs), General Counsels, Heads of Commercial Lending.

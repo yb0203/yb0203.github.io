@@ -1,6 +1,6 @@
-# 🏛️ Product Madison — Lyzr BFSI Agentic Master Strategy & Executive Pitch
+# 🏛️ Madison — Lyzr BFSI Agentic Master Strategy & Executive Pitch
 
-> **Project Codename**: Product Madison  
+> **Project Codename**: Madison  
 > **Target Role**: Product & Technology Leader — BFSI Vertical  
 > **Target Markets**: United States, Canada, United Kingdom & Europe  
 > **Core Stack**: Lyzr Agent Builder Platform (Agent ADK, RAG Core, Guardrails, OGI Knowledge Graph, Tracing)
@@ -40,7 +40,7 @@ Build a scalable, extensible, and templatized AI Agent Product Engine that lands
 
 > **TL;DR**: The Lyzr BFSI Enterprise Agent Workspace bridges financial underwriting, legal execution, commercial sales, and AML compliance. Differentiated by human-in-the-loop co-piloting, PDF coordinate bounding-box citations, hybrid deterministic rules (SR 11-7 compliant), and edge PII isolation.
 
-We are building **Product Madison** (the **Lyzr BFSI Enterprise Agent Workspace**)—an agentic AI platform tailored for commercial and retail banks ($10B–$50B+ AUM) that bridges financial underwriting, legal execution, commercial sales, and regulatory compliance.
+We are building **Madison** (the **Lyzr BFSI Enterprise Agent Workspace**)—an agentic AI platform tailored for commercial and retail banks ($10B–$50B+ AUM) that bridges financial underwriting, legal execution, commercial sales, and regulatory compliance.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
