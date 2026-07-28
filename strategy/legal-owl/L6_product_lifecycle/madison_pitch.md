@@ -181,33 +181,37 @@ Madison turns native Lyzr enterprise primitives directly into high-value banking
 
 ## 💼 5. Go-To-Market (GTM) Enterprise Sales & Delivery Engine
 
-> **TL;DR**: Madison scales across US, Canadian, and European commercial banks ($10B–$50B+ AUM) using 4 complementary sales channels: System Integrators (SIs), Hyperscaler Marketplace Co-Selling (AWS/Azure), Direct Outbound ABM, and Marketing Inbound Thought Leadership. Forward-Deployed Engineers (FDEs) execute rapid client VPC onboarding in under 7 days.
+> **TL;DR**: Madison scales across US, Canadian, and European commercial banks ($10B–$50B+ AUM) using 5 complementary sales channels: Banking Service & Legal Partners, System Integrators (SIs), Hyperscaler Marketplace Co-Selling (AWS/Azure), Direct Outbound ABM, and Marketing Inbound Thought Leadership. Forward-Deployed Engineers (FDEs) execute rapid client VPC onboarding in under 7 days.
 
 ```
  ┌──────────────────────────────────────────────────────────────────────────────────┐
- │                       MADISON 4-CHANNEL SALES ENGINE                             │
+ │                       MADISON 5-CHANNEL SALES ENGINE                             │
  ├─────────────────────────┬───────────────────────────┬────────────────────────────┤
  │ SALES MOTION            │ TARGET PARTNER / CHANNEL  │ STRATEGIC BENEFIT FOR BANK │
  ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
- │ 1. Via System           │ Accenture, Capgemini,     │ SIs handle legacy core API │
+ │ 1. Via Banking & Legal  │ Law Firms, Compliance     │ Partners pitch & co-sell   │
+ │    Service Partners     │ Consultancies & Advisory  │ Madison to existing clients│
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 2. Via System           │ Accenture, Capgemini,     │ SIs handle legacy core API │
  │    Integrators (SIs)    │ PwC, EY Banking Advisory  │ integration & deployment   │
  ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
- │ 2. Via Hyperscalers     │ AWS, Azure & GCP          │ Draws down from bank's     │
+ │ 3. Via Hyperscalers     │ AWS, Azure & GCP          │ Draws down from bank's     │
  │    Co-Sell              │ Financial Services        │ pre-committed cloud spend  │
  ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
- │ 3. Direct Outbound ABM  │ Target C-Suite Outbound   │ High-touch enterprise sales│
+ │ 4. Direct Outbound ABM  │ Target C-Suite Outbound   │ High-touch enterprise sales│
  │                         │ (CCO, CRO, General Counsel│ targeting $10B-$50B AUM    │
  ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
- │ 4. Marketing Inbounds   │ ROI Calculators, Webinars │ Inbound lead engine via    │
+ │ 5. Marketing Inbounds   │ ROI Calculators, Webinars │ Inbound lead engine via    │
  │                         │ & SR 11-7 Compliance Guides│ executive thought leadership│
  └─────────────────────────┴───────────────────────────┴────────────────────────────┘
 ```
 
-1. **Via System Integrators (SIs & Banking Consultancies)**: Partner with global banking System Integrators (Accenture Financial Services, Capgemini Banking, PwC, EY, Infosys). SIs handle custom legacy core mainframe API integrations (Fiserv, FIS, Jack Henry), while Madison delivers the templatized agentic AI software engine.
-2. **Via Hyperscaler Co-Sell & Cloud Marketplace (AWS / Azure / GCP)**: Co-sell with AWS Financial Services, Microsoft Azure for Financial Services, and GCP Banking. Listing Madison on AWS/Azure Marketplace allows bank CIOs to purchase software using pre-committed cloud spending accounts (AWS EDP / Azure MACC commits), shortening procurement cycles from 9 months to 3 weeks.
-3. **Direct Outbound Account-Based Marketing (ABM)**: High-touch outreach targeting Chief Credit Officers (CCOs), Chief Risk Officers (CROs), General Counsels, and Heads of Commercial Lending at $10B–$50B AUM regional banks with tailored benchmark reports.
-4. **Marketing Inbound Engine**: Executive thought leadership whitepapers, bank ROI calculators, SR 11-7 Model Risk Management compliance guides, and interactive web showcase demos driving inbound C-suite meeting requests.
-5. **Rapid FDE Client Onboarding**: Once a bank signs a PoC, Forward-Deployed Engineers (FDEs) use low-code configuration templates to map core mainframe APIs (Fiserv/FIS/Salesforce FSC), connect client SSO (Okta), and deploy into the bank's **Private VPC in under 7 days**.
+1. **Via Financial Advisory, Legal & Professional Service Partners**: Partner with third-party firms assisting banks directly or indirectly—including banking law firms (e.g., Mayer Brown, Latham & Watkins, Clifford Chance), regulatory compliance consultancies, auditing firms, and financial advisory boutiques. These partners pitch and co-sell Madison to their bank clients as part of their advisory engagements to automate title vetting, loan documentation, and regulatory compliance.
+2. **Via System Integrators (SIs & Banking Consultancies)**: Partner with global banking System Integrators (Accenture Financial Services, Capgemini Banking, PwC, EY, Infosys). SIs handle custom legacy core mainframe API integrations (Fiserv, FIS, Jack Henry), while Madison delivers the templatized agentic AI software engine.
+3. **Via Hyperscaler Co-Sell & Cloud Marketplace (AWS / Azure / GCP)**: Co-sell with AWS Financial Services, Microsoft Azure for Financial Services, and GCP Banking. Listing Madison on AWS/Azure Marketplace allows bank CIOs to purchase software using pre-committed cloud spending accounts (AWS EDP / Azure MACC commits), shortening procurement cycles from 9 months to 3 weeks.
+4. **Direct Outbound Account-Based Marketing (ABM)**: High-touch outreach targeting Chief Credit Officers (CCOs), Chief Risk Officers (CROs), General Counsels, and Heads of Commercial Lending at $10B–$50B AUM regional banks with tailored benchmark reports.
+5. **Marketing Inbound Engine**: Executive thought leadership whitepapers, bank ROI calculators, SR 11-7 Model Risk Management compliance guides, and interactive web showcase demos driving inbound C-suite meeting requests.
+6. **Rapid FDE Client Onboarding**: Once a bank signs a PoC, Forward-Deployed Engineers (FDEs) use low-code configuration templates to map core mainframe APIs (Fiserv/FIS/Salesforce FSC), connect client SSO (Okta), and deploy into the bank's **Private VPC in under 7 days**.
 
 ---
 
