@@ -44,7 +44,7 @@ Madison is constructed directly around the **Agentic Harness Loop Paradigm**, po
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────┐
 │                               MADISON ENTERPRISE ARCHITECTURE                            │
-│           (Bank Client Handshake + BFSI Skill Modules + Lyzr Agentic Harness)            │
+│           (Bank Client Handshake + BFSI Application Modules + Lyzr Agentic Harness)            │
 ├──────────────────────────────────────────────────────────────────────────────────────────┤
 │                                                                                          │
 │ ┌──────────────────────────────────────────────────────────────────────────────────────┐ │
@@ -54,7 +54,7 @@ Madison is constructed directly around the **Agentic Harness Loop Paradigm**, po
 │ └──────────────────────────────────────────▲───────────────────────────────────────────┘ │
 │                                            │ (User Request / Human Decision Approval)    │
 │ ┌──────────────────────────────────────────▼───────────────────────────────────────────┐ │
-│ │ 🏦 TEMPLATIZED BFSI APPLICATION SKILL MODULES                                        │ │
+│ │ 🏦 TEMPLATIZED BFSI APPLICATION MODULES                                              │ │
 │ │ ┌──────────────────────┐   ┌──────────────────────┐   ┌────────────────────────────┐ │ │
 │ │ │  Commercial Lending  │   │  Commercial Sales/RM │   │ Risk, AML & Retail Ops     │ │ │
 │ │ │ (Title/DSCR/Spreading)│   │  (Pre-Meeting Dossier)│   │ (UBO/SAR/Garnishments)     │ │ │
@@ -89,7 +89,7 @@ Madison is constructed directly around the **Agentic Harness Loop Paradigm**, po
 * **Interactive Co-Pilot Action Cards**: Surfaced at key operational decision gates (`[ Approve ]`, `[ Edit ]`, `[ Reject ]`) via Lyzr Superflow Node Approvals (`running-and-approvals`), ensuring bank officers retain 100% authority.
 * **Grounded PDF Citation Viewer**: Clicking any assertion (e.g. *"Unpaid Tax Lien $12k"*) opens the original document viewer and highlights the exact bounding-box coordinates ($x, y, w, h$).
 
-### 🏦 2. Templatized BFSI Application Skill Modules
+### 🏦 2. Templatized BFSI Application Modules
 * **Commercial Lending & Credit**: Title Exception Vetting, Financial Spreading (DSCR $\ge 1.25\times$), Court Scout (PACER/foreclosures), LSTA/LMA Contract Reconciliation.
 * **Commercial Sales & RM**: Pre-Meeting Customer Dossiers (SEC 10-K & news synthesis), Deal Structuring Co-Pilot, Cross-Sell Next-Best-Action.
 * **Risk, AML & Retail Operations**: UBO Tracing (unwrapping offshore shell webs to $\ge 10\%$ owners), SAR Narrative Writing, Garnishment & Levy Execution, Deceased Account Probate.

@@ -11,7 +11,7 @@
 - [🎯 1. Executive Summary & Vision](#-1-executive-summary--vision)
 - [🚀 2. Grounded Architecture: Powered by Lyzr Enterprise SDK & ADK](#-2-grounded-architecture-powered-by-lyzr-enterprise-sdk--adk)
   - [🤝 1. Bank Client & Officer Interaction Handshake (Human-in-the-Loop)](#-1-bank-client--officer-interaction-handshake-human-in-the-loop)
-  - [🏦 2. Templatized BFSI Application Skill Modules](#-2-templatized-bfsi-application-skill-modules)
+  - [🏦 2. Templatized BFSI Application Modules](#-2-templatized-bfsi-application-modules)
   - [🧠 3. Model (The Brain) — Powered by `Lyzr ADK` & `Lyzr Automata`](#-3-model-the-brain--powered-by-lyzr-adk--lyzr-automata)
   - [🛠️ 4. Action ➔ Tools / Sandbox — Powered by `Lyzr Superflow` & Code Sandbox](#%EF%B8%8F-4-action--tools--sandbox--powered-by-lyzr-superflow--code-sandbox)
   - [💾 5. Result ➔ Context & Memory — Powered by `Lyzr ADK KB` & `Lyzr Cognis`](#-5-result--context--memory--powered-by-lyzr-adk-kb--lyzr-cognis)
@@ -47,7 +47,7 @@ Madison is constructed directly around the **Agentic Harness Loop Paradigm**, po
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────┐
 │                               MADISON ENTERPRISE ARCHITECTURE                            │
-│           (Bank Client Handshake + BFSI Skill Modules + Lyzr Agentic Harness)            │
+│           (Bank Client Handshake + BFSI Application Modules + Lyzr Agentic Harness)      │
 ├──────────────────────────────────────────────────────────────────────────────────────────┤
 │                                                                                          │
 │ ┌──────────────────────────────────────────────────────────────────────────────────────┐ │
@@ -57,7 +57,7 @@ Madison is constructed directly around the **Agentic Harness Loop Paradigm**, po
 │ └──────────────────────────────────────────▲───────────────────────────────────────────┘ │
 │                                            │ (User Request / Human Decision Approval)    │
 │ ┌──────────────────────────────────────────▼───────────────────────────────────────────┐ │
-│ │ 🏦 TEMPLATIZED BFSI APPLICATION SKILL MODULES                                        │ │
+│ │ 🏦 TEMPLATIZED BFSI APPLICATION MODULES                                              │ │
 │ │ ┌──────────────────────┐   ┌──────────────────────┐   ┌────────────────────────────┐ │ │
 │ │ │  Commercial Lending  │   │  Commercial Sales/RM │   │ Risk, AML & Retail Ops     │ │ │
 │ │ │ (Title/DSCR/Spreading)│   │  (Pre-Meeting Dossier)│   │ (UBO/SAR/Garnishments)     │ │ │
@@ -92,7 +92,7 @@ Madison is constructed directly around the **Agentic Harness Loop Paradigm**, po
 * **Interactive Co-Pilot Action Cards**: Surfaced at key operational decision gates (`[ Approve ]`, `[ Edit ]`, `[ Reject ]`) via Lyzr Superflow Node Approvals (`running-and-approvals`), ensuring bank officers retain 100% authority.
 * **Grounded PDF Citation Viewer**: Clicking any assertion (e.g. *"Unpaid Tax Lien $12k"*) opens the original document viewer and highlights the exact bounding-box coordinates ($x, y, w, h$).
 
-### 🏦 2. Templatized BFSI Application Skill Modules
+### 🏦 2. Templatized BFSI Application Modules
 * **Commercial Lending & Credit**: Title Exception Vetting, Financial Spreading (DSCR $\ge 1.25\times$), Court Scout (PACER/foreclosures), LSTA/LMA Contract Reconciliation.
 * **Commercial Sales & RM**: Pre-Meeting Customer Dossiers (SEC 10-K & news synthesis), Deal Structuring Co-Pilot, Cross-Sell Next-Best-Action.
 * **Risk, AML & Retail Operations**: UBO Tracing (unwrapping offshore shell webs to $\ge 10\%$ owners), SAR Narrative Writing, Garnishment & Levy Execution, Deceased Account Probate.
