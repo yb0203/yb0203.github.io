@@ -46,44 +46,79 @@ We are building the **Lyzr BFSI Enterprise Agent Workspace**—an agentic AI pla
 
 ---
 
-## 🏗️ 3. How We Will Build It: Hub-and-Spoke Architecture
+## 🏗️ 3. Deep-Dive Product Architecture: The Enterprise Agentic OS
 
-To ensure the product is **scalable and templatized** (avoiding one-off software agency work), we implement a **Hub-and-Spoke Architecture**:
+To ensure the product is a true **Enterprise Agentic Software Product** (and not a custom development agency), we construct a **4-Layer Modular Agentic Operating System**:
 
 ```
  ┌──────────────────────────────────────────────────────────────────────────────────┐
- │                        LYZR ENTERPRISE BFSI PLATFORM                             │
+ │                     LYZR BFSI ENTERPRISE AGENTIC OS ARCHITECTURE                 │
  ├──────────────────────────────────────────────────────────────────────────────────┤
  │                                                                                  │
- │   ┌──────────────────────────────────────────────────────────────────────────┐   │
- │   │                       LYZR CORE ENGINE (THE HUB)                         │   │
- │   │  • Grounded Citation Bounding-Box Overlay Engine                         │   │
- │   │  • Deterministic Rule Engine & Guardrail Router                          │   │
- │   │  • Edge PII / NPI Redaction Pipeline (GLBA / OCC 2023-17 Compliant)       │   │
- │   │  • Approve-Before-Act Interactive Action Card UI Primitives               │   │
- │   │  • Enterprise Audit Trail & SR 11-7 Model Governance Engine               │   │
- │   └────────────────────────────────────┬─────────────────────────────────────┘   │
+ │ ┌──────────────────────────────────────────────────────────────────────────────┐ │
+ │ │ LAYER 1: GOVERNANCE, SR 11-7 & GUARDRAIL STACK                              │ │
+ │ │ • Edge PII Redaction  • Input Injection Shield  • Action Permission Matrix  │ │
+ │ │ • Bounding-Box Grounding Engine  • SR 11-7 Immutable Audit Trail Ledger     │ │
+ │ └──────────────────────────────────────┬───────────────────────────────────────┘ │
  │                                        │                                         │
- │                                        ▼                                         │
- │   ┌──────────────────────────────────────────────────────────────────────────┐   │
- │   │                 TEMPLATIZED BANKING SKILL PACKAGES (SPOKES)              │   │
- │   │  ┌────────────────┐   ┌────────────────┐   ┌──────────────────────────┐  │   │
- │   │  │ Lending Bundle │   │ Sales/RM Bundle│   │ Compliance/AML Bundle    │  │   │
- │   │  └────────────────┘   └────────────────┘   └──────────────────────────┘  │   │
- │   └────────────────────────────────────┬─────────────────────────────────────┘   │
+ │ ┌──────────────────────────────────────▼───────────────────────────────────────┐ │
+ │ │ LAYER 2: AGENTIC HARNESS & RESILIENCE RUNTIME ENGINE                          │ │
+ │ │ • State Re-hydration Machine  • Multi-LLM Router  • Deterministic Fallbacks  │ │
+ │ │ • Failure Recovery & Auto-Healing  • Continuous Golden Benchmark Harness    │ │
+ │ └──────────────────────────────────────┬───────────────────────────────────────┘ │
  │                                        │                                         │
- │                                        ▼                                         │
- │   ┌──────────────────────────────────────────────────────────────────────────┐   │
- │   │               FORWARD-DEPLOYED ENGINEER (FDE) CLONING LAYER              │   │
- │   │  `bank-config.yaml` ➔ Connect Core Mainframe APIs ➔ Deploy to Private VPC │   │
- │   └──────────────────────────────────────────────────────────────────────────┘   │
+ │ ┌──────────────────────────────────────▼───────────────────────────────────────┐ │
+ │ │ LAYER 3: PLUG-AND-PLAY MODULAR ASSEMBLY ENGINE (`bank-manifest.json`)        │ │
+ │ │ ┌─────────────────┐ ┌───────────────────┐ ┌────────────────────────────────┐ │ │
+ │ │ │ Lending Module  │ │ Commercial Sales  │ │ AML & Retail Ops Module        │ │ │
+ │ │ └─────────────────┘ └───────────────────┘ └────────────────────────────────┘ │ │
+ │ └──────────────────────────────────────┬───────────────────────────────────────┘ │
+ │                                        │                                         │
+ │ ┌──────────────────────────────────────▼───────────────────────────────────────┐ │
+ │ │ LAYER 4: PRIVATE VPC DEPLOYMENT & CORE MAINFRAME CONNECTOR SDK               │ │
+ │ │ • Single-Tenant Helm/Terraform  • Fiserv / FIS / Jack Henry / Salesforce FSC  │ │
+ │ └──────────────────────────────────────────────────────────────────────────────┘ │
  └──────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### The 3 Architectural Layers:
-1. **The Shared Core (The Hub)**: Shared UI shell, dual-pane PDF citation visualizer, action card engine, edge PII anonymizer, and Lyzr RAG/Tracing engine.
-2. **Templatized Domain Skill Bundles (The Spokes)**: Pre-packaged domain logic (`banking/lending`, `banking/sales-rm`, `banking/compliance-aml`, `banking/retail-garnishments`).
-3. **FDE Deployment Engine (Client Customization)**: When a bank signs a PoC, Forward-Deployed Engineers run `scripts/clone-client.sh --config=bank-config.yaml`, connect core mainframe APIs (Fiserv, FIS, Jack Henry, Salesforce FSC), and deploy inside the client's **Private VPC in under 7 days**.
+### Layer 1: Governance, SR 11-7 Compliance & Guardrail Stack
+* **Tier 1 (Input Guardrails)**: Edge PII/NPI Anonymizer, Prompt Injection Shield, Input Schema Validation.
+* **Tier 2 (Execution Guardrails)**: Tool Permission Matrix, State Boundary Locks, Mandatory Human-in-the-Loop ("Approve-Before-Act") Gates.
+* **Tier 3 (Output Guardrails)**: Grounded Citation Bounding-Box Overlay Engine, Schema Conformity Checker (`zod` / Pydantic).
+* **SR 11-7 Model Risk Management (MRM) Ledger**: Immutable audit trail logging `Execution ID`, `Prompt Version`, `Model & Temp`, `Context Hash`, `Tool Parameters`, `Guardrail Flags`, and `Human Officer Sign-Off ID` to pass Federal Reserve MVG audits out-of-the-box.
+
+### Layer 2: Agentic Harness & Resilience Runtime Engine
+* **State Machine & Re-hydration**: Persists execution states to database, allowing long-running 30-day workflows (e.g., foreclosure tracking) to pause/resume without context loss.
+* **Multi-LLM Router & Failover**: Dynamically routes tasks across LLMs (Claude 3.5 Sonnet, GPT-4o, Gemini) based on latency, cost, and quality, with automatic rate-limit failover.
+* **Deterministic Rule Fallbacks**: Overrides LLMs with hardcoded Python rule engines for legal date math (FDCPA 30-day cure, UK Companies House 21-day deadline) and financial ratios ($\text{DSCR} \ge 1.25\times$).
+* **Auto-Healing & Retry Engine**: Catches tool execution failures, refines prompt context, and auto-retries up to 3x with exponential backoff.
+* **Golden Benchmark Evaluation Harness**: Continuous evaluation pipeline testing agent accuracy against 1,000+ ground-truth commercial bank test files.
+
+### Layer 3: Plug-and-Play Modular Assembly Engine
+* Capabilities are built as atomic **Micro-Skill Primitives** (e.g., `ExtractScheduleB`, `CalculateDSCR`, `UnwrapUBO`, `ScrapePACER`, `DraftDefaultLetter`).
+* Bank administrators activate solutions out-of-the-box via a clean deployment manifest (`bank-manifest.json`):
+
+```json
+{
+  "bank_id": "us-regional-bank-01",
+  "deployment_mode": "private_vpc",
+  "active_modules": [
+    "module.commercial_lending_v2",
+    "module.commercial_sales_rm_v1",
+    "module.aml_ubo_tracing_v1",
+    "module.retail_garnishment_v1"
+  ],
+  "guardrails": {
+    "pii_redaction": true,
+    "mrm_sr11_7_ledger": true,
+    "human_in_the_loop": "mandatory"
+  }
+}
+```
+
+### Layer 4: Private VPC Deployment & Enterprise Connector SDK
+* **Single-Tenant Private VPC Package**: Helm Charts & Terraform scripts deploy the entire OS inside the bank's isolated AWS, Azure, GCP, or On-Premise OpenShift VPC.
+* **Core Banking Connectors**: Pre-built read/write integration adapters for legacy mainframes (**Fiserv, FIS, Jack Henry, Temenos**), CRMs (**Salesforce FSC, Dynamics 365**), document stores (**SharePoint, iManage, S3**), and court dockets (**PACER, Companies House**).
 
 ---
 
