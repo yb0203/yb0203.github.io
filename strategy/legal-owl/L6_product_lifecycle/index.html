@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madison — Executive Master Pitch & Strategy | Lyzr Enterprise BFSI</title>
+  <meta name="description" content="Executive Master Pitch and Strategy for Madison: Enterprise Agentic Operating System built natively on the Lyzr Enterprise Stack for BFSI.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            mono: ['Fira Code', 'monospace']
+          },
+          colors: {
+            lyzr: {
+              bg: '#070a12',
+              card: 'rgba(15, 23, 42, 0.65)',
+              border: 'rgba(255, 255, 255, 0.08)',
+              accent: '#10b981',
+              purple: '#8b5cf6',
+              cyan: '#06b6d4',
+              indigo: '#6366f1'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #070a12;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.12), transparent 50%),
+        radial-gradient(circle at 100% 50%, rgba(139, 92, 246, 0.08), transparent 40%),
+        radial-gradient(circle at 0% 80%, rgba(16, 185, 129, 0.08), transparent 40%);
+      color: #f3f4f6;
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+    .glass-card-hover:hover {
+      border-color: rgba(99, 102, 241, 0.3);
+      box-shadow: 0 12px 40px 0 rgba(99, 102, 241, 0.15);
+      transform: translateY(-2px);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gradient-accent {
+      background: linear-gradient(135deg, #10b981 0%, #06b6d4 50%, #6366f1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gradient-border {
+      position: relative;
+    }
+    .gradient-border::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(135deg, rgba(16,185,129,0.4), rgba(99,102,241,0.4));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen antialiased selection:bg-indigo-500/30 selection:text-indigo-200">
+
+  <!-- Header & Navigation Bar -->
+  <header class="sticky top-0 z-50 w-full glass-card border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Brand Logo & Title -->
+        <div class="flex items-center space-x-3">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-500 via-indigo-500 to-purple-500 p-0.5 flex items-center justify-center shadow-lg shadow-emerald-500/20">
+            <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+              <span class="text-emerald-400 font-extrabold text-lg">M</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="font-extrabold text-lg tracking-tight text-white">MADISON</span>
+              <span class="px-2 py-0.5 text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full">Internal Strategy</span>
+            </div>
+            <p class="text-xs text-slate-400 hidden sm:block">Lyzr Enterprise Agentic OS for BFSI</p>
+          </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <nav class="hidden md:flex items-center space-x-1 text-xs font-medium">
+          <a href="#vision" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">Vision</a>
+          <a href="#architecture" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">Architecture</a>
+          <a href="#differentiators" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">Differentiators</a>
+          <a href="#taxonomy" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">BFSI Taxonomy</a>
+          <a href="#gtm" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">GTM Sales</a>
+          <a href="#roadmap" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">Roadmap</a>
+          <a href="#alignment" class="px-3 py-1.5 rounded-lg text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 hover:bg-indigo-500/20 transition">Alignment</a>
+        </nav>
+
+        <!-- Right Quick Actions -->
+        <div class="flex items-center space-x-3">
+          <a href="madison_pitch.md" target="_blank" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-white/5 hover:bg-white/10 text-slate-200 border border-white/10 transition flex items-center space-x-1.5">
+            <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span>Raw Markdown</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero & Metadata Section -->
+  <section class="relative pt-12 pb-10 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Badge Banner -->
+      <div class="flex flex-wrap items-center gap-2 mb-6">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 rounded-full">
+          <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse"></span>
+          Internal Leadership Strategy Proposal
+        </span>
+        <span class="px-3 py-1 text-xs font-medium bg-slate-800/60 text-slate-300 border border-slate-700/50 rounded-full">Target Markets: US, CA, UK & EU ($10B-$50B+ AUM)</span>
+        <span class="px-3 py-1 text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full">Powered by Lyzr Enterprise Stack</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 gradient-text">
+        🏛️ Product Strategy & Executive Architecture: <span class="gradient-accent">Madison</span>
+      </h1>
+      <p class="text-lg text-slate-300 max-w-4xl font-normal leading-relaxed mb-8">
+        An Enterprise Agentic Operating System built natively on the <strong class="text-white">Lyzr Enterprise Stack</strong> (`Lyzr ADK`, `Automata`, `Cognis`, `RAI`, `Governor`, `Agent Studio`). Transforming slow, document-heavy banking workflows into autonomous, zero-hallucination, human-governed execution pipelines.
+      </p>
+
+      <!-- Motto Card -->
+      <div class="glass-card gradient-border p-6 rounded-2xl max-w-3xl mb-12">
+        <div class="flex items-start space-x-4">
+          <div class="p-3 bg-emerald-500/10 text-emerald-400 rounded-xl border border-emerald-500/20">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-1">Core Operating Motto</h3>
+            <p class="text-xl font-bold text-white tracking-tight">"Build the Core Once, Templatize Domain Skills, Deploy to Private VPCs in Days."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 pb-24">
+
+    <!-- SECTION 1: Executive Summary & Vision -->
+    <section id="vision" class="glass-card rounded-2xl p-6 sm:p-8">
+      <div class="flex items-center space-x-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 font-bold text-lg">🎯</div>
+        <h2 class="text-2xl font-bold text-white tracking-tight">1. Executive Summary & Vision</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-5 rounded-xl bg-slate-900/60 border border-white/5 space-y-3">
+          <h3 class="text-sm font-bold uppercase text-indigo-400 tracking-wider">Executive Overview</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Madison is an Enterprise Agentic Operating System built natively on the Lyzr Enterprise Stack. It transforms slow, document-heavy banking operations into autonomous, zero-hallucination, human-governed workflows—starting with high-value Commercial Lending and expanding horizontally into Commercial Sales, Marketing Compliance, Retail Ops, and AML/KYC across US, Canadian, and European banks ($10B–$50B+ AUM).
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-slate-900/60 border border-white/5 space-y-3">
+          <h3 class="text-sm font-bold uppercase text-emerald-400 tracking-wider">Strategic Vision</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            To establish <strong>Madison</strong> as the premier enterprise agentic product suite for banking—leveraging <strong>Lyzr’s full-stack AI infrastructure</strong> to automate high-friction financial workflows with 100% auditability, bank-grade PII isolation, and zero-hallucination PDF coordinate grounding.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Grounded Architecture -->
+    <section id="architecture" class="glass-card rounded-2xl p-6 sm:p-8">
+      <div class="flex items-center space-x-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 font-bold text-lg">🚀</div>
+        <div>
+          <h2 class="text-2xl font-bold text-white tracking-tight">2. Grounded Architecture: Powered by Lyzr Enterprise Stack</h2>
+          <p class="text-xs text-slate-400">Agentic Harness Loop Paradigm mapped 1-to-1 to official Lyzr primitives</p>
+        </div>
+      </div>
+
+      <!-- Architecture Visual Diagram Container -->
+      <div class="my-8 rounded-2xl bg-slate-950/80 border border-white/10 p-6 space-y-6">
+        <div class="flex items-center justify-between border-b border-white/10 pb-4">
+          <span class="text-xs font-mono text-emerald-400 font-semibold">MADISON AGENTIC HARNESS ARCHITECTURE</span>
+          <span class="text-xs text-slate-400">Single-Tenant Bank Private VPC</span>
+        </div>
+
+        <!-- Diagram Layer 1: Bank Client & Officer Interaction Handshake -->
+        <div class="p-4 rounded-xl bg-indigo-950/30 border border-indigo-500/30">
+          <div class="flex items-center space-x-2 mb-2">
+            <span class="text-base">🤝</span>
+            <h4 class="text-sm font-bold text-indigo-300">BANK CLIENT & OFFICER INTERACTION HANDSHAKE (HUMAN-IN-THE-LOOP)</h4>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-300">
+            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-white/5">• Bank Officer / Credit Analyst Interface & Co-Pilot Action Cards (`[ Approve ]`, `[ Edit ]`, `[ Reject ]`)</div>
+            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-white/5">• Grounded PDF Viewer & Highlighted Bounding Boxes (`x, y, w, h`)</div>
+          </div>
+        </div>
+
+        <!-- Connection Arrow -->
+        <div class="flex justify-center my-1">
+          <span class="text-xs text-slate-400 font-mono">▲ User Request & Human Approval Flow ▼</span>
+        </div>
+
+        <!-- Diagram Layer 2: Templatized BFSI Application Modules -->
+        <div class="p-4 rounded-xl bg-purple-950/30 border border-purple-500/30">
+          <div class="flex items-center space-x-2 mb-2">
+            <span class="text-base">🏦</span>
+            <h4 class="text-sm font-bold text-purple-300">TEMPLATIZED BFSI APPLICATION MODULES</h4>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-300">
+            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-white/5">
+              <span class="font-semibold text-white">Commercial Lending</span><br>
+              <span class="text-slate-400">Title Exceptions, DSCR Spreading, Court Scout</span>
+            </div>
+            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-white/5">
+              <span class="font-semibold text-white">Commercial Sales & RM</span><br>
+              <span class="text-slate-400">Pre-Meeting Dossiers, Deal Structuring</span>
+            </div>
+            <div class="bg-slate-900/80 p-2.5 rounded-lg border border-white/5">
+              <span class="font-semibold text-white">Risk, AML & Retail Ops</span><br>
+              <span class="text-slate-400">UBO Tracing, SAR Narratives, Garnishments</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connection Arrow -->
+        <div class="flex justify-center my-1">
+          <span class="text-xs text-slate-400 font-mono">▲ Executes Agentic Workflows ▼</span>
+        </div>
+
+        <!-- Diagram Layer 3: Lyzr Harness Core Loop -->
+        <div class="p-4 rounded-xl bg-slate-900/90 border border-emerald-500/30 space-y-4">
+          <div class="flex items-center justify-between border-b border-white/10 pb-2">
+            <div class="flex items-center space-x-2">
+              <span class="text-base">🛡️</span>
+              <h4 class="text-sm font-bold text-emerald-300">LYZR GOVERNOR & PRIVATE VPC HARNESS (AGENTIC LOOP CORE)</h4>
+            </div>
+            <span class="text-xs text-slate-400 font-mono">Fed SR 11-7 MRM Audit Ledger</span>
+          </div>
+
+          <!-- The Loop 4 Blocks Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- 1. Brain -->
+            <div class="p-3 bg-slate-950 rounded-lg border border-indigo-500/20 text-xs">
+              <span class="font-bold text-indigo-300 block mb-1">🧠 1. MODEL (THE BRAIN)</span>
+              <p class="text-slate-400">• Lyzr ADK `Agent()` personas</p>
+              <p class="text-slate-400">• Multi-LLM Router (Claude 3.5 Sonnet / GPT-4o / Bedrock)</p>
+              <p class="text-slate-400">• `Task()` operational graph nodes</p>
+            </div>
+            <!-- 2. Action Tools -->
+            <div class="p-3 bg-slate-950 rounded-lg border border-emerald-500/20 text-xs">
+              <span class="font-bold text-emerald-300 block mb-1">🛠️ 2. ACTION ➔ TOOLS / SANDBOX</span>
+              <p class="text-slate-400">• Lyzr Superflow Node Approvals (`running-and-approvals`)</p>
+              <p class="text-slate-400">• E2B Code Execution Sandbox</p>
+              <p class="text-slate-400">• Core Mainframe APIs (Fiserv, FIS, Jack Henry, FSC)</p>
+            </div>
+            <!-- 3. Grounding Observation -->
+            <div class="p-3 bg-slate-950 rounded-lg border border-cyan-500/20 text-xs">
+              <span class="font-bold text-cyan-300 block mb-1">👁️ 4. OBSERVATION ➔ GROUNDING & RAI</span>
+              <p class="text-slate-400">• PDF Bounding-Box Overlay (`x, y, w, h` coordinates)</p>
+              <p class="text-slate-400">• Lyzr RAI Edge PII Redaction (`create_policy` SSN/Tax ID)</p>
+              <p class="text-slate-400">• `zod` / Pydantic schema enforcers</p>
+            </div>
+            <!-- 4. Memory -->
+            <div class="p-3 bg-slate-950 rounded-lg border border-purple-500/20 text-xs">
+              <span class="font-bold text-purple-300 block mb-1">💾 3. RESULT ➔ CONTEXT & MEMORY</span>
+              <p class="text-slate-400">• Lyzr ADK `KnowledgeBase()` Hybrid Vector RAG</p>
+              <p class="text-slate-400">• Lyzr `Cognis` Memory Engine (`add/search-memories`)</p>
+              <p class="text-slate-400">• Multi-day long-running state machine</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: 6 Core Product Differentiators -->
+    <section id="differentiators" class="glass-card rounded-2xl p-6 sm:p-8">
+      <div class="flex items-center space-x-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold text-lg">💎</div>
+        <div>
+          <h2 class="text-2xl font-bold text-white tracking-tight">3. Core Product Differentiators Grounded in Lyzr</h2>
+          <p class="text-xs text-slate-400">Mapping native Lyzr enterprise primitives directly to high-value banking differentiators</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Diff 1 -->
+        <div class="p-5 rounded-xl bg-slate-900/60 border border-white/5 glass-card-hover transition space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono px-2 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded">Lyzr KB + Structured</span>
+            <span class="text-xs text-slate-400">Diff #1</span>
+          </div>
+          <h3 class="text-base font-bold text-white">Grounded PDF Bounding-Box Citation Ledger</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Visual coordinate links on PDFs (`x, y, w, h`). Clicking any assertion (e.g. <em>"Unpaid Tax Lien $12k"</em>) draws a highlighted bounding box directly over the exact line item on the source document (0% hallucination risk).
+          </p>
+        </div>
+
+        <!-- Diff 2 -->
+        <div class="p-5 rounded-xl bg-slate-900/60 border border-white/5 glass-card-hover transition space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono px-2 py-0.5 bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded">Lyzr Superflow Node</span>
+            <span class="text-xs text-slate-400">Diff #2</span>
+          </div>
+          <h3 class="text-base font-bold text-white">"Approve-Before-Act" Co-Pilot Action Cards</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            AI agents pause at high-stakes decision gates via Superflow Node Approvals (`running-and-approvals`), surfacing interactive action cards with `[ Approve ]`, `[ Edit ]`, and `[ Reject ]` controls for human bank officers.
+          </p>
+        </div>
+
+        <!-- Diff 3 -->
+        <div class="p-5 rounded-xl bg-slate-900/60 border border-white/5 glass-card-hover transition space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono px-2 py-0.5 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded">Lyzr Governor</span>
+            <span class="text-xs text-slate-400">Diff #3</span>
+          </div>
+          <h3 class="text-base font-bold text-white">Native Fed SR 11-7 Model Governance Ledger</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Maintains an immutable execution audit log (`Execution ID`, `Prompt Version`, `Context Hash`, `Tool Parameters`, `Guardrail Flags`, `Human Sign-Off ID`) to pass Federal Reserve Model Validation Group (MVG) audits out-of-the-box.
+          </p>
+        </div>
+
+        <!-- Diff 4 -->
+        <div class="p-5 rounded-xl bg-slate-900/60 border border-white/5 glass-card-hover transition space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono px-2 py-0.5 bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 rounded">Lyzr Responsible AI</span>
+            <span class="text-xs text-slate-400">Diff #4</span>
+          </div>
+          <h3 class="text-base font-bold text-white">Edge PII/NPI Isolation & Data Privacy Shield</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Uses Lyzr RAI policies (`create_policy`) to scrub SSNs, Tax IDs, and account numbers at the local boundary before LLM inference (GLBA & OCC Bulletin 2023-17 compliant).
+          </p>
+        </div>
+
+        <!-- Diff 5 -->
+        <div class="p-5 rounded-xl bg-slate-900/60 border border-white/5 glass-card-hover transition space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono px-2 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded">Lyzr Agent Studio</span>
+            <span class="text-xs text-slate-400">Diff #5</span>
+          </div>
+          <h3 class="text-base font-bold text-white">Git-for-Agents Enterprise Promotion Pipeline</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Enables strict Dev ➔ Staging ➔ Production Private VPC promotion pipelines with version rollback for bank Forward-Deployed Engineers.
+          </p>
+        </div>
+
+        <!-- Diff 6 -->
+        <div class="p-5 rounded-xl bg-slate-900/60 border border-white/5 glass-card-hover transition space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono px-2 py-0.5 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded">Lyzr Simulation Engine</span>
+            <span class="text-xs text-slate-400">Diff #6</span>
+          </div>
+          <h3 class="text-base font-bold text-white">Pre-Deployment Banking Scenario Sandbox</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Pre-tests multi-agent banking workflows against thousands of synthetic stress-test scenarios before live client VPC deployment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: The 6 BFSI Opportunity Pillars (Taxonomy) -->
+    <section id="taxonomy" class="glass-card rounded-2xl p-6 sm:p-8">
+      <div class="flex items-center space-x-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 font-bold text-lg">🗺️</div>
+        <div>
+          <h2 class="text-2xl font-bold text-white tracking-tight">4. The 6 BFSI Opportunity Pillars (Taxonomy)</h2>
+          <p class="text-xs text-slate-400">Exhaustive opportunity matrix covering core banking verticals across US, CA, UK & EU</p>
+        </div>
+      </div>
+
+      <!-- Table Container -->
+      <div class="overflow-x-auto rounded-xl border border-white/10">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="bg-slate-900/90 text-slate-300 border-b border-white/10 uppercase font-mono">
+              <th class="p-3.5">Pillar</th>
+              <th class="p-3.5">Focus Area</th>
+              <th class="p-3.5">High-ROI Lyzr AI Agent Modules</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-white/5 text-slate-300">
+            <tr class="hover:bg-white/5 transition">
+              <td class="p-3.5 font-semibold text-emerald-400">1. Lending & Credit</td>
+              <td class="p-3.5 text-slate-400">CRE, SME & Corporate Debt</td>
+              <td class="p-3.5"><strong>Title Vetting Agent</strong> (Schedule B exceptions); <strong>Financial Spreading Agent</strong> (DSCR ≥ 1.25×); <strong>Court Scout Agent</strong> (PACER/foreclosures); <strong>Contract Reconciliation Agent</strong>.</td>
+            </tr>
+            <tr class="hover:bg-white/5 transition">
+              <td class="p-3.5 font-semibold text-indigo-400">2. Commercial Sales & RM</td>
+              <td class="p-3.5 text-slate-400">RM Productivity & Deal Origination</td>
+              <td class="p-3.5"><strong>RM Pre-Meeting Dossier Agent</strong> (SEC 10-K & news synthesis); <strong>Commercial Deal Structuring Co-Pilot</strong>; <strong>Cross-Sell / Next-Best-Action Agent</strong>.</td>
+            </tr>
+            <tr class="hover:bg-white/5 transition">
+              <td class="p-3.5 font-semibold text-purple-400">3. Marketing & Growth</td>
+              <td class="p-3.5 text-slate-400">Acquisition & Compliance</td>
+              <td class="p-3.5"><strong>Ad Regulatory Compliance Agent</strong> (auditing ad copy against TILA, RESPA, CFPB, FCA rules); <strong>Hyper-Personalized Campaign Copy Agent</strong>.</td>
+            </tr>
+            <tr class="hover:bg-white/5 transition">
+              <td class="p-3.5 font-semibold text-cyan-400">4. Retail Operations</td>
+              <td class="p-3.5 text-slate-400">Branch & Customer Servicing</td>
+              <td class="p-3.5"><strong>Garnishment & Levy Execution Agent</strong> (court attachments & exempt cash calculation); <strong>Deceased Account Probate Agent</strong>; <strong>Dispute Resolution Agent</strong>.</td>
+            </tr>
+            <tr class="hover:bg-white/5 transition">
+              <td class="p-3.5 font-semibold text-amber-400">5. Risk & AML/KYC</td>
+              <td class="p-3.5 text-slate-400">Financial Crime & GRC</td>
+              <td class="p-3.5"><strong>UBO Tracing Agent</strong> (unwrapping offshore shell webs to ≥ 10% owners); <strong>SAR Narrative Writer Agent</strong> (FinCEN/FINTRAC reports); <strong>Vendor TPRM Audit Agent</strong>.</td>
+            </tr>
+            <tr class="hover:bg-white/5 transition">
+              <td class="p-3.5 font-semibold text-rose-400">6. Wealth & Treasury</td>
+              <td class="p-3.5 text-slate-400">Private Banking & Hedging</td>
+              <td class="p-3.5"><strong>ISDA & CSA Master Agreement Auditor</strong>; <strong>Daily Margin Call Agent</strong>; <strong>Wealth Estate Planning Co-Pilot</strong>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Go-To-Market (GTM) Enterprise Sales Engine -->
+    <section id="gtm" class="glass-card rounded-2xl p-6 sm:p-8">
+      <div class="flex items-center space-x-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 font-bold text-lg">💼</div>
+        <div>
+          <h2 class="text-2xl font-bold text-white tracking-tight">5. Go-To-Market (GTM) Enterprise Sales & Delivery Engine</h2>
+          <p class="text-xs text-slate-400">5-channel sales & co-sell engine designed for rapid enterprise acquisition & 7-day client onboarding</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-6">
+        <!-- Sales Motion 1 -->
+        <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5 space-y-2">
+          <span class="text-xs font-mono px-2 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded">Motion #1</span>
+          <h3 class="text-sm font-bold text-white">Via Banking & Legal Service Partners</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Partner with banking law firms (e.g. Mayer Brown, Latham & Watkins), compliance consultancies, and auditing boutiques. Partners pitch and co-sell Madison directly to existing bank clients.
+          </p>
+        </div>
+
+        <!-- Sales Motion 2 -->
+        <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5 space-y-2">
+          <span class="text-xs font-mono px-2 py-0.5 bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded">Motion #2</span>
+          <h3 class="text-sm font-bold text-white">Via System Integrators (SIs)</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Partner with Accenture Financial Services, Capgemini Banking, PwC, EY, and Infosys. SIs manage custom legacy core mainframe API integrations while Lyzr licenses Madison software.
+          </p>
+        </div>
+
+        <!-- Sales Motion 3 -->
+        <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5 space-y-2">
+          <span class="text-xs font-mono px-2 py-0.5 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded">Motion #3</span>
+          <h3 class="text-sm font-bold text-white">Via Hyperscaler Cloud Co-Sell</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Co-sell with AWS Financial Services, Azure for Financial Services, and GCP Banking. Listing on Cloud Marketplaces lets bank CIOs draw from pre-committed cloud budgets (AWS EDP / Azure MACC), shortening sales from 9 months to 3 weeks.
+          </p>
+        </div>
+
+        <!-- Sales Motion 4 -->
+        <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5 space-y-2">
+          <span class="text-xs font-mono px-2 py-0.5 bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 rounded">Motion #4</span>
+          <h3 class="text-sm font-bold text-white">Direct Outbound ABM</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            High-touch C-suite outreach targeting Chief Credit Officers (CCOs), Chief Risk Officers (CROs), and General Counsels at $10B–$50B AUM regional banks with tailored benchmark reports.
+          </p>
+        </div>
+
+        <!-- Sales Motion 5 -->
+        <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5 space-y-2">
+          <span class="text-xs font-mono px-2 py-0.5 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded">Motion #5</span>
+          <h3 class="text-sm font-bold text-white">Marketing Inbound Thought Leadership</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Executive whitepapers, bank ROI calculators, SR 11-7 Model Risk Management compliance guides, and interactive web showcase demos driving inbound C-suite meeting requests.
+          </p>
+        </div>
+
+        <!-- Delivery Highlight -->
+        <div class="p-4 rounded-xl bg-gradient-to-tr from-emerald-950/40 to-slate-900/80 border border-emerald-500/30 space-y-2">
+          <span class="text-xs font-mono px-2 py-0.5 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded">Rapid Delivery</span>
+          <h3 class="text-sm font-bold text-emerald-300">7-Day FDE Client Onboarding</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Forward-Deployed Engineers (FDEs) use low-code configuration templates to map core mainframe APIs (Fiserv/FIS/FSC), connect client SSO (Okta), and deploy into the bank's Private VPC in under 7 days.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Near-Term, Mid-Term & Long-Term Execution Roadmap -->
+    <section id="roadmap" class="glass-card rounded-2xl p-6 sm:p-8">
+      <div class="flex items-center space-x-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 font-bold text-lg">🗓️</div>
+        <div>
+          <h2 class="text-2xl font-bold text-white tracking-tight">6. Near-Term, Mid-Term & Long-Term Execution Roadmap</h2>
+          <p class="text-xs text-slate-400">Structured execution roadmap across showcase app, bank pilots, and enterprise scale</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <!-- Phase 1 -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-emerald-500/30 space-y-2">
+          <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider block">Phase 1: Near-Term</span>
+          <h3 class="text-sm font-bold text-white">Showcase Demo & Templatization</h3>
+          <ul class="text-xs text-slate-300 space-y-1 list-disc list-inside">
+            <li>Build 21-day Commercial Lending Showcase App</li>
+            <li>Develop FDE cloning scripts</li>
+            <li>Write Sales Storyboard & Pitch Deck</li>
+          </ul>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-indigo-500/30 space-y-2">
+          <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider block">Phase 2: Mid-Term</span>
+          <h3 class="text-sm font-bold text-white">Paid Bank Pilots & Governance</h3>
+          <ul class="text-xs text-slate-300 space-y-1 list-disc list-inside">
+            <li>Execute 3 Paid Bank Pilots ($50K-$100K PoCs)</li>
+            <li>Audit SR 11-7 Model Validation Group compliance</li>
+            <li>Measure baseline disbursement speed KPIs</li>
+          </ul>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-purple-500/30 space-y-2">
+          <span class="text-xs font-bold text-purple-400 uppercase tracking-wider block">Phase 3: Long-Term</span>
+          <h3 class="text-sm font-bold text-white">Horizontal Expansion & FDE Engine</h3>
+          <ul class="text-xs text-slate-300 space-y-1 list-disc list-inside">
+            <li>Launch Sales/RM & AML/UBO Skill Bundles</li>
+            <li>Formalize FDE Client Onboarding Playbook</li>
+            <li>Target Top 25 US Regional Banks</li>
+          </ul>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-cyan-500/30 space-y-2">
+          <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider block">Phase 4: Scaling</span>
+          <h3 class="text-sm font-bold text-white">Global Market Expansion</h3>
+          <ul class="text-xs text-slate-300 space-y-1 list-disc list-inside">
+            <li>Expand to UK/EU & Canada public registries</li>
+            <li>Package direct API connectors (Fiserv, FIS)</li>
+            <li>Scale ARR & enterprise licensing seats</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Open Discussions & Strategic Alignment -->
+    <section id="alignment" class="glass-card gradient-border rounded-2xl p-6 sm:p-8">
+      <div class="flex items-center space-x-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold text-lg">❓</div>
+        <div>
+          <h2 class="text-2xl font-bold text-white tracking-tight">7. Open Discussions & Strategic Alignment</h2>
+          <p class="text-xs text-slate-400">4 recommended strategic principles for internal leadership alignment</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <!-- Alignment 1 -->
+        <div class="p-5 rounded-xl bg-slate-900/80 border border-emerald-500/30 space-y-2">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-0.5 text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded">[RECOMMENDED]</span>
+            <h3 class="text-sm font-bold text-white">1. Standalone Product Suite Packaging</h3>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Madison is packaged as a <strong>configurable standalone agentic AI software suite</strong> (the <em>Lyzr Banking Engine</em>) equipped with native banking mainframe connectors, rather than a passive template inside Lyzr Studio.
+          </p>
+        </div>
+
+        <!-- Alignment 2 -->
+        <div class="p-5 rounded-xl bg-slate-900/80 border border-emerald-500/30 space-y-2">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-0.5 text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded">[RECOMMENDED]</span>
+            <h3 class="text-sm font-bold text-white">2. 20% R&D / 80% FDE Resource Flywheel</h3>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            <strong>Phase 1 Launch</strong>: Resource split is 20% Core R&D / 80% FDEs capturing real-world bank feedback.<br>
+            <strong>Phase 2 Scale</strong>: As domain skills are templatized, ratio shifts toward R&D-dominant scaling where FDEs exclusively handle low-code YAML/JSON configurations.
+          </p>
+        </div>
+
+        <!-- Alignment 3 -->
+        <div class="p-5 rounded-xl bg-slate-900/80 border border-emerald-500/30 space-y-2">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-0.5 text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded">[RECOMMENDED]</span>
+            <h3 class="text-sm font-bold text-white">3. Inherited SOC-2 & SR 11-7 Readiness</h3>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Lyzr natively possesses SOC-2 Type-2 and HIPAA/Enterprise Security certifications. Built natively on the Lyzr Enterprise Stack, Madison <strong>inherits SOC-2 compliance out-of-the-box</strong> and satisfies Fed SR 11-7 Model Validation audits on Day 1.
+          </p>
+        </div>
+
+        <!-- Alignment 4 -->
+        <div class="p-5 rounded-xl bg-slate-900/80 border border-emerald-500/30 space-y-2">
+          <div class="flex items-center space-x-2">
+            <span class="px-2 py-0.5 text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded">[RECOMMENDED]</span>
+            <h3 class="text-sm font-bold text-white">4. System Integrator & Partner Co-Sell Motion</h3>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Active co-selling with global banking SIs (Accenture, Capgemini, PwC, EY) and banking legal/advisory partners. Partners manage legacy mainframe integration & client relationships, while Lyzr licenses the Madison agentic core.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-slate-950/80 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="mb-2 font-mono">Lyzr Enterprise Agentic Operating System — Project Madison</p>
+      <p>© 2026 Lyzr AI. All Strategy Specifications Grounded in Official Lyzr SDK Primitives.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
