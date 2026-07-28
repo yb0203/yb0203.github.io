@@ -19,7 +19,7 @@
 - [🗺️ 4. The 6 BFSI Opportunity Pillars (Taxonomy)](#%EF%B8%8F-4-the-6-bfsi-opportunity-pillars-taxonomy)
 - [🏗️ 5. Modular Assembly & FDE Delivery Engine (`bank-manifest.json`)](#%EF%B8%8F-5-modular-assembly--fde-delivery-engine-bank-manifestjson)
 - [💼 6. Go-To-Market (GTM) Enterprise Sales Motions](#-6-go-to-market-gtm-enterprise-sales-motions)
-- [🗓️ 7. 30-60-90 Day Execution Roadmap](#%EF%B8%8F-7-30-60-90-day-execution-roadmap)
+- [🗓️ 7. Near-Term, Mid-Term & Long-Term Execution Roadmap](#%EF%B8%8F-7-near-term-mid-term--long-term-execution-roadmap)
 - [🎯 8. Strategic Founder Alignment & Executive Directives](#-8-strategic-founder-alignment--executive-directives)
 
 ---
@@ -210,14 +210,14 @@ The script provisions a client-isolated Lyzr Agent Workspace, maps core mainfram
 
 ---
 
-## 🗓️ 7. 30-60-90 Day Execution Roadmap
+## 🗓️ 7. Near-Term, Mid-Term & Long-Term Execution Roadmap
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                           30-60-90 DAY EXECUTION PLAN                                                  │
+│                                       NEAR-TERM, MID-TERM & LONG-TERM EXECUTION PLAN                                   │
 ├──────────────────────────┬──────────────────────────┬──────────────────────────┬───────────────────────────────────────┤
-│ MONTH 1: Core Showcase   │ MONTH 2: Initial Bank    │ MONTH 3: Horizontal      │ MONTH 4+: Enterprise Scaling          │
-│ Demo & Templatization    │ Pilots & Model Governance│ Expansion & FDE Engine   │ & Global Market Expansion             │
+│ NEAR-TERM: Showcase Demo │ MID-TERM: Initial Bank   │ LONG-TERM: Horizontal    │ ENTERPRISE SCALING: Global            │
+│ & Core Templatization    │ Pilots & Model Governance│ Expansion & FDE Engine   │ Market Expansion & Scale              │
 ├──────────────────────────┼──────────────────────────┼──────────────────────────┼───────────────────────────────────────┤
 │ • Build & freeze 21-day  │ • Execute 3 Paid Bank    │ • Launch Sales/RM Co-    │ • Expand to UK/EU & Canada            │
 │   Commercial Lending     │   Pilots ($50K–$100K PoC)│   Pilot & AML/UBO Skill  │   registries (Companies House,        │
