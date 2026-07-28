@@ -1,45 +1,55 @@
-# 5B. Go-To-Market (GTM) Motion
+# 5B. Go-To-Market (GTM) Sales Motions & Strategy
 
 ## ⚡ TL;DR
-- Outbound sales leverage warm introductions via alumni networks and Chase internal connections.
-- We utilize external law firms as referral partners to build trust with bank General Counsel.
-- A 3-step outreach sequence is designed to secure discovery meetings with Chief Legal Officers.
+- Product Madison executes a 4-channel enterprise sales strategy targeting US, Canadian, and European commercial banks ($10B–$50B+ AUM).
+- Core motions: **Via System Integrators (SIs)**, **Via Hyperscalers (AWS/Azure/GCP Co-Sell)**, **Direct Outbound ABM**, and **Marketing Inbounds**.
+- Accelerates enterprise procurement cycles from 9 months down to 3 weeks via cloud marketplace commitments and templatized private VPC deployments.
 
 ## 🗺️ Where This Fits
-[Layer 5 GTM → Feeds into Layer 5C Sales Cycle]
+[Layer 5 GTM Motion → Feeds into Layer 5C Sales Cycle & 5D Commercial Model]
 
 ## 📖 Full Detail
 
-### Multi-Channel GTM Strategy
-1. **Direct Enterprise Outbound (Primary)**: Targeted outreach to CLOs, Head of Litigation, and Head of Legal Ops. Focus on the core value proposition: reducing manual contract review times.
-2. **Referral Program via External Law Firms (Secondary)**: Law firms advising banks act as trusted recommenders. We partner with mid-sized New York-based law firms, offering them workflow incentives to recommend the Platform to their bank clients.
-3. **Warm Network Lever (Alumni & Banking Networks)**: Direct outreach via Stanford alumni networks and existing professional connections inside JPMorgan Chase to secure initial pilot reviews.
+### 💼 Product Madison 4-Channel Enterprise Sales Engine
 
-### Outbound Outreach Sequence (to Chief Legal Officers)
+```
+ ┌──────────────────────────────────────────────────────────────────────────────────┐
+ │                    PRODUCT MADISON 4-CHANNEL SALES ENGINE                        │
+ ├─────────────────────────┬───────────────────────────┬────────────────────────────┤
+ │ SALES MOTION            │ TARGET PARTNER / CHANNEL  │ STRATEGIC BENEFIT FOR BANK │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 1. Via System           │ Accenture, Capgemini,     │ SIs handle legacy core API │
+ │    Integrators (SIs)    │ PwC, EY Banking Advisory  │ integration & deployment   │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 2. Via Hyperscalers     │ AWS, Azure & GCP          │ Draws down from bank's     │
+ │    Co-Sell              │ Financial Services        │ pre-committed cloud spend  │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 3. Direct Outbound ABM  │ Target C-Suite Outbound   │ High-touch enterprise sales│
+ │                         │ (CCO, CRO, General Counsel│ targeting $10B-$50B AUM    │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 4. Marketing Inbounds   │ ROI Calculators, Webinars │ Inbound lead engine via    │
+ │                         │ & SR 11-7 Compliance Guides│ executive thought leadership│
+ └─────────────────────────┴───────────────────────────┴────────────────────────────┘
+```
 
-#### Step 1: The Value Hook (Email / LinkedIn - Day 1)
-> **Subject**: Cutting contract review times & automating PACER & state court dockets tracking for [Bank Name]
->
-> *"Dear [Name],*
->
-> *I follow your team's updates at [Bank Name] and appreciate your focus on operational efficiency. I'm Yashvi Bansal, a Stanford alum and former engineer at Chase, now building the Platform.*
->
-> *We help private bank legal teams reduce manual contract comparison times and automate PACER & state court dockets hearing alerts. Our tool runs completely inside your bank's secure private cloud, ensuring zero data leakage. On average, we help teams cut contract turnaround times and automate litigation tracking updates.*
->
-> *Would you be open to a brief 10-minute introduction call this Thursday to see if we can help support your team?*
->
-> *Best regards,*
-> *Yashvi Bansal | +1 (555) 019-9234 | bansaly0203@gmail.com | LinkedIn: linkedin.com/in/yb0203"*
+### 1. Via System Integrators (SIs & Banking Consultancies)
+* **Target Partners**: Accenture Financial Services, Capgemini Banking, PwC, EY, Infosys Banking, Wipro.
+* **Co-Selling Strategy**: Global SIs maintain deep relationships with bank CIOs. SIs manage custom legacy core mainframe API integrations (Fiserv, FIS, Jack Henry), while Product Madison delivers the templatized agentic AI software engine.
 
-#### Step 2: The Proof Follow-up (LinkedIn / Slack / MS Teams - Day 4)
-> *"Hi [Name], following up on my email. We recently helped a team automate their litigation date tracking, eliminating manual PACER & state court dockets checks. I thought your litigation team might find this helpful. If you have 5 minutes next week, I'd love to share the brief workflow framework. Thank you!"*
+### 2. Via Hyperscaler Co-Sell & Cloud Marketplace (AWS / Azure / GCP)
+* **Target Channels**: AWS Financial Services, Microsoft Cloud for Financial Services, Google Cloud Banking.
+* **Co-Selling Strategy**: Listing Product Madison on AWS Marketplace and Azure Marketplace. Bank CIOs can purchase software licenses using pre-committed cloud spending accounts (AWS EDP / Azure MACC commits), completely bypassing long traditional procurement cycles.
 
-#### Step 3: The Call to Action (Email - Day 8)
-> *"Hi [Name], I know you're busy managing your department's goals. We are scheduling brief product reviews for New York-based banking teams next week. We'd love to set up a quick 10-minute demo to share how we handle template deviation checks. If you're open to it, let me know what day works best. Thank you!"*
+### 3. Direct Outbound Account-Based Marketing (ABM)
+* **Target Personas**: Chief Credit Officers (CCOs), Chief Risk Officers (CROs), General Counsels, Heads of Commercial Lending.
+* **Outbound Strategy**: High-touch, personalized outreach using tailored benchmark reports (e.g., *"Commercial Lending Disbursement Velocity Analysis for $20B Regional Banks"*), offering a 30-day paid pilot ($50K PoC).
+
+### 4. Marketing Inbound Engine
+* **Target Inbound Channels**: Executive thought leadership whitepapers, bank ROI calculators, SR 11-7 Model Risk Management compliance guides, and interactive web showcase demos driving inbound C-suite meeting requests.
 
 ## 🔑 Key Decisions / Open Questions
-- [ ] Identify if American Bankers Association (ABA) events are a viable channel for corporate sponsorships.
+- [ ] Establish AWS & Azure Marketplace co-sell listing prerequisites for enterprise private VPC deployment.
 
 ## 🔗 Cross-Links
-- Upstream: [L4_stakeholder_map/4A_functional_head_mapping.md](../L4_stakeholder_map/4A_functional_head_mapping.md) | [L4_stakeholder_map/4C_adoption_barriers.md](../L4_stakeholder_map/4C_adoption_barriers.md)
-- Downstream: [L5_business_lifecycle/5C_sales_cycle.md](./5C_sales_cycle.md)\n
+- Upstream: [L5_business_lifecycle/5A_icp_definition.md](./5A_icp_definition.md)
+- Downstream: [L5_business_lifecycle/5C_sales_cycle.md](./5C_sales_cycle.md) | [L6_product_lifecycle/7A_bfsi_agentic_master_pitch.md](../L6_product_lifecycle/7A_bfsi_agentic_master_pitch.md)

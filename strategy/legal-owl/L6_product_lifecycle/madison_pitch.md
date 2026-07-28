@@ -15,11 +15,12 @@
   - [C. Responsible AI & Guardrail Stack (`Lyzr RAI`)](#c-responsible-ai--guardrail-stack-lyzr-rai)
   - [D. Enterprise Governance & Model Risk (`Lyzr Governor`)](#d-enterprise-governance--model-risk-lyzr-governor)
   - [E. Environment Control Plane (`Lyzr Agent Studio`)](#e-environment-control-plane-lyzr-agent-studio)
-- [💎 3. Core Product Differentiators (The 4 WOW Features)](#-3-core-product-differentiators-the-4-wow-features)
+- [💎 3. Core Product Differentiators Grounded in Lyzr](#-3-core-product-differentiators-grounded-in-lyzr)
 - [🗺️ 4. The 6 BFSI Opportunity Pillars (Taxonomy)](#%EF%B8%8F-4-the-6-bfsi-opportunity-pillars-taxonomy)
 - [🏗️ 5. Modular Assembly & FDE Delivery Engine (`bank-manifest.json`)](#%EF%B8%8F-5-modular-assembly--fde-delivery-engine-bank-manifestjson)
-- [🗓️ 6. 30-60-90 Day Execution Roadmap](#%EF%B8%8F-6-30-60-90-day-execution-roadmap)
-- [❓ 7. Strategic Queries for the Founder Meeting](#-7-strategic-queries-for-the-founder-meeting)
+- [💼 6. Go-To-Market (GTM) Enterprise Sales Motions](#-6-go-to-market-gtm-enterprise-sales-motions)
+- [🗓️ 7. 30-60-90 Day Execution Roadmap](#%EF%B8%8F-7-30-60-90-day-execution-roadmap)
+- [❓ 8. Strategic Queries for the Founder Meeting](#-8-strategic-queries-for-the-founder-meeting)
 
 ---
 
@@ -178,7 +179,38 @@ The script provisions a client-isolated Lyzr Agent Workspace, maps core mainfram
 
 ---
 
-## 🗓️ 6. 30-60-90 Day Execution Roadmap
+## 💼 6. Go-To-Market (GTM) Enterprise Sales Motions
+
+> **TL;DR**: Product Madison scales across US, Canadian, and European commercial banks ($10B–$50B+ AUM) using 4 complementary sales channels: System Integrators (SIs), Hyperscaler Marketplace Co-Selling (AWS/Azure), Direct Outbound ABM, and Marketing Inbound Thought Leadership.
+
+```
+ ┌──────────────────────────────────────────────────────────────────────────────────┐
+ │                    PRODUCT MADISON 4-CHANNEL SALES ENGINE                        │
+ ├─────────────────────────┬───────────────────────────┬────────────────────────────┤
+ │ SALES MOTION            │ TARGET PARTNER / CHANNEL  │ STRATEGIC BENEFIT FOR BANK │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 1. Via System           │ Accenture, Capgemini,     │ SIs handle legacy core API │
+ │    Integrators (SIs)    │ PwC, EY Banking Advisory  │ integration & deployment   │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 2. Via Hyperscalers     │ AWS, Azure & GCP          │ Draws down from bank's     │
+ │    Co-Sell              │ Financial Services        │ pre-committed cloud spend  │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 3. Direct Outbound ABM  │ Target C-Suite Outbound   │ High-touch enterprise sales│
+ │                         │ (CCO, CRO, General Counsel│ targeting $10B-$50B AUM    │
+ ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
+ │ 4. Marketing Inbounds   │ ROI Calculators, Webinars │ Inbound lead engine via    │
+ │                         │ & SR 11-7 Compliance Guides│ executive thought leadership│
+ └─────────────────────────┴───────────────────────────┴────────────────────────────┘
+```
+
+1. **Via System Integrators (SIs & Banking Consultancies)**: Partner with global banking System Integrators (Accenture Financial Services, Capgemini Banking, PwC, EY, Infosys). SIs handle custom legacy core mainframe API integrations (Fiserv, FIS, Jack Henry), while Product Madison delivers the templatized agentic AI software engine.
+2. **Via Hyperscaler Co-Sell & Cloud Marketplace (AWS / Azure / GCP)**: Co-sell with AWS Financial Services, Microsoft Azure for Financial Services, and GCP Banking. Listing Product Madison on AWS/Azure Marketplace allows bank CIOs to purchase software using pre-committed cloud spending accounts (AWS EDP / Azure MACC commits), shortening procurement cycles from 9 months to 3 weeks.
+3. **Direct Outbound Account-Based Marketing (ABM)**: High-touch outreach targeting Chief Credit Officers (CCOs), Chief Risk Officers (CROs), General Counsels, and Heads of Commercial Lending at $10B–$50B AUM regional banks with tailored benchmark reports.
+4. **Marketing Inbound Engine**: Executive thought leadership whitepapers, bank ROI calculators, SR 11-7 Model Risk Management compliance guides, and interactive web showcase demos driving inbound C-suite meeting requests.
+
+---
+
+## 🗓️ 7. 30-60-90 Day Execution Roadmap
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -199,7 +231,7 @@ The script provisions a client-isolated Lyzr Agent Workspace, maps core mainfram
 
 ---
 
-## ❓ 7. Strategic Queries for the Founder Meeting
+## ❓ 8. Strategic Queries for the Founder Meeting
 
 1. **Platform Strategy vs. Vertical Packaging**:
    > *"Do we position Product Madison as a standalone product suite ('Lyzr Banking Engine') with native banking connectors, or as a pre-configured vertical template layer on top of Lyzr Studio?"*
