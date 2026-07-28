@@ -6,7 +6,23 @@
 
 ---
 
+## 📑 Table of Contents
+- [🎯 1. Mission, Vision, Goal & Motto](#-1-mission-vision-goal--motto)
+- [🚀 2. Executive Pitch: What We Are Building](#-2-executive-pitch-what-we-are-building)
+- [🏗️ 3. Deep-Dive Product Architecture: The Enterprise Agentic OS](#%EF%B8%8F-3-deep-dive-product-architecture-the-enterprise-agentic-os)
+  - [Layer 1: Governance, SR 11-7 Compliance & Guardrail Stack](#layer-1-governance-sr-11-7-compliance--guardrail-stack)
+  - [Layer 2: Agentic Harness & Resilience Runtime Engine](#layer-2-agentic-harness--resilience-runtime-engine)
+  - [Layer 3: Plug-and-Play Modular Assembly Engine](#layer-3-plug-and-play-modular-assembly-engine)
+  - [Layer 4: Private VPC Deployment & Enterprise Connector SDK](#layer-4-private-vpc-deployment--enterprise-connector-sdk)
+- [🗺️ 4. Exhaustive Domain Opportunity Taxonomy (The 6 Banking Pillars)](#%EF%B8%8F-4-exhaustive-domain-opportunity-taxonomy-the-6-banking-pillars)
+- [🗓️ 5. Next Few Months Execution Roadmap (30-60-90 Day Plan)](#%EF%B8%8F-5-next-few-months-execution-roadmap-30-60-90-day-plan)
+- [❓ 6. Strategic Queries & Discussion Points for the Founder](#-6-strategic-queries--discussion-points-for-the-founder)
+
+---
+
 ## 🎯 1. Mission, Vision, Goal & Motto
+
+> **TL;DR**: Establish Lyzr as the enterprise agentic operating system for banks ($10B–$50B+ AUM) across US, Canada, and Europe by building a modular core once, templatizing domain skills, and deploying single-tenant private VPC instances in days.
 
 ### Vision
 To establish **Lyzr** as the definitive **Enterprise Agentic Operating System for Global Banking, Financial Services, and Insurance (BFSI)**—transforming slow, document-heavy financial operations into autonomous, zero-hallucination, human-governed workflows.
@@ -20,6 +36,8 @@ Build a scalable, extensible, and templatized AI Agent Product Engine that lands
 ---
 
 ## 🚀 2. Executive Pitch: What We Are Building
+
+> **TL;DR**: The Lyzr BFSI Enterprise Agent Workspace bridges financial underwriting, legal execution, commercial sales, and AML compliance. Differentiated by human-in-the-loop co-piloting, PDF coordinate bounding-box citations, hybrid deterministic rules (SR 11-7 compliant), and edge PII isolation.
 
 We are building the **Lyzr BFSI Enterprise Agent Workspace**—an agentic AI platform tailored for commercial and retail banks ($10B–$50B+ AUM) that bridges financial underwriting, legal execution, commercial sales, and regulatory compliance.
 
@@ -47,6 +65,8 @@ We are building the **Lyzr BFSI Enterprise Agent Workspace**—an agentic AI pla
 ---
 
 ## 🏗️ 3. Deep-Dive Product Architecture: The Enterprise Agentic OS
+
+> **TL;DR**: A 4-layer enterprise architecture comprising a 3-Tier Guardrail & SR 11-7 Audit Stack, a State-Persistent Runtime Harness with deterministic fallbacks, a Manifest-Driven Assembly Engine (`bank-manifest.json`), and containerized Helm/Terraform Private VPC Blueprints.
 
 To ensure the product is a true **Enterprise Agentic Software Product** (and not a custom development agency), we construct a **4-Layer Modular Agentic Operating System**:
 
@@ -124,6 +144,8 @@ To ensure the product is a true **Enterprise Agentic Software Product** (and not
 
 ## 🗺️ 4. Exhaustive Domain Opportunity Taxonomy (The 6 Banking Pillars)
 
+> **TL;DR**: An exhaustive mapping of agentic modules across 6 banking pillars: Commercial Lending, Commercial Sales/RM, Ad Marketing Compliance, Retail Garnishment/Probate Ops, Financial Crime (UBO/SAR), and Treasury/ISDA Management.
+
 ```
                        ┌───────────────────────────────────────┐
                        │       6 BFSI OPPORTUNITY PILLARS      │
@@ -150,6 +172,8 @@ To ensure the product is a true **Enterprise Agentic Software Product** (and not
 
 ## 🗓️ 5. Next Few Months Execution Roadmap (30-60-90 Day Plan)
 
+> **TL;DR**: Month 1 delivers the 21-day Commercial Lending Showcase App & FDE cloning scripts; Month 2 executes 3 paid bank pilots ($50K–$100K PoCs) and audits SR 11-7 compliance; Month 3 expands horizontally to Sales/RM & AML modules across top 25 regional banks.
+
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │                                           30-60-90 DAY EXECUTION PLAN                                                  │
@@ -170,6 +194,8 @@ To ensure the product is a true **Enterprise Agentic Software Product** (and not
 ---
 
 ## ❓ 6. Strategic Queries & Discussion Points for the Founder
+
+> **TL;DR**: High-leverage strategic questions covering platform vs. vertical packaging, R&D vs. FDE headcount split, out-of-the-box SR 11-7 MVG audit readiness, and System Integrator (Accenture/Capgemini) partner co-selling.
 
 1. **Platform Strategy vs. Vertical Packaging**:
    > *"Do we position BFSI as a standalone product suite ('Lyzr Banking Engine') with native banking connectors, or as a pre-configured vertical template layer on top of Lyzr Studio?"*
