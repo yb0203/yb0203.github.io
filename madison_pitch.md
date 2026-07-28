@@ -38,61 +38,60 @@ To establish **Madison** as the premier enterprise agentic product suite for ban
 
 ## 🚀 2. Grounded Architecture: Powered by Lyzr Enterprise SDK & ADK
 
-> **TL;DR**: A 4-layer modular architecture directly leveraging official Lyzr SDK primitives: `lyzr-automata` for DAG pipelines, `Lyzr ADK KnowledgeBase` & `Cognis` for vector/graph memory, `Lyzr RAI` for edge PII redaction, `Lyzr Governor` for Fed SR 11-7 compliance, and `Lyzr Agent Studio` for Private VPC deployment.
+> **TL;DR**: An intuitive, enterprise 4-layer architecture: Layer 1 (Private VPC & Mainframe Core Connectors), Layer 2 (Lyzr Agent Runtime Engine with `lyzr-automata` DAGs, `KnowledgeBase` RAG, `Cognis` memory, and deterministic rule fallbacks), Layer 3 (Cross-Cutting Lyzr RAI Edge Security, Superflow Approve-Before-Act gates, and Lyzr Governor SR 11-7 Audit Ledger), and Layer 4 (Templatized Banking Applications activated via `bank-manifest.json`).
 
 Madison is constructed directly on top of official **Lyzr Enterprise Modules and SDK Primitives**:
 
 ```
- ┌──────────────────────────────────────────────────────────────────────────────────┐
- │                        PRODUCT MADISON ENTERPRISE ARCHITECTURE                   │
- ├──────────────────────────────────────────────────────────────────────────────────┤
- │                                                                                  │
- │ ┌──────────────────────────────────────────────────────────────────────────────┐ │
- │ │ LYZR RESPONSIBLE AI (RAI) & GOVERNOR LAYER                                  │ │
- │ │ • PII/NPI Edge Anonymizer (`rai/create-policy`)  • Prompt Injection Shield     │ │
- │ │ • Bounding-Box Grounding Engine                  • SR 11-7 Governor Audit Log │ │
- │ └──────────────────────────────────────┬───────────────────────────────────────┘ │
- │                                        │                                         │
- │ ┌──────────────────────────────────────▼───────────────────────────────────────┐ │
- │ │ LYZR ADK & AUTOMATA ORCHESTRATION RUNTIME ENGINE                             │ │
- │ │ • `Agent()` & `Task()` Nodes           • `LinearSyncPipeline` & `DAGPipeline`  │ │
- │ │ • Cognis Memory (`add/search-memories`) • Deterministic Rule Fallbacks         │ │
- │ └──────────────────────────────────────┬───────────────────────────────────────┘ │
- │                                        │                                         │
- │ ┌──────────────────────────────────────▼───────────────────────────────────────┐ │
- │ │ TEMPLATIZED BANKING SKILL BUNDLES (`bank-manifest.json`)                     │ │
- │ │ ┌─────────────────┐ ┌───────────────────┐ ┌────────────────────────────────┐ │ │
- │ │ │ Lending Bundle  │ │ Commercial Sales  │ │ AML & Retail Ops Module        │ │ │
- │ │ └─────────────────┘ └───────────────────┘ └────────────────────────────────┘ │ │
- │ └──────────────────────────────────────┬───────────────────────────────────────┘ │
- │                                        │                                         │
- │ ┌──────────────────────────────────────▼───────────────────────────────────────┐ │
- │ │ LYZR AGENT STUDIO & CONTROL PLANE (PRIVATE VPC DEPLOYMENT)                   │ │
- │ │ • Git-for-Agents (Branching/Promotion)  • Core Banking Connectors (Fiserv/FIS) │ │
- │ └──────────────────────────────────────────────────────────────────────────────┘ │
- └──────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│                                MADISON ENTERPRISE ARCHITECTURE                           │
+├──────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                          │
+│ ┌──────────────────────────────────────────────────────────────────────────────────────┐ │
+│ │ LAYER 4: TEMPLATIZED BANKING APPLICATION LAYER (`bank-manifest.json`)                 │ │
+│ │  ┌─────────────────────┐  ┌──────────────────────┐  ┌───────────────────────────────┐  │ │
+│ │  │ Commercial Lending │  │ Commercial Sales/RM  │  │ Risk, AML & Retail Operations │  │ │
+│ │  └─────────────────────┘  └──────────────────────┘  └───────────────────────────────┘  │ │
+│ └──────────────────────────────────────────▲───────────────────────────────────────────┘ │
+│                                            │ (Executes via Skill Primitives)             │
+│ ┌──────────────────────────────────────────┴───────────────────────────────────────────┐ │
+│ │ LAYER 3: LYZR AGENT RUNTIME ENGINE & DETERMINISTIC CORE                              │ │
+│ │  • Orchestration: `Agent()` & `Task()` Nodes via `lyzr-automata` (DAG Pipeline)      │ │
+│ │  • Multi-LLM Router: Dynamic routing across Claude 3.5, GPT-4o, Bedrock              │ │
+│ │  • Memory Systems: `KnowledgeBase` RAG + `Cognis` Episodic & Graph Memory            │ │
+│ │  • Hardcoded Rule Engine: FDCPA legal date math, UK 21-day rules, DSCR math          │ │
+│ └──────────────────────┬─────────────────────────────────────────────────┬─────────────┘ │
+│                        │                                                 │               │
+│                        │ (Enforces Policies & Logs)                      │ (Deploys via) │
+│ ┌──────────────────────▼──────────────────────────┐ ┌────────────────────▼────────────┐ │
+│ │ LAYER 2: CROSS-CUTTING GOVERNANCE & SECURITY     │ │ LAYER 1: PRIVATE VPC INFRASTRUCTURE│ │
+│ │ • Lyzr RAI: Edge PII Redaction & Prompt Shield  │ │ • Single-Tenant AWS/Azure/GCP VPC  │ │
+│ │ • Lyzr Superflow: Approve-Before-Act Action Cards│ │ • Lyzr Agent Studio Git-for-Agents │ │
+│ │ • Lyzr Governor: SR 11-7 Immutable Audit Ledger │ │ • Banking Core SDK (Fiserv/FIS)    │ │
+│ └─────────────────────────────────────────────────┘ └──────────────────────────────────┘ │
+└──────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### A. Agent & Task Orchestration (`lyzr-automata`)
-* **`Agent()` Primitives**: Instantiates specialized banking agents configured with specific `role`, `goal`, `instructions`, and foundation model providers (OpenAI GPT-4o, Anthropic Claude 3.5 Sonnet, AWS Bedrock).
-* **`Task()` Primitives**: Defines discrete operational assignments detailing execution steps, input parameters, and expected `zod` / Pydantic JSON outputs.
-* **`LinearSyncPipeline` & `DAGPipeline`**: Drives multi-agent workflows (e.g., *Financial Spreading Agent $\rightarrow$ Title Vetting Agent $\rightarrow$ Covenant Reconciliation Agent*).
+### Layer 1: Base Infrastructure & Enterprise Banking Connectors
+* **Single-Tenant Private VPC Deployment**: Helm Charts & Terraform scripts deploy Madison inside the bank's isolated AWS, Azure, GCP, or On-Premise OpenShift VPC.
+* **Core Banking Mainframe Connectors**: Pre-built read/write integration adapters for legacy mainframes (**Fiserv, FIS, Jack Henry, Temenos**), CRMs (**Salesforce FSC**), and document repositories (**SharePoint, S3**).
+* **Lyzr Agent Studio & Control Plane**: Manages environment configuration, API keys, and `git-for-agents` Dev $\rightarrow$ Staging $\rightarrow$ Production promotion pipelines.
 
-### B. Knowledge Base & Memory (`Lyzr ADK KB` & `Cognis`)
-* **`KnowledgeBase()` RAG Core**: Parses, chunks, and embeds unstructured bank dossiers (300-page PDF financial audits, commercial title commitments, LSTA credit agreements) into hybrid vector stores.
-* **`Cognis` Memory Engine**: Uses `add_memories()`, `search_memories()`, and `get_memories()` to maintain short-term conversation state and long-term historical context across multi-day banking workflows.
+### Layer 2: Cross-Cutting Governance, Security & Compliance Stack (Sidecar Wrapper)
+* **Input Security (`Lyzr RAI Engine`)**: Edge PII/NPI Anonymizer (`create_policy`) scrubs SSNs, Tax IDs, and account numbers at the boundary before LLM inference, paired with a Prompt Injection Shield.
+* **Execution Governance (`Lyzr Superflow`)**: Pauses agent execution at high-stakes decision gates via Superflow Node Approvals (`running-and-approvals`), surfacing interactive **Approve-Before-Act** Co-Pilot Cards.
+* **Output Grounding**: Coordinate Bounding-Box Overlay Engine ($x, y, w, h$) mapping assertions directly to original PDFs, plus `zod`/Pydantic schema enforcers.
+* **Model Risk Management (`Lyzr Governor`)**: Immutable audit log recording context hashes, prompt versions, tool parameters, guardrail flags, and human sign-off IDs to pass Federal Reserve **SR 11-7** MVG audits out-of-the-box.
 
-### C. Responsible AI & Guardrail Stack (`Lyzr RAI`)
-* **PII/NPI Edge Anonymizer**: Uses Lyzr RAI policies (`create_policy`) to automatically redact Non-Public Personal Information (SSNs, Tax IDs, account numbers) at the API boundary before LLM inference.
-* **Prompt Injection Shield**: Filters incoming prompt inputs and PDF text for adversarial injection attempts.
-* **Structured Output Enforcer**: Enforces strict JSON output formatting for all agent responses.
+### Layer 3: Lyzr Agent Runtime Engine & Execution Core
+* **Agent & Task Orchestration (`lyzr-automata`)**: `Agent()` nodes and `Task()` definitions chained into deterministic execution graphs via `LinearSyncPipeline` and `DAGPipeline`.
+* **Dynamic Multi-LLM Router**: Multi-provider task routing (Claude 3.5 Sonnet, GPT-4o, AWS Bedrock) with automatic rate-limit failover.
+* **Dual Context & Memory Engine**: `KnowledgeBase()` hybrid RAG (PDFs, 10-Ks, title commitments) paired with `Cognis` episodic and graph memory (`add/search/get-memories`).
+* **Hardcoded Deterministic Fallbacks**: Overrides LLMs with hardcoded Python rule engines for statutory legal date math (FDCPA 30-day cure, UK 21-day Companies House deadlines) and financial ratios ($\text{DSCR} \ge 1.25\times$) to guarantee zero math errors.
 
-### D. Enterprise Governance & Model Risk (`Lyzr Governor`)
-* **SR 11-7 Model Risk Management (MRM) Ledger**: Lyzr Governor records an immutable audit log of every execution (`Execution ID`, `Agent Persona`, `Prompt Version`, `Model & Temp`, `Context Hash`, `Tool Parameters`, `Guardrail Flags`, and `Human Sign-Off ID`) to satisfy Federal Reserve MVG compliance.
-
-### E. Environment Control Plane (`Lyzr Agent Studio`)
-* **Git-for-Agents**: Manages agent version control, prompt branching, and environment promotion across Dev, Staging, and Production Private VPCs.
-* **Enterprise Integration Connectors**: Pre-built adapters connecting Lyzr agents to Core Banking Mainframes (**Fiserv, FIS, Jack Henry, Temenos**), CRMs (**Salesforce FSC**), and Document Repositories (**SharePoint, S3**).
+### Layer 4: Templatized Banking Application Layer (`bank-manifest.json`)
+* **Declarative Skill Provisioning**: Micro-skill primitives activated out-of-the-box via a clean deployment manifest (`bank-manifest.json`).
+* **Pre-Packaged Banking Bundles**: Commercial Lending (Title Vetting, Spreading, Court Scout), Commercial Sales/RM (Pre-Meeting Dossiers), Ad Marketing Compliance (TILA/RESPA), Retail Operations (Garnishments/Probate), Risk & AML/KYC (UBO Tracing/SAR narratives).
 
 ---
 
