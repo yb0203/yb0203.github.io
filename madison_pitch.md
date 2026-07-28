@@ -28,7 +28,7 @@
 
 > **TL;DR**: Product Madison is an Enterprise Agentic Operating System built natively on the Lyzr Enterprise Stack. It transforms slow, document-heavy banking operations into autonomous, zero-hallucination, human-governed workflows—starting with high-value Commercial Lending and expanding horizontally into Commercial Sales, Marketing Compliance, Retail Ops, and AML/KYC across the US, Canada, and Europe ($10B–$50B+ AUM banks).
 
-### Mission Statement
+### Vision
 To establish **Product Madison** as the premier enterprise agentic product suite for banking—leveraging **Lyzr’s full-stack AI infrastructure** to automate high-friction financial workflows with 100% auditability, bank-grade PII isolation, and zero-hallucination PDF coordinate grounding.
 
 ### Core Motto
@@ -38,7 +38,9 @@ To establish **Product Madison** as the premier enterprise agentic product suite
 
 ## 🚀 2. Grounded Architecture: Powered by Lyzr Enterprise SDK & ADK
 
-Product Madison is built directly on top of official **Lyzr Enterprise Modules and SDK Primitives**:
+> **TL;DR**: A 4-layer modular architecture directly leveraging official Lyzr SDK primitives: `lyzr-automata` for DAG pipelines, `Lyzr ADK KnowledgeBase` & `Cognis` for vector/graph memory, `Lyzr RAI` for edge PII redaction, `Lyzr Governor` for Fed SR 11-7 compliance, and `Lyzr Agent Studio` for Private VPC deployment.
+
+Product Madison is constructed directly on top of official **Lyzr Enterprise Modules and SDK Primitives**:
 
 ```
  ┌──────────────────────────────────────────────────────────────────────────────────┐
@@ -96,6 +98,8 @@ Product Madison is built directly on top of official **Lyzr Enterprise Modules a
 
 ## 💎 3. Core Product Differentiators Grounded in Lyzr
 
+> **TL;DR**: 6 killer differentiators mapping Lyzr features to banking value: zero-hallucination PDF coordinate grounding, Approve-Before-Act Superflow cards, native Fed SR 11-7 Governor audit logging, Lyzr RAI edge PII redaction, Git-for-Agents VPC promotion, and Agent Simulation stress-testing.
+
 Product Madison turns native Lyzr enterprise primitives directly into high-value banking differentiators:
 
 ```
@@ -135,6 +139,8 @@ Product Madison turns native Lyzr enterprise primitives directly into high-value
 
 ## 🗺️ 4. The 6 BFSI Opportunity Pillars (Taxonomy)
 
+> **TL;DR**: An exhaustive banking taxonomy spanning 6 pillars: Commercial Lending (Title Vetting/Spreading), Commercial Sales & RM (Pre-Meeting Dossiers), Ad Marketing Compliance (TILA/RESPA), Retail Operations (Garnishments/Probate), Risk & AML/KYC (UBO Tracing/SAR narratives), and Wealth & Treasury (ISDA Master Agreements).
+
 | Pillar | Focus Area | High-ROI Lyzr AI Agent Modules |
 | :--- | :--- | :--- |
 | **1. Lending & Credit** | CRE, SME & Corporate Debt | **Title Vetting Agent** (Schedule B exceptions); **Financial Spreading Agent** (DSCR $\ge 1.25\times$); **Court Scout Agent** (PACER/foreclosures); **Contract Reconciliation Agent** (LSTA/LMA agreements). |
@@ -147,6 +153,8 @@ Product Madison turns native Lyzr enterprise primitives directly into high-value
 ---
 
 ## 🏗️ 5. Modular Assembly & FDE Delivery Engine (`bank-manifest.json`)
+
+> **TL;DR**: Templatizes micro-skill primitives into a single declarative deployment manifest (`bank-manifest.json`). Enables Forward-Deployed Engineers (FDEs) to execute `./scripts/clone-client.sh` and provision client-isolated Lyzr agent instances into private bank VPCs within 7 days.
 
 Product Madison treats every banking capability as a **Micro-Skill Primitive**. Bank administrators activate solution modules out-of-the-box via a single manifest (`bank-manifest.json`):
 
@@ -212,6 +220,8 @@ The script provisions a client-isolated Lyzr Agent Workspace, maps core mainfram
 
 ## 🗓️ 7. Near-Term, Mid-Term & Long-Term Execution Roadmap
 
+> **TL;DR**: Near-Term delivers the 21-day Commercial Lending Showcase App & FDE cloning scripts; Mid-Term executes 3 paid bank pilots ($50K–$100K PoCs) and audits SR 11-7 compliance; Long-Term & Enterprise Scaling expands horizontally to Sales/RM & AML modules across top 25 regional banks.
+
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │                                       NEAR-TERM, MID-TERM & LONG-TERM EXECUTION PLAN                                   │
@@ -222,7 +232,7 @@ The script provisions a client-isolated Lyzr Agent Workspace, maps core mainfram
 │ • Build & freeze 21-day  │ • Execute 3 Paid Bank    │ • Launch Sales/RM Co-    │ • Expand to UK/EU & Canada            │
 │   Commercial Lending     │   Pilots ($50K–$100K PoC)│   Pilot & AML/UBO Skill  │   registries (Companies House,        │
 │   Showcase Demo App      │ • Audit SR 11-7 Model    │   Bundles                │   PPSA, CERSAI)                       │
-│ • Develop FDE cloning    │   Risk Management with   │ • Formalize FDE Client   │ • Package direct API connectors       │
+│ • Develop FDE cloning    │   scripts (`clone.sh`)   │ • Formalize FDE Client   │ • Package direct API connectors       │
 │   scripts (`clone.sh`)   │   bank Model Validation  │   Onboarding Playbook    │   for Fiserv, FIS, Jack Henry         │
 │ • Write Sales Storyboard │ • Measure baseline KPIs  │ • Target Top 25 US       │ • Scale ARR & enterprise              │
 │   & Pitch Deck           │   (Disbursement speed)   │   Regional Banks         │   licensing seats                     │
@@ -232,6 +242,8 @@ The script provisions a client-isolated Lyzr Agent Workspace, maps core mainfram
 ---
 
 ## 🎯 8. Strategic Founder Alignment & Executive Directives
+
+> **TL;DR**: Four core founder directives locked in: Product Madison is a standalone configurable suite; resource allocation starts at 20% R&D / 80% FDE and shifts toward 100% R&D over time; Product Madison inherits Lyzr's native SOC-2 Type-2 & SR 11-7 compliance; SIs manage mainframe APIs while Lyzr licenses the product core.
 
 Product Madison's product strategy is aligned around the following 4 core executive principles:
 
@@ -247,5 +259,3 @@ Product Madison's product strategy is aligned around the following 4 core execut
 
 4. **System Integrator (SI) Partner Motion**:
    * Active co-selling with global banking SIs (Accenture Financial Services, Capgemini Banking, PwC, EY). SIs handle complex legacy core mainframe API integrations (Fiserv/FIS/Jack Henry), while Lyzr owns and licenses the Product Madison agentic software core.
-
-
