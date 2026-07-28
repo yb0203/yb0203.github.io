@@ -56,7 +56,7 @@
 >
 > Banks don't want generic AI wrappers; they need a configurable, bank-grade agentic AI software suite built on Private VPCs with 100% auditability and zero-hallucination PDF coordinate grounding. Our core operating motto is:
 >
-> 👉 *'Build the Core Once, Templatize Domain Skills, Deploy to Private VPCs in Days.'*
+> 👉 *"A Sovereign Agentic Operating System for Enterprise Banking"*
 >
 > Structurally, Madison's architecture bridges three layers:
 > 1. **The Bank Client & Officer Handshake**: Pausing at operational decision gates with interactive Co-Pilot Action Cards (`[ Approve ]`, `[ Edit ]`, `[ Reject ]`) via `Lyzr Superflow`, paired with a Grounded PDF Citation Viewer that draws exact bounding boxes (`x, y, w, h`) over source documents with 0% hallucination risk.

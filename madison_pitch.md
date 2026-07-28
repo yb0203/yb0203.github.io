@@ -31,7 +31,7 @@ Madison is an Enterprise Agentic Operating System built natively on the Lyzr Ent
 To establish **Madison** as the premier enterprise agentic product suite for banking—leveraging **Lyzr’s full-stack AI infrastructure** to automate high-friction financial workflows with 100% auditability, bank-grade PII isolation, and zero-hallucination PDF coordinate grounding.
 
 ### Core Motto
-> **"Build the Core Once, Templatize Domain Skills, Deploy to Private VPCs in Days."**
+> **"A Sovereign Agentic Operating System for Enterprise Banking"**
 
 ---
 

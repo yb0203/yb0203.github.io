@@ -32,7 +32,7 @@ To establish **Lyzr** as the definitive **Enterprise Agentic Operating System fo
 Build a scalable, extensible, and templatized AI Agent Product Engine that lands in high-value Commercial Lending and expands horizontally across Commercial Sales/RM, Marketing Compliance, Retail Operations, and Financial Crime (AML/KYC).
 
 ### Core Motto
-> **"Build the Core Once, Templatize Domain Skills, Deploy to Private VPCs in Days."**
+> **"A Sovereign Agentic Operating System for Enterprise Banking"**
 
 ---
 
