@@ -13,13 +13,12 @@
   - [Layer 1: Base Infrastructure & Enterprise Banking Connectors](#layer-1-base-infrastructure--enterprise-banking-connectors)
   - [Layer 2: Cross-Cutting Governance, Security & Compliance Stack](#layer-2-cross-cutting-governance-security--compliance-stack-sidecar-wrapper)
   - [Layer 3: Lyzr Agent Runtime Engine & Execution Core](#layer-3-lyzr-agent-runtime-engine--execution-core)
-  - [Layer 4: Templatized Banking Application Layer](#layer-4-templatized-banking-application-layer-bank-manifestjson)
+  - [Layer 4: Templatized Banking Application Layer](#layer-4-templatized-banking-application-layer)
 - [💎 3. Core Product Differentiators Grounded in Lyzr](#-3-core-product-differentiators-grounded-in-lyzr)
 - [🗺️ 4. The 6 BFSI Opportunity Pillars (Taxonomy)](#%EF%B8%8F-4-the-6-bfsi-opportunity-pillars-taxonomy)
-- [🏗️ 5. Modular Assembly & FDE Delivery Engine (`bank-manifest.json`)](#%EF%B8%8F-5-modular-assembly--fde-delivery-engine-bank-manifestjson)
-- [💼 6. Go-To-Market (GTM) Enterprise Sales Motions](#-6-go-to-market-gtm-enterprise-sales-motions)
-- [🗓️ 7. Near-Term, Mid-Term & Long-Term Execution Roadmap](#%EF%B8%8F-7-near-term-mid-term--long-term-execution-roadmap)
-- [❓ 8. Open Discussions & Strategic Alignment](#-8-open-discussions--strategic-alignment)
+- [💼 5. Go-To-Market (GTM) Enterprise Sales & Delivery Engine](#-5-go-to-market-gtm-enterprise-sales--delivery-engine)
+- [🗓️ 6. Near-Term, Mid-Term & Long-Term Execution Roadmap](#%EF%B8%8F-6-near-term-mid-term--long-term-execution-roadmap)
+- [❓ 7. Open Discussions & Strategic Alignment](#-7-open-discussions--strategic-alignment)
 
 ---
 
@@ -37,7 +36,7 @@ To establish **Madison** as the premier enterprise agentic product suite for ban
 
 ## 🚀 2. Grounded Architecture: Powered by Lyzr Enterprise SDK & ADK
 
-> **TL;DR**: An intuitive, enterprise 4-layer architecture: Layer 1 (Private VPC & Mainframe Core Connectors), Layer 2 (Cross-Cutting Lyzr RAI Edge Security, Superflow Approve-Before-Act gates, and Lyzr Governor SR 11-7 Audit Ledger), Layer 3 (Lyzr Agent Runtime Engine with `lyzr-automata` DAGs, `KnowledgeBase` RAG, `Cognis` memory, and deterministic rule fallbacks), and Layer 4 (Templatized Banking Applications activated via `bank-manifest.json`).
+> **TL;DR**: An intuitive, enterprise 4-layer architecture: Layer 1 (Private VPC & Mainframe Core Connectors), Layer 2 (Cross-Cutting Lyzr RAI Edge Security, Superflow Approve-Before-Act gates, and Lyzr Governor SR 11-7 Audit Ledger), Layer 3 (Lyzr Agent Runtime Engine with `lyzr-automata` DAGs, `KnowledgeBase` RAG, `Cognis` memory, and deterministic rule fallbacks), and Layer 4 (Templatized Banking Applications).
 
 Madison is constructed directly on top of official **Lyzr Enterprise Modules and SDK Primitives**:
 
@@ -47,7 +46,7 @@ Madison is constructed directly on top of official **Lyzr Enterprise Modules and
 ├──────────────────────────────────────────────────────────────────────────────────────────┤
 │                                                                                          │
 │ ┌──────────────────────────────────────────────────────────────────────────────────────┐ │
-│ │ LAYER 4: TEMPLATIZED BANKING APPLICATION LAYER (`bank-manifest.json`)                 │ │
+│ │ LAYER 4: TEMPLATIZED BANKING APPLICATION LAYER (Low-Code Declarative Skill Bundles)  │ │
 │ │  ┌─────────────────────┐  ┌──────────────────────┐  ┌───────────────────────────────┐  │ │
 │ │  │ Commercial Lending │  │ Commercial Sales/RM  │  │ Risk, AML & Retail Operations │  │ │
 │ │  └─────────────────────┘  └──────────────────────┘  └───────────────────────────────┘  │ │
@@ -88,8 +87,8 @@ Madison is constructed directly on top of official **Lyzr Enterprise Modules and
 * **Dual Context & Memory Engine**: `KnowledgeBase()` hybrid RAG (PDFs, 10-Ks, title commitments) paired with `Cognis` episodic and graph memory (`add/search/get-memories`).
 * **Hardcoded Deterministic Fallbacks**: Overrides LLMs with hardcoded Python rule engines for statutory legal date math (FDCPA 30-day cure, UK 21-day Companies House deadlines) and financial ratios ($\text{DSCR} \ge 1.25\times$) to guarantee zero math errors.
 
-### Layer 4: Templatized Banking Application Layer (`bank-manifest.json`)
-* **Declarative Skill Provisioning**: Micro-skill primitives activated out-of-the-box via a clean deployment manifest (`bank-manifest.json`).
+### Layer 4: Templatized Banking Application Layer
+* **Declarative Skill Provisioning**: Micro-skill primitives activated out-of-the-box via clean, low-code banking manifests.
 * **Pre-Packaged Banking Bundles**: Commercial Lending (Title Vetting, Spreading, Court Scout), Commercial Sales/RM (Pre-Meeting Dossiers), Ad Marketing Compliance (TILA/RESPA), Retail Operations (Garnishments/Probate), Risk & AML/KYC (UBO Tracing/SAR narratives).
 
 ---
@@ -119,7 +118,7 @@ Madison turns native Lyzr enterprise primitives directly into high-value banking
  │    (RAI Engine)         │ Data Privacy Shield       │ Data Privacy Compliance    │
  ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
  │ 5. Lyzr Git-for-Agents  │ Enterprise Promotion      │ Safe Dev ➔ Staging ➔ Prod  │
- │    Control Plane        │ Pipeline (`bank-manifest`)│ VPC Deployment Engine      │
+ │    Control Plane        │ Pipeline (VPC Manifest)   │ VPC Deployment Engine      │
  ├─────────────────────────┼───────────────────────────┼────────────────────────────┤
  │ 6. Lyzr Simulation      │ Pre-Deployment Banking    │ Stress-Testing Workflows   │
  │    Engine               │ Scenario Sandbox          │ Against 1,000+ Cases       │
@@ -130,7 +129,7 @@ Madison turns native Lyzr enterprise primitives directly into high-value banking
 2. **"Approve-Before-Act" Co-Pilot Action Cards** *(Powered by Lyzr Superflow Node Approvals)*: AI agents run in the background and pause at decision gates, surfacing interactive action cards with `[ Approve ]`, `[ Edit ]`, and `[ Reject ]` controls. Bank legal/credit officers retain 100% decision authority.
 3. **Native SR 11-7 Model Governance & Audit Ledger** *(Powered by Lyzr Governor)*: Maintains an immutable execution audit log (`Execution ID`, `Prompt Version`, `Model & Temp`, `Context Hash`, `Tool Parameters`, `Guardrail Flags`, `Human Sign-Off ID`) to pass Federal Reserve Model Validation Group (MVG) audits out-of-the-box.
 4. **Edge PII/NPI Isolation & Privacy Shield** *(Powered by Lyzr RAI Engine)*: Uses Lyzr RAI policies (`create_policy`) to scrub SSNs, Tax IDs, and account numbers at the local boundary before LLM inference (GLBA & OCC Bulletin 2023-17 compliant).
-5. **Git-for-Agents Enterprise Promotion Pipeline** *(Powered by Lyzr Agent Studio)*: Enables strict Dev $\rightarrow$ Staging $\rightarrow$ Production Private VPC promotion pipelines with version rollback for bank Forward-Deployed Engineers (`bank-manifest.json`).
+5. **Git-for-Agents Enterprise Promotion Pipeline** *(Powered by Lyzr Agent Studio)*: Enables strict Dev $\rightarrow$ Staging $\rightarrow$ Production Private VPC promotion pipelines with version rollback for bank Forward-Deployed Engineers.
 6. **Pre-Deployment Banking Scenario Sandbox** *(Powered by Lyzr Agent Simulation Engine)*: Pre-tests multi-agent banking workflows against thousands of synthetic stress-test scenarios before live client VPC deployment.
 
 ---
@@ -150,44 +149,9 @@ Madison turns native Lyzr enterprise primitives directly into high-value banking
 
 ---
 
-## 🏗️ 5. Modular Assembly & FDE Delivery Engine (`bank-manifest.json`)
+## 💼 5. Go-To-Market (GTM) Enterprise Sales & Delivery Engine
 
-> **TL;DR**: Templatizes micro-skill primitives into a single declarative deployment manifest (`bank-manifest.json`). Enables Forward-Deployed Engineers (FDEs) to execute `./scripts/clone-client.sh` and provision client-isolated Lyzr agent instances into private bank VPCs within 7 days.
-
-Madison treats every banking capability as a **Micro-Skill Primitive**. Bank administrators activate solution modules out-of-the-box via a single manifest (`bank-manifest.json`):
-
-```json
-{
-  "project": "Madison",
-  "bank_id": "us-regional-bank-01",
-  "deployment_mode": "private_vpc",
-  "lyzr_core_version": "2.4.0",
-  "active_modules": [
-    "module.commercial_lending_v2",
-    "module.commercial_sales_rm_v1",
-    "module.aml_ubo_tracing_v1",
-    "module.retail_garnishment_v1"
-  ],
-  "guardrails": {
-    "pii_redaction": true,
-    "mrm_sr11_7_ledger": true,
-    "human_in_the_loop": "mandatory"
-  }
-}
-```
-
-### Forward-Deployed Engineer (FDE) Client Handoff:
-Once a bank signs a PoC, FDEs execute a single command:
-```bash
-./scripts/clone-client.sh --config=bank-manifest.json --vpc=aws-us-east-1
-```
-The script provisions a client-isolated Lyzr Agent Workspace, maps core mainframe APIs (Fiserv/FIS/Salesforce FSC), connects client SSO (Okta), and deploys into the bank's **Private VPC in under 7 days**.
-
----
-
-## 💼 6. Go-To-Market (GTM) Enterprise Sales Motions
-
-> **TL;DR**: Madison scales across US, Canadian, and European commercial banks ($10B–$50B+ AUM) using 4 complementary sales channels: System Integrators (SIs), Hyperscaler Marketplace Co-Selling (AWS/Azure), Direct Outbound ABM, and Marketing Inbound Thought Leadership.
+> **TL;DR**: Madison scales across US, Canadian, and European commercial banks ($10B–$50B+ AUM) using 4 complementary sales channels: System Integrators (SIs), Hyperscaler Marketplace Co-Selling (AWS/Azure), Direct Outbound ABM, and Marketing Inbound Thought Leadership. Forward-Deployed Engineers (FDEs) execute rapid client VPC onboarding in under 7 days.
 
 ```
  ┌──────────────────────────────────────────────────────────────────────────────────┐
@@ -213,10 +177,11 @@ The script provisions a client-isolated Lyzr Agent Workspace, maps core mainfram
 2. **Via Hyperscaler Co-Sell & Cloud Marketplace (AWS / Azure / GCP)**: Co-sell with AWS Financial Services, Microsoft Azure for Financial Services, and GCP Banking. Listing Madison on AWS/Azure Marketplace allows bank CIOs to purchase software using pre-committed cloud spending accounts (AWS EDP / Azure MACC commits), shortening procurement cycles from 9 months to 3 weeks.
 3. **Direct Outbound Account-Based Marketing (ABM)**: High-touch outreach targeting Chief Credit Officers (CCOs), Chief Risk Officers (CROs), General Counsels, and Heads of Commercial Lending at $10B–$50B AUM regional banks with tailored benchmark reports.
 4. **Marketing Inbound Engine**: Executive thought leadership whitepapers, bank ROI calculators, SR 11-7 Model Risk Management compliance guides, and interactive web showcase demos driving inbound C-suite meeting requests.
+5. **Rapid FDE Client Onboarding**: Once a bank signs a PoC, Forward-Deployed Engineers (FDEs) use low-code configuration templates to map core mainframe APIs (Fiserv/FIS/Salesforce FSC), connect client SSO (Okta), and deploy into the bank's **Private VPC in under 7 days**.
 
 ---
 
-## 🗓️ 7. Near-Term, Mid-Term & Long-Term Execution Roadmap
+## 🗓️ 6. Near-Term, Mid-Term & Long-Term Execution Roadmap
 
 > **TL;DR**: Near-Term delivers the 21-day Commercial Lending Showcase App & FDE cloning scripts; Mid-Term executes 3 paid bank pilots ($50K–$100K PoCs) and audits SR 11-7 compliance; Long-Term & Enterprise Scaling expands horizontally to Sales/RM & AML modules across top 25 regional banks.
 
@@ -230,8 +195,8 @@ The script provisions a client-isolated Lyzr Agent Workspace, maps core mainfram
 │ • Build & freeze 21-day  │ • Execute 3 Paid Bank    │ • Launch Sales/RM Co-    │ • Expand to UK/EU & Canada            │
 │   Commercial Lending     │   Pilots ($50K–$100K PoC)│   Pilot & AML/UBO Skill  │   registries (Companies House,        │
 │   Showcase Demo App      │ • Audit SR 11-7 Model    │   Bundles                │   PPSA, CERSAI)                       │
-│ • Develop FDE cloning    │   scripts (`clone.sh`)   │ • Formalize FDE Client   │ • Package direct API connectors       │
-│   scripts (`clone.sh`)   │   bank Model Validation  │   Onboarding Playbook    │   for Fiserv, FIS, Jack Henry         │
+│ • Develop FDE cloning    │   scripts                │ • Formalize FDE Client   │ • Package direct API connectors       │
+│   scripts                │   bank Model Validation  │   Onboarding Playbook    │   for Fiserv, FIS, Jack Henry         │
 │ • Write Sales Storyboard │ • Measure baseline KPIs  │ • Target Top 25 US       │ • Scale ARR & enterprise              │
 │   & Pitch Deck           │   (Disbursement speed)   │   Regional Banks         │   licensing seats                     │
 └──────────────────────────┴──────────────────────────┴──────────────────────────┴───────────────────────────────────────┘
@@ -239,7 +204,7 @@ The script provisions a client-isolated Lyzr Agent Workspace, maps core mainfram
 
 ---
 
-## ❓ 8. Open Discussions & Strategic Alignment
+## ❓ 7. Open Discussions & Strategic Alignment
 
 > **TL;DR**: Four core recommended strategic principles for founder review: Madison as a standalone suite, initial 20% R&D / 80% FDE flywheel shifting to R&D-dominant scaling, inherited SOC-2 Type-2 & SR 11-7 compliance readiness, and active SI co-selling.
 
@@ -250,7 +215,7 @@ Madison's product strategy incorporates the following **4 recommended strategic 
 
 2. **[RECOMMENDED] 20% R&D / 80% FDE Resource Flywheel**:
    * **Phase 1 Launch**: Resource split is **20% Core Product R&D / 80% Forward-Deployed Engineering (FDE)**. FDEs capture real-world problem-solution feedback directly from client bank deployments and feed edge cases back to R&D.
-   * **Phase 2 Scale**: As banking domain skills are progressively templatized, the ratio shifts toward **R&D-dominant scaling**, where FDEs exclusively handle low-code YAML/JSON configurations (`bank-manifest.json`).
+   * **Phase 2 Scale**: As banking domain skills are progressively templatized, the ratio shifts toward **R&D-dominant scaling**, where FDEs exclusively handle low-code YAML/JSON configurations.
 
 3. **[RECOMMENDED] Inherited SOC-2 Type-2 & SR 11-7 Compliance Readiness**:
    * Lyzr natively possesses **SOC-2 Type-2 and HIPAA/Enterprise Security certifications**. Because Madison is built directly on top of the Lyzr Enterprise Stack (Lyzr Governor + Lyzr RAI), Madison **inherits SOC-2 Type-2 compliance out-of-the-box** and passes bank Model Validation Group (MVG) & Federal Reserve SR 11-7 audits on Day 1.
