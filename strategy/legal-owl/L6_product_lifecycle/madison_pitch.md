@@ -236,7 +236,7 @@ Madison turns native Lyzr enterprise primitives directly into high-value banking
 
 ## ❓ 7. Open Discussions & Strategic Alignment
 
-> **TL;DR**: Four core recommended strategic principles for founder review: Madison as a standalone suite, initial 20% R&D / 80% FDE flywheel shifting to R&D-dominant scaling, inherited SOC-2 Type-2 & SR 11-7 compliance readiness, and active SI co-selling.
+> **TL;DR**: Four core recommended strategic principles for internal leadership review: Madison as a standalone suite, initial 20% R&D / 80% FDE flywheel shifting to R&D-dominant scaling, inherited SOC-2 Type-2 & SR 11-7 compliance readiness, and active SI co-selling.
 
 Madison's product strategy incorporates the following **4 recommended strategic positions**:
 
