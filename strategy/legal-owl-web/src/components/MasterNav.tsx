@@ -7,6 +7,7 @@ export const MasterNav = () => {
         <span className="text-white/40 text-[10px] uppercase">US Banking Strategy</span>
       </div>
       <div className="flex items-center gap-1 sm:gap-2 flex-nowrap">
+        <a href="#madison-pitch" className="px-2.5 py-1.5 rounded bg-[#c59e5f]/20 text-[#c59e5f] font-bold hover:bg-[#c59e5f]/30 transition whitespace-nowrap">★ Project Madison Pitch</a>
         <a href="#overview" className="px-2.5 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">00. Hierarchy</a>
         <a href="#layer1" className="px-2.5 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">L1. Market & Regs</a>
         <a href="#layer2" className="px-2.5 py-1.5 rounded hover:text-white hover:bg-white/10 transition whitespace-nowrap">L2. Problem Space</a>

@@ -1,5 +1,6 @@
 import { MasterNav } from './components/MasterNav';
 import { HeroHeader } from './components/HeroHeader';
+import { MadisonMasterPitch } from './components/MadisonMasterPitch';
 import { StrategyLayersOverview } from './components/StrategyLayersOverview';
 import { Layer1MarketIntel } from './components/Layer1MarketIntel';
 import { Layer2ProblemSpace } from './components/Layer2ProblemSpace';
@@ -19,6 +20,7 @@ export function App() {
       <HeroHeader />
 
       <main className="max-w-6xl mx-auto px-4 sm:px-8 space-y-4">
+        <MadisonMasterPitch />
         <StrategyLayersOverview />
         <Layer1MarketIntel />
         <Layer2ProblemSpace />
