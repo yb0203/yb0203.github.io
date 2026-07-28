@@ -8,7 +8,6 @@ export const ExecutionRoadmap: React.FC = () => {
   const phases = [
     {
       badge: 'Phase 1: Near-Term',
-      variant: 'emerald' as const,
       subtitle: 'Showcase Demo & Templatization',
       items: [
         'Build and freeze 21-day Commercial Lending Showcase Demo App',
@@ -18,7 +17,6 @@ export const ExecutionRoadmap: React.FC = () => {
     },
     {
       badge: 'Phase 2: Mid-Term',
-      variant: 'indigo' as const,
       subtitle: 'Paid Bank Pilots & Model Governance',
       items: [
         'Execute 3 Paid Bank Pilots ($50K–$100K PoCs)',
@@ -28,7 +26,6 @@ export const ExecutionRoadmap: React.FC = () => {
     },
     {
       badge: 'Phase 3: Long-Term',
-      variant: 'purple' as const,
       subtitle: 'Horizontal Expansion & FDE Engine',
       items: [
         'Launch Sales/RM Co-Pilot & AML/UBO Skill Bundles',
@@ -38,7 +35,6 @@ export const ExecutionRoadmap: React.FC = () => {
     },
     {
       badge: 'Phase 4: Scaling',
-      variant: 'cyan' as const,
       subtitle: 'Global Market Expansion',
       items: [
         'Expand to UK/EU & Canada public registries',
@@ -49,7 +45,7 @@ export const ExecutionRoadmap: React.FC = () => {
   ];
 
   return (
-    <section className="space-y-6 pb-10 border-b border-slate-800/80">
+    <section className="space-y-6 pb-10 border-b border-[#281c17]">
       <SectionHeader 
         id="roadmap"
         number="06"
@@ -62,10 +58,10 @@ export const ExecutionRoadmap: React.FC = () => {
         {phases.map((p, i) => (
           <Card key={i} className="space-y-2">
             <div className="flex items-center justify-between">
-              <Badge variant={p.variant}>{p.badge}</Badge>
-              <span className="text-xs font-mono text-slate-500">{p.subtitle}</span>
+              <Badge variant="coral">{p.badge}</Badge>
+              <span className="text-xs font-mono text-[#a89f9b]">{p.subtitle}</span>
             </div>
-            <ul className="text-xs text-slate-300 space-y-1 list-disc list-inside pt-1">
+            <ul className="text-xs text-[#c4bbb7] space-y-1.5 list-disc list-inside pt-1">
               {p.items.map((item, idx) => (
                 <li key={idx}>{item}</li>
               ))}

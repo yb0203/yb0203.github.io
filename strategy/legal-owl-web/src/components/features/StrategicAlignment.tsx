@@ -36,10 +36,10 @@ export const StrategicAlignment: React.FC = () => {
 
       <div className="space-y-4">
         {directives.map((d, i) => (
-          <Card key={i} className="border-emerald-500/30 space-y-1.5">
-            <Badge variant="emerald">[RECOMMENDED]</Badge>
-            <h3 className="text-sm font-bold text-white pt-1">{d.title}</h3>
-            <p className="text-xs text-slate-300 leading-relaxed">{d.description}</p>
+          <Card key={i} glow className="space-y-2 border-[#e26a45]/30">
+            <Badge variant="terra">[RECOMMENDED]</Badge>
+            <h3 className="text-base font-bold text-white font-serif pt-1">{d.title}</h3>
+            <p className="text-xs text-[#c4bbb7] leading-relaxed">{d.description}</p>
           </Card>
         ))}
       </div>

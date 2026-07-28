@@ -6,21 +6,21 @@ interface SectionHeaderProps {
   number: string;
   title: string;
   subtitle?: string;
-  icon: LucideIcon;
+  icon?: LucideIcon;
 }
 
-export const SectionHeader: React.FC<SectionHeaderProps> = ({ id, number, title, subtitle, icon: Icon }) => {
+export const SectionHeader: React.FC<SectionHeaderProps> = ({ id, number, title, subtitle }) => {
   return (
-    <div id={id} className="space-y-1.5 scroll-mt-20">
-      <div className="flex items-center gap-2 text-emerald-400 font-semibold text-xs uppercase tracking-wider font-mono">
-        <Icon className="w-4 h-4 text-emerald-400" />
-        Section {number}
+    <div id={id} className="space-y-1.5 scroll-mt-24">
+      <div className="flex items-center gap-2 text-[#e26a45] font-mono text-xs font-bold tracking-widest uppercase">
+        <span className="w-1.5 h-1.5 rounded-full bg-[#e26a45] inline-block"></span>
+        LAYER {number}
       </div>
-      <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+      <h2 className="text-2xl sm:text-4xl font-serif font-normal text-white tracking-tight leading-tight">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-sm text-slate-400">
+        <p className="text-sm text-[#a89f9b] font-normal leading-relaxed">
           {subtitle}
         </p>
       )}

@@ -45,7 +45,7 @@ export const Differentiators: React.FC = () => {
   ];
 
   return (
-    <section className="space-y-6 pb-10 border-b border-slate-800/80">
+    <section className="space-y-6 pb-10 border-b border-[#281c17]">
       <SectionHeader 
         id="differentiators"
         number="03"
@@ -56,13 +56,13 @@ export const Differentiators: React.FC = () => {
 
       <div className="space-y-4">
         {diffs.map((item, i) => (
-          <Card key={i} glow className="space-y-1.5">
+          <Card key={i} glow className="space-y-2">
             <div className="flex items-center justify-between">
-              <Badge variant="emerald">{item.badge}</Badge>
-              <span className="text-xs text-slate-500 font-mono">{item.tag}</span>
+              <Badge variant="coral">{item.badge}</Badge>
+              <span className="text-xs text-[#a89f9b] font-mono">{item.tag}</span>
             </div>
-            <h3 className="text-base font-bold text-white pt-1">{item.title}</h3>
-            <p className="text-xs text-slate-300 leading-relaxed">{item.description}</p>
+            <h3 className="text-base font-bold text-white pt-1 font-serif">{item.title}</h3>
+            <p className="text-xs text-[#c4bbb7] leading-relaxed">{item.description}</p>
           </Card>
         ))}
       </div>

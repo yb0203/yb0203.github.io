@@ -4,7 +4,7 @@ import { SectionHeader } from '../ui/SectionHeader';
 
 export const ArchitectureHarness: React.FC = () => {
   return (
-    <section className="space-y-6 pb-10 border-b border-slate-800/80">
+    <section className="space-y-6 pb-10 border-b border-[#281c17]">
       <SectionHeader 
         id="architecture"
         number="02"
@@ -13,80 +13,80 @@ export const ArchitectureHarness: React.FC = () => {
         icon={Cpu}
       />
 
-      <div className="p-6 sm:p-8 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-6">
-        <div className="flex items-center justify-between border-b border-slate-800 pb-4 text-xs">
-          <span className="font-mono text-emerald-400 font-bold uppercase">MADISON ENTERPRISE ARCHITECTURE HARNESS</span>
-          <span className="text-slate-400">Single-Tenant Bank Private VPC</span>
+      <div className="p-6 sm:p-8 rounded-2xl bg-[#18100c]/90 border border-[#33221b] space-y-6 shadow-2xl">
+        <div className="flex items-center justify-between border-b border-[#33221b] pb-4 text-xs font-mono">
+          <span className="text-[#e26a45] font-bold uppercase tracking-wider">MADISON ENTERPRISE HARNESS ARCHITECTURE</span>
+          <span className="text-[#a89f9b]">Single-Tenant Bank Private VPC</span>
         </div>
 
         {/* Handshake Layer */}
-        <div className="p-5 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
-          <div className="flex items-center gap-2 text-emerald-400 font-bold text-xs uppercase tracking-wider">
-            <Workflow className="w-4 h-4" />
+        <div className="p-5 rounded-xl bg-[#211410] border border-[#442217] space-y-2">
+          <div className="flex items-center gap-2 text-[#ff7a59] font-bold text-xs uppercase font-mono tracking-wider">
+            <Workflow className="w-4 h-4 text-[#e26a45]" />
             1. Bank Client & Officer Interaction Handshake (Human-in-the-Loop)
           </div>
-          <ul className="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+          <ul className="text-xs text-[#c4bbb7] space-y-1.5 list-disc list-inside">
             <li>Bank Officer Interface & Co-Pilot Action Cards (`[ Approve ]`, `[ Edit ]`, `[ Reject ]`) via Lyzr Superflow</li>
             <li>Grounded PDF Citation Viewer & Highlighted Bounding Boxes (`x, y, w, h`) with 0% hallucination risk</li>
           </ul>
         </div>
 
         {/* Application Modules Layer */}
-        <div className="p-5 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
-          <div className="flex items-center gap-2 text-indigo-400 font-bold text-xs uppercase tracking-wider">
-            <Building2 className="w-4 h-4" />
+        <div className="p-5 rounded-xl bg-[#211410] border border-[#442217] space-y-3">
+          <div className="flex items-center gap-2 text-[#ff7a59] font-bold text-xs uppercase font-mono tracking-wider">
+            <Building2 className="w-4 h-4 text-[#e26a45]" />
             2. Templatized BFSI Application Modules
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 text-xs">
-            <div className="p-3 rounded bg-slate-900 border border-slate-800">
-              <strong className="text-white block mb-0.5">Commercial Lending</strong>
-              <span className="text-slate-400">Title Exceptions, DSCR Spreading, Court Scout</span>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+            <div className="p-3 rounded-lg bg-[#140d0a] border border-[#33221b]">
+              <strong className="text-white block mb-0.5 font-serif">Commercial Lending</strong>
+              <span className="text-[#a89f9b]">Title Exceptions, DSCR Spreading, Court Scout</span>
             </div>
-            <div className="p-3 rounded bg-slate-900 border border-slate-800">
-              <strong className="text-white block mb-0.5">Commercial Sales / RM</strong>
-              <span className="text-slate-400">Pre-Meeting Dossiers, Deal Structuring</span>
+            <div className="p-3 rounded-lg bg-[#140d0a] border border-[#33221b]">
+              <strong className="text-white block mb-0.5 font-serif">Commercial Sales / RM</strong>
+              <span className="text-[#a89f9b]">Pre-Meeting Dossiers, Deal Structuring</span>
             </div>
-            <div className="p-3 rounded bg-slate-900 border border-slate-800">
-              <strong className="text-white block mb-0.5">Risk, AML & Retail Ops</strong>
-              <span className="text-slate-400">UBO Tracing, SAR Narratives, Garnishments</span>
+            <div className="p-3 rounded-lg bg-[#140d0a] border border-[#33221b]">
+              <strong className="text-white block mb-0.5 font-serif">Risk, AML & Retail Ops</strong>
+              <span className="text-[#a89f9b]">UBO Tracing, SAR Narratives, Garnishments</span>
             </div>
           </div>
         </div>
 
         {/* Lyzr Harness Core Loop */}
-        <div className="p-5 rounded-xl bg-slate-950 border border-emerald-500/30 space-y-4">
-          <div className="flex items-center justify-between border-b border-slate-800 pb-2 text-xs">
-            <div className="flex items-center gap-2 text-emerald-400 font-bold uppercase tracking-wider">
-              <Lock className="w-4 h-4" />
+        <div className="p-5 rounded-xl bg-[#211410] border border-[#e26a45]/40 space-y-4 shadow-lg">
+          <div className="flex items-center justify-between border-b border-[#33221b] pb-2 text-xs">
+            <div className="flex items-center gap-2 text-[#ff7a59] font-bold uppercase font-mono tracking-wider">
+              <Lock className="w-4 h-4 text-[#e26a45]" />
               3. Lyzr Governor & Agentic Harness Loop Core
             </div>
-            <span className="font-mono text-slate-400">Fed SR 11-7 MRM Audit Ledger</span>
+            <span className="font-mono text-[#a89f9b]">Fed SR 11-7 MRM Audit Ledger</span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-            <div className="p-3.5 rounded-lg bg-slate-900 border border-slate-800 space-y-1">
-              <strong className="text-emerald-400 flex items-center gap-1.5 font-mono">
-                <Cpu className="w-3.5 h-3.5" /> 1. Model (Brain)
+            <div className="p-3.5 rounded-lg bg-[#140d0a] border border-[#33221b] space-y-1">
+              <strong className="text-[#ff7a59] flex items-center gap-1.5 font-mono">
+                <Cpu className="w-3.5 h-3.5 text-[#e26a45]" /> 1. Model (Brain)
               </strong>
-              <p className="text-slate-400">• Lyzr ADK `Agent()`, Multi-LLM Router, `Task()` graph</p>
+              <p className="text-[#a89f9b]">• Lyzr ADK `Agent()`, Multi-LLM Router, `Task()` graph</p>
             </div>
-            <div className="p-3.5 rounded-lg bg-slate-900 border border-slate-800 space-y-1">
-              <strong className="text-cyan-400 flex items-center gap-1.5 font-mono">
-                <Zap className="w-3.5 h-3.5" /> 2. Action ➔ Tools / Sandbox
+            <div className="p-3.5 rounded-lg bg-[#140d0a] border border-[#33221b] space-y-1">
+              <strong className="text-[#ff7a59] flex items-center gap-1.5 font-mono">
+                <Zap className="w-3.5 h-3.5 text-[#e26a45]" /> 2. Action ➔ Tools / Sandbox
               </strong>
-              <p className="text-slate-400">• Lyzr Superflow Node Approvals, E2B Sandbox, Core APIs</p>
+              <p className="text-[#a89f9b]">• Lyzr Superflow Node Approvals, E2B Sandbox, Core APIs</p>
             </div>
-            <div className="p-3.5 rounded-lg bg-slate-900 border border-slate-800 space-y-1">
-              <strong className="text-purple-400 flex items-center gap-1.5 font-mono">
-                <Database className="w-3.5 h-3.5" /> 3. Context & Memory
+            <div className="p-3.5 rounded-lg bg-[#140d0a] border border-[#33221b] space-y-1">
+              <strong className="text-[#ff7a59] flex items-center gap-1.5 font-mono">
+                <Database className="w-3.5 h-3.5 text-[#e26a45]" /> 3. Context & Memory
               </strong>
-              <p className="text-slate-400">• Lyzr ADK Hybrid RAG, Lyzr Cognis Memory Engine</p>
+              <p className="text-[#a89f9b]">• Lyzr ADK Hybrid RAG, Lyzr Cognis Memory Engine</p>
             </div>
-            <div className="p-3.5 rounded-lg bg-slate-900 border border-slate-800 space-y-1">
-              <strong className="text-indigo-400 flex items-center gap-1.5 font-mono">
-                <Eye className="w-3.5 h-3.5" /> 4. Observation & Grounding
+            <div className="p-3.5 rounded-lg bg-[#140d0a] border border-[#33221b] space-y-1">
+              <strong className="text-[#ff7a59] flex items-center gap-1.5 font-mono">
+                <Eye className="w-3.5 h-3.5 text-[#e26a45]" /> 4. Observation & Grounding
               </strong>
-              <p className="text-slate-400">• PDF Bounding-Box Overlay (`x,y,w,h`), Lyzr RAI PII Shield</p>
+              <p className="text-[#a89f9b]">• PDF Bounding-Box Overlay (`x,y,w,h`), Lyzr RAI PII Shield</p>
             </div>
           </div>
         </div>

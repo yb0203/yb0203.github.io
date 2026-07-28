@@ -2,22 +2,20 @@ import React from 'react';
 
 interface BadgeProps {
   children: React.ReactNode;
-  variant?: 'emerald' | 'cyan' | 'indigo' | 'purple' | 'amber' | 'slate';
+  variant?: 'coral' | 'terra' | 'muted' | 'outline';
   className?: string;
 }
 
-export const Badge: React.FC<BadgeProps> = ({ children, variant = 'emerald', className = '' }) => {
+export const Badge: React.FC<BadgeProps> = ({ children, variant = 'coral', className = '' }) => {
   const variantStyles = {
-    emerald: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
-    cyan: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20',
-    indigo: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20',
-    purple: 'bg-purple-500/10 text-purple-400 border-purple-500/20',
-    amber: 'bg-amber-500/10 text-amber-400 border-amber-500/20',
-    slate: 'bg-slate-800 text-slate-300 border-slate-700',
+    coral: 'bg-[#e26a45]/15 text-[#ff7a59] border-[#e26a45]/30',
+    terra: 'bg-[#442217]/60 text-[#e26a45] border-[#e26a45]/40',
+    muted: 'bg-white/5 text-[#a89f9b] border-white/10',
+    outline: 'bg-transparent text-white/80 border-white/20',
   };
 
   return (
-    <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 text-[11px] font-mono font-medium border rounded-md ${variantStyles[variant]} ${className}`}>
+    <span className={`inline-flex items-center gap-1.5 px-3 py-1 text-xs font-mono font-medium border rounded-full ${variantStyles[variant]} ${className}`}>
       {children}
     </span>
   );

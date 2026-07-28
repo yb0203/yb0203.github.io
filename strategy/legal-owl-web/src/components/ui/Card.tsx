@@ -8,7 +8,7 @@ interface CardProps {
 
 export const Card: React.FC<CardProps> = ({ children, className = '', glow = false }) => {
   return (
-    <div className={`p-6 rounded-xl bg-slate-900/60 border border-slate-800 transition duration-200 hover:border-slate-700 ${glow ? 'hover:border-emerald-500/30 hover:shadow-lg hover:shadow-emerald-500/5' : ''} ${className}`}>
+    <div className={`p-6 sm:p-7 rounded-2xl bg-[#18100c]/90 border border-[#33221b] transition-all duration-300 hover:border-[#e26a45]/40 hover:shadow-xl hover:shadow-[#e26a45]/5 ${glow ? 'border-[#e26a45]/30 bg-gradient-to-b from-[#211410] to-[#160d0a]' : ''} ${className}`}>
       {children}
     </div>
   );
