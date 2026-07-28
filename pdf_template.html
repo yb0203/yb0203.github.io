@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Madison — Executive Master Brief</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 12mm 14mm 12mm 14mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: #0f172a;
+      background: #ffffff;
+      font-size: 9.5pt;
+      line-height: 1.45;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    
+    /* Header Section */
+    .header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .brand-title {
+      font-size: 20pt;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #0f172a;
+      line-height: 1;
+    }
+    .brand-subtitle {
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: #2563eb;
+      margin-top: 4px;
+    }
+    .meta-badge {
+      font-size: 7.5pt;
+      font-family: 'JetBrains Mono', monospace;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 4px 8px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+      text-align: right;
+    }
+    
+    /* Motto Banner */
+    .motto-banner {
+      background: #eff6ff;
+      border-left: 4px solid #2563eb;
+      padding: 8px 12px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 14px;
+    }
+    .motto-text {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #1e40af;
+    }
+
+    /* Section Styling */
+    .section-title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-top: 12px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    
+    /* Two Column Grid */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 10px;
+    }
+    .card-title {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+    }
+    
+    /* Architecture Diagram Box */
+    .arch-box {
+      background: #0f172a;
+      color: #f8fafc;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+      font-size: 8.5pt;
+    }
+    .arch-header {
+      color: #38bdf8;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 8pt;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .arch-layer {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 5px;
+      padding: 6px 8px;
+      margin-bottom: 6px;
+    }
+    .arch-layer-title {
+      font-weight: 700;
+      color: #60a5fa;
+      font-size: 8pt;
+    }
+    .arch-loop-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .arch-loop-item {
+      background: #090d16;
+      border: 1px solid #1e293b;
+      border-radius: 4px;
+      padding: 5px 7px;
+      font-size: 7.5pt;
+    }
+
+    /* Differentiators Grid */
+    .diff-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .diff-card {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 7px 9px;
+    }
+    .diff-badge {
+      font-size: 6.5pt;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 1px 4px;
+      border-radius: 3px;
+      display: inline-block;
+      margin-bottom: 3px;
+    }
+    .diff-title {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 2px;
+    }
+    .diff-desc {
+      font-size: 7.5pt;
+      color: #475569;
+      line-height: 1.35;
+    }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8pt;
+      margin-bottom: 10px;
+    }
+    th {
+      background: #f1f5f9;
+      color: #334155;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 7pt;
+      padding: 5px 8px;
+      border: 1px solid #cbd5e1;
+      text-align: left;
+    }
+    td {
+      padding: 5px 8px;
+      border: 1px solid #e2e8f0;
+      color: #1e293b;
+    }
+    
+    /* GTM 5-Channel Grid */
+    .gtm-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .gtm-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 6px;
+      font-size: 7.5pt;
+    }
+    .gtm-title {
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 2px;
+      font-size: 7.5pt;
+    }
+
+    /* Roadmap & Directives Grid */
+    .flex-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .roadmap-card {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 5px;
+      padding: 6px;
+      font-size: 7.5pt;
+    }
+    
+    /* Alignment Badges */
+    .directive-card {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 6px;
+      padding: 7px 9px;
+      font-size: 7.5pt;
+    }
+    .directive-title {
+      font-weight: 700;
+      color: #166534;
+      margin-bottom: 2px;
+    }
+
+    .footer {
+      border-top: 1px solid #e2e8f0;
+      padding-top: 6px;
+      margin-top: 14px;
+      font-size: 7pt;
+      color: #94a3b8;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div>
+      <div class="brand-title">MADISON</div>
+      <div class="brand-subtitle">A Sovereign Agentic Operating System for Enterprise Banking</div>
+    </div>
+    <div class="meta-badge">
+      <div>EXECUTIVE BRIEF</div>
+      <div>Target Markets: US, CA, UK & EU</div>
+      <div>Lyzr Enterprise Stack</div>
+    </div>
+  </div>
+
+  <!-- Motto Banner -->
+  <div class="motto-banner">
+    <div class="motto-text">"A Sovereign Agentic Operating System for Enterprise Banking"</div>
+  </div>
+
+  <!-- 1. Executive Summary -->
+  <div class="section-title">🎯 1. Executive Summary & Strategic Vision</div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">Executive Overview</div>
+      <p style="font-size: 8pt; color: #334155;">
+        Madison is an Enterprise Agentic OS built natively on the Lyzr Stack. It transforms slow, document-heavy banking workflows into autonomous, zero-hallucination, human-governed execution pipelines—starting with high-value Commercial Lending and expanding into Commercial Sales, Marketing Compliance, Retail Ops, and AML/KYC ($10B–$50B+ AUM banks).
+      </p>
+    </div>
+    <div class="card">
+      <div class="card-title">Strategic Vision</div>
+      <p style="font-size: 8pt; color: #334155;">
+        To establish <strong>Madison</strong> as the premier enterprise agentic product suite for banking—leveraging Lyzr’s full-stack AI infrastructure to automate high-friction financial workflows with 100% auditability, bank-grade PII isolation, and zero-hallucination PDF coordinate grounding.
+      </p>
+    </div>
+  </div>
+
+  <!-- 2. Grounded Architecture -->
+  <div class="section-title">🚀 2. Grounded Architecture (Powered by Lyzr Stack)</div>
+  <div class="arch-box">
+    <div class="arch-header">
+      <span>MADISON ARCHITECTURE HARNESS</span>
+      <span>SINGLE-TENANT BANK PRIVATE VPC</span>
+    </div>
+    
+    <!-- Handshake Layer -->
+    <div class="arch-layer">
+      <div class="arch-layer-title">🤝 1. BANK CLIENT & OFFICER HANDSHAKE (HUMAN-IN-THE-LOOP)</div>
+      <div style="color: #cbd5e1; margin-top: 2px;">
+        • Interactive Co-Pilot Action Cards (`[ Approve ]`, `[ Edit ]`, `[ Reject ]`) via Lyzr Superflow Node Approvals<br>
+        • Grounded PDF Citation Viewer highlighting exact bounding-box coordinates (`x, y, w, h`)
+      </div>
+    </div>
+
+    <!-- Application Modules Layer -->
+    <div class="arch-layer" style="background: #172554; border-color: #1e40af;">
+      <div class="arch-layer-title" style="color: #93c5fd;">🏦 2. TEMPLATIZED BFSI APPLICATION MODULES</div>
+      <div style="color: #dbeafe; margin-top: 2px;">
+        Commercial Lending (Title/DSCR) | Commercial Sales/RM (Dossiers) | Risk, AML & Retail Ops (UBO/SAR/Garnishments)
+      </div>
+    </div>
+
+    <!-- Lyzr Harness Core Loop -->
+    <div style="background: #022c22; border: 1px solid #065f46; border-radius: 5px; padding: 6px 8px;">
+      <div class="arch-layer-title" style="color: #6ee7b7;">🛡️ 3. LYZR GOVERNOR & AGENTIC HARNESS LOOP CORE (Fed SR 11-7 MRM Audit Ledger)</div>
+      <div class="arch-loop-grid">
+        <div class="arch-loop-item">
+          <strong style="color: #818cf8;">🧠 1. Model (Brain)</strong><br>
+          Lyzr ADK `Agent()`, Multi-LLM Router, `Task()` graph
+        </div>
+        <div class="arch-loop-item">
+          <strong style="color: #34d399;">🛠️ 2. Action / Tools</strong><br>
+          Superflow Node Approvals, E2B Sandbox, Core APIs
+        </div>
+        <div class="arch-loop-item">
+          <strong style="color: #c084fc;">💾 3. Context & Memory</strong><br>
+          Lyzr ADK Hybrid RAG, Lyzr Cognis Memory Engine
+        </div>
+        <div class="arch-loop-item">
+          <strong style="color: #22d3ee;">👁️ 4. Observation & Grounding</strong><br>
+          PDF Bounding-Box (`x,y,w,h`), Lyzr RAI PII Shield
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Differentiators -->
+  <div class="section-title">💎 3. Core Product Differentiators Grounded in Lyzr</div>
+  <div class="diff-grid">
+    <div class="diff-card">
+      <span class="diff-badge">LYZR KB + STRUCTURED</span>
+      <div class="diff-title">1. PDF Citation Bounding-Box</div>
+      <div class="diff-desc">Visual `x,y,w,h` coordinates overlay on PDFs. 0% LLM hallucination risk with verifiable proof.</div>
+    </div>
+    <div class="diff-card">
+      <span class="diff-badge">SUPERFLOW APPROVALS</span>
+      <div class="diff-title">2. Approve-Before-Act Cards</div>
+      <div class="diff-desc">Surfaces `[ Approve ]`, `[ Edit ]`, `[ Reject ]` action cards for bank officer sign-off.</div>
+    </div>
+    <div class="diff-card">
+      <span class="diff-badge">LYZR GOVERNOR</span>
+      <div class="diff-title">3. Fed SR 11-7 Audit Ledger</div>
+      <div class="diff-desc">Immutable audit logging (`Execution ID`, `Context Hash`, `Tool Params`) for Fed MVG approval.</div>
+    </div>
+    <div class="diff-card">
+      <span class="diff-badge">LYZR RAI ENGINE</span>
+      <div class="diff-title">4. Edge PII Privacy Shield</div>
+      <div class="diff-desc">Scubs SSNs, Tax IDs, and NPI data locally before LLM inference (GLBA & OCC compliant).</div>
+    </div>
+    <div class="diff-card">
+      <span class="diff-badge">AGENT STUDIO</span>
+      <div class="diff-title">5. Git-for-Agents Pipeline</div>
+      <div class="diff-desc">Governs strict Dev ➔ Staging ➔ Prod VPC promotion pipelines for bank FDE engineers.</div>
+    </div>
+    <div class="diff-card">
+      <span class="diff-badge">SIMULATION ENGINE</span>
+      <div class="diff-title">6. Scenario Sandbox</div>
+      <div class="diff-desc">Pre-tests multi-agent banking workflows against 1,000+ synthetic stress-test scenarios.</div>
+    </div>
+  </div>
+
+  <!-- 4. BFSI Pillars & GTM Engine -->
+  <div class="section-title">🗺️ 4. The 6 BFSI Pillars & 5-Channel GTM Sales Engine</div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 25%;">Pillar</th>
+        <th style="width: 25%;">Focus Area</th>
+        <th>High-ROI Lyzr Agent Modules</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1. Lending & Credit</strong></td>
+        <td>CRE, SME & Corporate Debt</td>
+        <td>Title Vetting Agent; Financial Spreading Agent (DSCR ≥ 1.25×); Court Scout Agent.</td>
+      </tr>
+      <tr>
+        <td><strong>2. Commercial Sales/RM</strong></td>
+        <td>RM Productivity & Origination</td>
+        <td>Pre-Meeting Customer Dossiers (SEC 10-K); Deal Structuring Co-Pilot.</td>
+      </tr>
+      <tr>
+        <td><strong>3. Marketing & Growth</strong></td>
+        <td>Acquisition & Compliance</td>
+        <td>Ad Regulatory Compliance Agent (TILA, RESPA, CFPB rules).</td>
+      </tr>
+      <tr>
+        <td><strong>4. Retail Operations</strong></td>
+        <td>Branch & Customer Servicing</td>
+        <td>Garnishment & Levy Execution Agent; Deceased Account Probate Agent.</td>
+      </tr>
+      <tr>
+        <td><strong>5. Risk & AML/KYC</strong></td>
+        <td>Financial Crime & GRC</td>
+        <td>UBO Tracing Agent (unwrapping shell webs to ≥ 10% owners); SAR Narrative Writer.</td>
+      </tr>
+      <tr>
+        <td><strong>6. Wealth & Treasury</strong></td>
+        <td>Private Banking & Hedging</td>
+        <td>ISDA & CSA Master Agreement Auditor; Daily Margin Call Agent.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- GTM Grid -->
+  <div class="gtm-grid">
+    <div class="gtm-card">
+      <div class="gtm-title">1. Legal & Advisory</div>
+      <div>Law firms & consultancies pitch/co-sell Madison.</div>
+    </div>
+    <div class="gtm-card">
+      <div class="gtm-title">2. System Integrators</div>
+      <div>SIs (Accenture/EY) manage legacy core APIs.</div>
+    </div>
+    <div class="gtm-card">
+      <div class="gtm-title">3. Cloud Marketplace</div>
+      <div>AWS/Azure EDP spend drawdown co-selling.</div>
+    </div>
+    <div class="gtm-card">
+      <div class="gtm-title">4. Outbound ABM</div>
+      <div>Direct CCO & General Counsel C-suite outreach.</div>
+    </div>
+    <div class="gtm-card">
+      <div class="gtm-title">5. Inbound Marketing</div>
+      <div>SR 11-7 whitepapers & ROI calculators.</div>
+    </div>
+  </div>
+
+  <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 6px 10px; border-radius: 5px; font-size: 8pt; margin-bottom: 10px;">
+    ⚡ <strong>Rapid Client Delivery:</strong> Forward-Deployed Engineers (FDEs) use low-code YAML/JSON configurations to onboard client banks in <strong>under 7 days</strong>.
+  </div>
+
+  <!-- 5. Roadmap & Directives -->
+  <div class="section-title">🗓️ 5. Execution Roadmap & Recommended Directives</div>
+  <div class="flex-grid-4">
+    <div class="roadmap-card">
+      <strong style="color: #15803d;">Phase 1: Near-Term</strong><br>
+      21-day Commercial Lending Showcase App & FDE scripts.
+    </div>
+    <div class="roadmap-card">
+      <strong style="color: #1d4ed8;">Phase 2: Mid-Term</strong><br>
+      3 Paid Bank Pilots ($50K-$100K PoCs) & Fed SR 11-7 approval.
+    </div>
+    <div class="roadmap-card">
+      <strong style="color: #6b21a8;">Phase 3: Long-Term</strong><br>
+      Launch Sales/RM & AML bundles; Target Top 25 Banks.
+    </div>
+    <div class="roadmap-card">
+      <strong style="color: #0e7490;">Phase 4: Scale</strong><br>
+      Global UK/EU/CA expansion & scale ARR licensing seats.
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="directive-card">
+      <div class="directive-title">[RECOMMENDED] Standalone Product Packaging</div>
+      <div>Configurable standalone agentic AI software suite with native mainframe connectors.</div>
+    </div>
+    <div class="directive-card">
+      <div class="directive-title">[RECOMMENDED] 20% R&D / 80% FDE Resource Flywheel</div>
+      <div>Phase 1 FDE-led feedback loop shifting to R&D-dominant low-code scaling in Phase 2.</div>
+    </div>
+    <div class="directive-card">
+      <div class="directive-title">[RECOMMENDED] Inherited SOC-2 & SR 11-7 Readiness</div>
+      <div>Inherits Lyzr's native SOC-2 Type-2 & HIPAA certifications out-of-the-box on Day 1.</div>
+    </div>
+    <div class="directive-card">
+      <div class="directive-title">[RECOMMENDED] SI & Partner Co-Sell Motion</div>
+      <div>Active co-selling with global SIs & legal partners who handle core API integrations.</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span>Project Madison — Executive Strategy Specification</span>
+    <span>Grounded in Official Lyzr Enterprise Stack Primitives</span>
+  </div>
+
+</body>
+</html>
