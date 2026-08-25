@@ -1,4 +1,4 @@
-name: Deploy Strategy Web to GitHub Pages
+name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
@@ -25,28 +25,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install dependencies
-        run: |
-          cd strategy/legal-owl-web
-          npm install
-
-      - name: Build Vite App
-        run: |
-          cd strategy/legal-owl-web
-          npm run build
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: strategy/legal-owl-web/dist
+          # Upload root folder containing index.html, 404.html, assets/
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
