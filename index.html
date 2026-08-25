@@ -60,61 +60,85 @@
   </div>
 
   <main>
-    <!-- Section 01: Hero (Calm Editorial Headline with Portrait & Inline Motifs) -->
+    <!-- Section 01: Hero (Calm Editorial Split with Dedicated Profile Card) -->
     <section class="hero-section" id="hero">
       <div class="container">
-        <div style="display: flex; justify-content: center; gap: 0.75rem; align-items: center; flex-wrap: wrap; margin-bottom: var(--space-8);">
-          <div class="hero-avatar-badge">
-            <img src="assets/images/yashvi_portrait.jpg" alt="Yashvi Bansal" class="hero-avatar-img">
-            <div style="text-align: left;">
-              <div style="font-family: var(--font-serif); font-size: 1.15rem; line-height: 1.1; color: var(--color-ink);">Yashvi Bansal</div>
-              <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--color-muted); text-transform: uppercase;">IIT BHU &bull; Kotak Bank</div>
+        <div class="hero-split-grid">
+          <!-- Left Column: Story, Title, Actions & Proofs -->
+          <div class="hero-left-content">
+            <div class="hero-status-pill">
+              <span class="hero-status-dot"></span>
+              <span>Open to Founder's Office &amp; AI PM Roles</span>
+            </div>
+
+            <h1 class="hero-title-editorial">
+              Product-Minded <span class="serif-italic">Builder</span> crafting AI systems &amp; <span class="serif-italic">platform leverage</span> <span class="inline-smiley">☺</span>
+            </h1>
+
+            <p class="hero-lead-text" style="margin: 0 0 var(--space-8); max-width: 100%;">
+              High-agency builder with <strong>3+ years shipping 0-to-1 products and platforms</strong> across multi-agent AI systems, RAG pipelines, and core banking infrastructure at Kotak Mahindra Bank (IIT BHU B.Tech).
+            </p>
+
+            <div class="hero-action-pills" style="justify-content: flex-start; margin-bottom: var(--space-8);">
+              <a href="#work" class="btn-pill btn-pill-primary">
+                <span>Explore Work ↓</span>
+              </a>
+              <button class="btn-pill btn-pill-outline open-resume-modal-btn">
+                <span>View Resume 📄</span>
+              </button>
+              <a href="#contact" class="btn-pill btn-pill-outline">
+                <span>Get in Touch ✉</span>
+              </a>
+            </div>
+
+            <!-- Calm Proof Bar -->
+            <div class="hero-proof-bar" style="width: 100%; margin: 0;">
+              <div class="proof-item">
+                <span class="proof-num">IIT BHU</span>
+                <span class="proof-label">B.Tech (8.69 / 10)</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-num">Kotak Bank</span>
+                <span class="proof-label">SDE / Platform</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-num">90% Cut</span>
+                <span class="proof-label">BDD Cycle</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-num">99% ROI</span>
+                <span class="proof-label">Storage Efficiency</span>
+              </div>
             </div>
           </div>
 
-          <div class="hero-status-pill" style="margin-bottom: 0;">
-            <span class="hero-status-dot"></span>
-            <span>Open to Founder's Office &amp; AI PM Roles</span>
-          </div>
-        </div>
-
-        <h1 class="hero-title-editorial">
-          Product-Minded <span class="serif-italic">Builder</span> crafting <img src="assets/images/yashvi_portrait.jpg" alt="Yashvi Bansal" class="inline-photo-chip"> AI systems and <span class="serif-italic">platform leverage</span> <span class="inline-smiley">☺</span>
-        </h1>
-
-        <p class="hero-lead-text">
-          High-agency builder with <strong>3+ years shipping 0-to-1 products and platforms</strong> across multi-agent AI systems, RAG pipelines, and core banking infrastructure at Kotak Mahindra Bank (IIT BHU B.Tech).
-        </p>
-
-        <div class="hero-action-pills">
-          <a href="#work" class="btn-pill btn-pill-primary">
-            <span>Explore Work ↓</span>
-          </a>
-          <button class="btn-pill btn-pill-outline open-resume-modal-btn">
-            <span>View Resume 📄</span>
-          </button>
-          <a href="#contact" class="btn-pill btn-pill-outline">
-            <span>Get in Touch ✉</span>
-          </a>
-        </div>
-
-        <!-- Calm Proof Bar -->
-        <div class="hero-proof-bar">
-          <div class="proof-item">
-            <span class="proof-num">IIT BHU</span>
-            <span class="proof-label">B.Tech (8.69 / 10.0)</span>
-          </div>
-          <div class="proof-item">
-            <span class="proof-num">Kotak Bank</span>
-            <span class="proof-label">SDE / Platform Owner</span>
-          </div>
-          <div class="proof-item">
-            <span class="proof-num">90% Cut</span>
-            <span class="proof-label">BDD Validation Cycle</span>
-          </div>
-          <div class="proof-item">
-            <span class="proof-num">99% ROI</span>
-            <span class="proof-label">Storage Optimization</span>
+          <!-- Right Column: Dedicated Hero Profile Card -->
+          <div class="profile-card-calm">
+            <div class="profile-photo-frame">
+              <img src="assets/images/yashvi_portrait.jpg" alt="Yashvi Bansal" class="profile-photo-img">
+            </div>
+            <div class="profile-card-info">
+              <h2 class="profile-name">Yashvi Bansal</h2>
+              <div class="profile-role">Product-Minded Builder &amp; Technical Operator</div>
+            </div>
+            <div class="profile-details-list">
+              <div class="profile-detail-row">
+                <span class="profile-detail-label">Background</span>
+                <span class="profile-detail-val">IIT BHU &bull; B.Tech (8.69)</span>
+              </div>
+              <div class="profile-detail-row">
+                <span class="profile-detail-label">Track Record</span>
+                <span class="profile-detail-val">Kotak Mahindra Bank</span>
+              </div>
+              <div class="profile-detail-row">
+                <span class="profile-detail-label">Focus Areas</span>
+                <span class="profile-detail-val">0-to-1 AI &bull; Platforms</span>
+              </div>
+              <div class="profile-detail-row">
+                <span class="profile-detail-label">Status</span>
+                <span class="profile-detail-val" style="color: var(--color-sage);">Available for Hire ●</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
