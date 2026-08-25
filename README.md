@@ -8,13 +8,14 @@ Welcome to your structured job preparation workspace! This repository is designe
 
 | Section / File | Description | Direct Link |
 | :--- | :--- | :--- |
-| **Profile Audit & Strategy** | In-depth critique of your strengths, gaps, and pivoting strategy. | [audit_report.md](file:///Users/hkc/Documents/job-prep/audit_report.md) |
-| **PM-Tailored Resume** | Version of your resume optimized for PM and Founder's Office roles. | [pm_tailored.md](file:///Users/hkc/Documents/job-prep/resumes/pm_tailored.md) |
-| **Generalist Resumes** | Your generalist SDE/PM resume (in Markdown and DOCX). | [generalist.md](file:///Users/hkc/Documents/job-prep/resumes/generalist.md) / [generalist.docx](file:///Users/hkc/Documents/job-prep/resumes/generalist.docx) |
-| **Job Board Tracker** | Markdown-based Kanban board to track active applications and stages. | [tracker.md](file:///Users/hkc/Documents/job-prep/applications/tracker.md) |
-| **Outreach Templates** | Platform-tailored templates (WA, LI, Mail) with a grounded/humble tone. | [outreach.md](file:///Users/hkc/Documents/job-prep/applications/outreach.md) |
-| **Behavioral Stories (STAR)** | STAR stories for core platforms, visibility tools, AI safety, and Legal Owl. | [behavioral.md](file:///Users/hkc/Documents/job-prep/interview_prep/behavioral.md) |
-| **PM Case Prep & AI Product Guide** | Case study frameworks and system design tips tailored to RAG/MCP/Multi-agents. | [pm_cases.md](file:///Users/hkc/Documents/job-prep/interview_prep/pm_cases.md) |
+| **🌐 Portfolio Website** | Interactive static website for GitHub Pages. | [index.html](file:///Users/yashvi/Documents/job-prep/index.html) &bull; [Guide](file:///Users/yashvi/Documents/job-prep/GITHUB_PAGES_SETUP.md) |
+| **Profile Audit & Strategy** | In-depth critique of your strengths, gaps, and pivoting strategy. | [audit_report.md](file:///Users/yashvi/Documents/job-prep/audit_report.md) |
+| **PM-Tailored Resume** | Version of your resume optimized for PM and Founder's Office roles. | [pm_tailored.md](file:///Users/yashvi/Documents/job-prep/resumes/pm_tailored.md) |
+| **Generalist Resumes** | Your generalist SDE/PM resume (in Markdown and DOCX). | [generalist.md](file:///Users/yashvi/Documents/job-prep/resumes/generalist.md) / [generalist.docx](file:///Users/yashvi/Documents/job-prep/resumes/generalist.docx) |
+| **Job Board Tracker** | Markdown-based Kanban board to track active applications and stages. | [tracker.md](file:///Users/yashvi/Documents/job-prep/applications/tracker.md) |
+| **Outreach Templates** | Platform-tailored templates (WA, LI, Mail) with a grounded/humble tone. | [outreach.md](file:///Users/yashvi/Documents/job-prep/applications/outreach.md) |
+| **Behavioral Stories (STAR)** | STAR stories for core platforms, visibility tools, AI safety, and Legal Owl. | [behavioral.md](file:///Users/yashvi/Documents/job-prep/interview_prep/behavioral.md) |
+| **PM Case Prep & AI Product Guide** | Case study frameworks and system design tips tailored to RAG/MCP/Multi-agents. | [pm_cases.md](file:///Users/yashvi/Documents/job-prep/interview_prep/pm_cases.md) |
 
 ---
 
