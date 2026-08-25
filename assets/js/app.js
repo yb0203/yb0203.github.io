@@ -1,11 +1,9 @@
 /* ==========================================================================
-   YASHVI BANSAL — HIGH-CONVERTING 4-SECTION APP LOGIC (app.js)
-   Renders Archive Table, Flagship Modals, Role Lens, Resume & Floating Bar
+   YASHVI BANSAL — CALM EDITORIAL APP LOGIC (app.js)
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
-  initRoleLens();
   renderArchiveTable();
   initModals();
   initMobileMenu();
@@ -13,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollSpy();
 });
 
-/* --- Theme Switcher (Warm Silk Default / Matte Obsidian Dark) --- */
+/* --- Theme Switcher (Warm Grid Canvas / Calm Night Grid) --- */
 function initTheme() {
   const themeBtn = document.getElementById('theme-toggle-btn');
   const storedTheme = localStorage.getItem('portfolio-theme') || 'light';
@@ -27,7 +25,7 @@ function initTheme() {
       document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('portfolio-theme', newTheme);
       updateThemeIcon(newTheme);
-      showToast(newTheme === 'dark' ? '● Dark Theme enabled' : '● Warm Silk Theme enabled');
+      showToast(newTheme === 'dark' ? '● Night Grid enabled' : '● Warm Paper Grid enabled');
     });
   }
 }
@@ -39,31 +37,6 @@ function updateThemeIcon(theme) {
   }
 }
 
-/* --- Integrated Hero Role Lens Switcher --- */
-function initRoleLens() {
-  const lensButtons = document.querySelectorAll('.lens-btn');
-  const highlightBar = document.getElementById('lens-highlight-bar');
-
-  const lensMessages = {
-    'founders-office': '<strong>[ FOCUS: FOUNDER\'S OFFICE ]</strong> Emphasizing 0-to-1 velocity, business-to-engineering translation, cross-functional alignment, and high-agency operational execution.',
-    'ai-pm': '<strong>[ FOCUS: AI & TECH PM ]</strong> Emphasizing RAG architectures, schema-locked multi-agents, DeepEval banking metrics, DevEx platforms, and AI trust & safety guardrails.',
-    'generalist': '<strong>[ FOCUS: FULL SPECTRUM ]</strong> Complete portfolio overview across product strategy, AI systems, and enterprise banking infrastructure.'
-  };
-
-  lensButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      lensButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const lens = btn.getAttribute('data-lens');
-
-      if (highlightBar && lensMessages[lens]) {
-        highlightBar.innerHTML = lensMessages[lens];
-        highlightBar.classList.add('visible');
-      }
-    });
-  });
-}
-
 /* --- Compact Archive Table Rendering --- */
 function renderArchiveTable() {
   const container = document.getElementById('directory-table-body');
@@ -71,35 +44,30 @@ function renderArchiveTable() {
 
   container.innerHTML = '';
 
-  // Filter for secondary builds (GitaBae, Vibe Check, Madison)
   const archiveProjects = PROJECTS_DATA.filter(p => p.id !== 'legal-owl' && p.id !== 'kotak-platforms');
 
   archiveProjects.forEach((project, index) => {
     const row = document.createElement('div');
-    row.className = 'editorial-row';
+    row.className = 'archive-row-calm';
     row.setAttribute('data-project-id', project.id);
 
-    const indexFormatted = `[ ${String(index + 3).padStart(2, '0')} ]`;
+    const indexFormatted = `0${index + 3}`;
     const primaryMetric = project.keyMetrics && project.keyMetrics.length > 0
       ? project.keyMetrics[0].value
       : '0-to-1 Build';
 
     row.innerHTML = `
-      <div class="row-index">${indexFormatted}</div>
-      <div class="row-title-block">
-        <h3>${escapeHtml(project.title)}</h3>
-        <p>${escapeHtml(project.tagline)}</p>
+      <div style="font-family: var(--font-serif); font-size: 1.2rem; color: var(--color-terracotta);">${indexFormatted}</div>
+      <div>
+        <div style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-ink);">${escapeHtml(project.title)}</div>
+        <div style="font-size: 0.825rem; color: var(--color-slate);">${escapeHtml(project.tagline)}</div>
       </div>
       <div>
-        <span class="row-metrics-chip">${escapeHtml(primaryMetric)}</span>
+        <span class="calm-chip">${escapeHtml(primaryMetric)}</span>
       </div>
-      <div class="row-tags">
-        <span class="tag-badge tag-cobalt">${escapeHtml(project.categoryLabel)}</span>
-      </div>
-      <div class="row-actions">
-        <button class="btn btn-secondary btn-sm open-project-modal-btn" data-id="${project.id}">
-          <span>VIEW SPEC</span>
-          <span class="btn-arrow-box">→</span>
+      <div style="text-align: right;">
+        <button class="btn-pill btn-pill-outline" style="padding: 0.25rem 0.75rem; font-size: 0.75rem;">
+          <span>SPEC →</span>
         </button>
       </div>
     `;
@@ -182,50 +150,49 @@ function openProjectModal(projectId) {
 
   if (!modalTitle || !modalContent || !modalBackdrop) return;
 
-  modalTitle.textContent = `[ SPEC // ${project.title.toUpperCase()} ]`;
+  modalTitle.textContent = `${project.title}`;
 
   const decisionsHtml = project.productDecisions.map(d => `
-    <li class="exp-bullet">${escapeHtml(d)}</li>
+    <li class="exp-bullet-calm">${escapeHtml(d)}</li>
   `).join('');
 
   const metricsHtml = project.keyMetrics.map(m => `
-    <div class="spec-row">
-      <span class="spec-label">${escapeHtml(m.label)}</span>
-      <span class="spec-value">${escapeHtml(m.value)}</span>
+    <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border-hairline); font-size: 0.875rem;">
+      <span style="font-family: var(--font-mono); color: var(--color-muted);">${escapeHtml(m.label)}</span>
+      <span style="font-weight: 600; color: var(--color-ink);">${escapeHtml(m.value)}</span>
     </div>
   `).join('');
 
   modalContent.innerHTML = `
-    <div style="font-family: var(--font-mono); font-size: 0.825rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem;">
-      CATEGORY: ${escapeHtml(project.categoryLabel)} &bull; TIMEFRAME: ${escapeHtml(project.timeframe)}
+    <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-terracotta); text-transform: uppercase; margin-bottom: 0.4rem;">
+      ${escapeHtml(project.categoryLabel)} &bull; ${escapeHtml(project.timeframe)}
     </div>
-    <p style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1.25rem;">
+    <p style="font-size: 1.15rem; font-weight: 600; color: var(--color-ink); margin-bottom: 1.25rem;">
       ${escapeHtml(project.tagline)}
     </p>
 
     <h4 class="modal-section-title">01. Problem &amp; Friction Point</h4>
-    <p style="color: var(--text-secondary); line-height: 1.65;">${escapeHtml(project.problemStatement)}</p>
+    <p style="color: var(--color-slate); line-height: 1.7; font-size: 0.925rem;">${escapeHtml(project.problemStatement)}</p>
 
     <h4 class="modal-section-title">02. Technical &amp; Product Architecture</h4>
-    <p style="color: var(--text-secondary); line-height: 1.65;">${escapeHtml(project.solution)}</p>
+    <p style="color: var(--color-slate); line-height: 1.7; font-size: 0.925rem;">${escapeHtml(project.solution)}</p>
 
     <div class="modal-architecture-box">${project.architecture}</div>
 
-    <h4 class="modal-section-title">03. Key Strategic &amp; Architectural Decisions</h4>
-    <ul class="exp-bullets" style="margin-top: 0.5rem;">
+    <h4 class="modal-section-title">03. Key Architectural Decisions</h4>
+    <ul class="exp-bullets-calm" style="margin-top: 0.5rem;">
       ${decisionsHtml}
     </ul>
 
     <h4 class="modal-section-title">04. Quantified Metrics &amp; Benchmarks</h4>
-    <div class="hero-spec-sheet" style="margin-top: 0.5rem;">
+    <div style="margin-top: 0.5rem; background: var(--bg-canvas); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-hairline);">
       ${metricsHtml}
     </div>
 
     ${project.githubUrl ? `
-      <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-line); display: flex; justify-content: flex-end;">
-        <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-          <span>VIEW SOURCE ON GITHUB</span>
-          <span class="btn-arrow-box">↗</span>
+      <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+        <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn-pill btn-pill-primary">
+          <span>GITHUB REPOSITORY ↗</span>
         </a>
       </div>
     ` : ''}
@@ -325,7 +292,7 @@ function showToast(message) {
 /* --- ScrollSpy for Active Navbar Link --- */
 function initScrollSpy() {
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-link');
+  const navLinks = document.querySelectorAll('.nav-pill-link');
 
   window.addEventListener('scroll', () => {
     let current = '';
