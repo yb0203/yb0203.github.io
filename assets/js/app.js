@@ -1,13 +1,13 @@
 /* ==========================================================================
-   YASHVI BANSAL — EDITORIAL BRUTALIST APP LOGIC (app.js)
-   Controls Themes, Role Lenses, Modals, Filtering, Copy-To-Clipboard & Toasts
+   YASHVI BANSAL — REFINED IA APP LOGIC (app.js)
+   Renders Directory Table, Flagship Card Triggers, Role Lens, Modals & Floating Bar
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initRoleLens();
-  renderProjects('all');
-  initProjectsFilter();
+  renderDirectoryTable('all');
+  initDirectoryFilter();
   initModals();
   initMobileMenu();
   initContactActions();
@@ -40,13 +40,13 @@ function updateThemeIcon(theme) {
   }
 }
 
-/* --- Role Lens Switcher --- */
+/* --- Integrated Hero Role Lens Switcher --- */
 function initRoleLens() {
   const lensButtons = document.querySelectorAll('.lens-btn');
   const highlightBar = document.getElementById('lens-highlight-bar');
 
   const lensMessages = {
-    'founders-office': '<strong>[ FOCUS: FOUNDER\'S OFFICE ]</strong> Emphasizing 0-to-1 ownership, business-to-engineering translation, cross-functional velocity, and high-agency operational execution.',
+    'founders-office': '<strong>[ FOCUS: FOUNDER\'S OFFICE ]</strong> Emphasizing 0-to-1 velocity, business-to-engineering translation, cross-functional alignment, and high-agency operational execution.',
     'ai-pm': '<strong>[ FOCUS: AI & TECH PM ]</strong> Emphasizing RAG architectures, schema-locked multi-agents, DeepEval banking metrics, DevEx platforms, and AI trust & safety guardrails.',
     'generalist': '<strong>[ FOCUS: FULL SPECTRUM ]</strong> Complete portfolio overview across product strategy, AI systems, and enterprise banking infrastructure.'
   };
@@ -65,9 +65,9 @@ function initRoleLens() {
   });
 }
 
-/* --- Editorial Numbered Table Projects Rendering --- */
-function renderProjects(filterCategory = 'all') {
-  const container = document.getElementById('projects-table-body');
+/* --- Directory Numbered Table Rendering --- */
+function renderDirectoryTable(filterCategory = 'all') {
+  const container = document.getElementById('directory-table-body');
   if (!container || typeof PROJECTS_DATA === 'undefined') return;
 
   container.innerHTML = '';
@@ -84,7 +84,7 @@ function renderProjects(filterCategory = 'all') {
     const indexFormatted = `[ ${String(index + 1).padStart(2, '0')} ]`;
     const primaryMetric = project.keyMetrics && project.keyMetrics.length > 0
       ? project.keyMetrics[0].value
-      : '0-to-1 Platform';
+      : '0-to-1 Build';
 
     row.innerHTML = `
       <div class="row-index">${indexFormatted}</div>
@@ -106,7 +106,6 @@ function renderProjects(filterCategory = 'all') {
       </div>
     `;
 
-    // Make whole row clickable for deep dive modal
     row.addEventListener('click', (e) => {
       if (!e.target.closest('a')) {
         openProjectModal(project.id);
@@ -117,14 +116,14 @@ function renderProjects(filterCategory = 'all') {
   });
 }
 
-function initProjectsFilter() {
+function initDirectoryFilter() {
   const filterTabs = document.querySelectorAll('.filter-tab');
   filterTabs.forEach(tab => {
     tab.addEventListener('click', () => {
       filterTabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
       const cat = tab.getAttribute('data-filter');
-      renderProjects(cat);
+      renderDirectoryTable(cat);
     });
   });
 }
@@ -133,6 +132,15 @@ function initProjectsFilter() {
 function initModals() {
   const projectModalBackdrop = document.getElementById('project-modal-backdrop');
   const projectModalClose = document.getElementById('project-modal-close');
+
+  // Trigger modal for any element with data-project-target
+  document.querySelectorAll('[data-project-target]').forEach(elem => {
+    elem.addEventListener('click', (e) => {
+      e.preventDefault();
+      const projId = elem.getAttribute('data-project-target');
+      openProjectModal(projId);
+    });
+  });
 
   if (projectModalClose && projectModalBackdrop) {
     projectModalClose.addEventListener('click', () => {
@@ -203,14 +211,14 @@ function openProjectModal(projectId) {
   `).join('');
 
   modalContent.innerHTML = `
-    <div style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.5rem;">
+    <div style="font-family: var(--font-mono); font-size: 0.825rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem;">
       CATEGORY: ${escapeHtml(project.categoryLabel)} &bull; TIMEFRAME: ${escapeHtml(project.timeframe)}
     </div>
     <p style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1.25rem;">
       ${escapeHtml(project.tagline)}
     </p>
 
-    <h4 class="modal-section-title">01. Problem &amp; Operational Friction</h4>
+    <h4 class="modal-section-title">01. Problem &amp; Friction Point</h4>
     <p style="color: var(--text-secondary); line-height: 1.65;">${escapeHtml(project.problemStatement)}</p>
 
     <h4 class="modal-section-title">02. Technical &amp; Product Architecture</h4>
@@ -218,7 +226,7 @@ function openProjectModal(projectId) {
 
     <div class="modal-architecture-box">${project.architecture}</div>
 
-    <h4 class="modal-section-title">03. Key Architectural Decisions</h4>
+    <h4 class="modal-section-title">03. Key Strategic &amp; Architectural Decisions</h4>
     <ul class="exp-bullets" style="margin-top: 0.5rem;">
       ${decisionsHtml}
     </ul>
@@ -231,7 +239,7 @@ function openProjectModal(projectId) {
     ${project.githubUrl ? `
       <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-line); display: flex; justify-content: flex-end;">
         <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-          <span>SOURCE REPOSITORY</span>
+          <span>VIEW SOURCE ON GITHUB</span>
           <span class="btn-arrow-box">↗</span>
         </a>
       </div>

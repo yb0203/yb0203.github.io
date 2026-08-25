@@ -23,17 +23,19 @@
     <div class="container nav-container">
       <a href="#hero" class="nav-brand">
         <span class="brand-badge">YB</span>
-        <span>YASHVI BANSAL</span>
+        <span>Yashvi Bansal</span>
       </a>
 
       <nav>
         <ul class="nav-links">
-          <li><a href="#hero" class="nav-link active">INDEX</a></li>
-          <li><a href="#projects" class="nav-link">PROJECTS</a></li>
-          <li><a href="#playground" class="nav-link">SIMULATOR</a></li>
-          <li><a href="#experience" class="nav-link">TRACK RECORD</a></li>
-          <li><a href="#skills" class="nav-link">SKILLS</a></li>
-          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+          <li><a href="#hero" class="nav-link active">Dossier</a></li>
+          <li><a href="#flagships" class="nav-link">Flagships</a></li>
+          <li><a href="#directory" class="nav-link">Directory</a></li>
+          <li><a href="#principles" class="nav-link">Principles</a></li>
+          <li><a href="#playground" class="nav-link">Simulator</a></li>
+          <li><a href="#experience" class="nav-link">Track Record</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
@@ -54,12 +56,14 @@
 
   <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav-drawer" id="mobile-nav-drawer">
-    <a href="#hero" class="mobile-nav-link">[ 00 ] INDEX</a>
-    <a href="#projects" class="mobile-nav-link">[ 01 ] 0-TO-1 PROJECTS</a>
-    <a href="#playground" class="mobile-nav-link">[ 02 ] AI AGENT SIMULATOR</a>
-    <a href="#experience" class="mobile-nav-link">[ 03 ] EXPERIENCE &amp; IMPACT</a>
-    <a href="#skills" class="mobile-nav-link">[ 04 ] SKILLS &amp; DOMAINS</a>
-    <a href="#contact" class="mobile-nav-link">[ 05 ] CONTACT</a>
+    <a href="#hero" class="mobile-nav-link">[ 00 ] DOSSIER &amp; HERO</a>
+    <a href="#flagships" class="mobile-nav-link">[ 01 ] THE FLAGSHIPS</a>
+    <a href="#directory" class="mobile-nav-link">[ 02 ] SYSTEMS DIRECTORY</a>
+    <a href="#principles" class="mobile-nav-link">[ 03 ] OPERATING PRINCIPLES</a>
+    <a href="#playground" class="mobile-nav-link">[ 04 ] AGENT SIMULATOR</a>
+    <a href="#experience" class="mobile-nav-link">[ 05 ] TRACK RECORD</a>
+    <a href="#skills" class="mobile-nav-link">[ 06 ] COMPETENCY MATRIX</a>
+    <a href="#contact" class="mobile-nav-link">[ 07 ] CONTACT &amp; CHANNELS</a>
     <a href="#resume-modal" class="mobile-nav-link open-resume-modal-btn">[ RESUME ] VIEW SPEC</a>
   </div>
 
@@ -68,23 +72,40 @@
     <section class="hero-section" id="hero">
       <div class="container">
         <div class="hero-meta-top">
-          <div class="hero-index-tag">[ 00 ] // PROFILE DOSSIER</div>
-          <div>STATUS: <strong>OPEN TO FOUNDER'S OFFICE &amp; AI PM ROLES</strong></div>
+          <div class="hero-index-tag">[ 00 ] // CANDIDATE DOSSIER</div>
+          <div class="tag-badge tag-emerald">
+            <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:currentColor;"></span>
+            <span>OPEN TO FOUNDER'S OFFICE &amp; AI PM ROLES</span>
+          </div>
         </div>
 
         <h1 class="hero-title-main">
-          PRODUCT-MINDED BUILDER &amp; TECHNICAL OPERATOR
+          Product-Minded Builder &amp; Technical Operator
         </h1>
+
+        <!-- Integrated Role Lens Switcher in Hero -->
+        <div class="hero-lens-bar">
+          <div style="display: flex; align-items: center; gap: 0.65rem;">
+            <span class="brand-badge">LENS</span>
+            <span style="font-size: 0.825rem; font-weight: 700; text-transform: uppercase;">Tailor Content For:</span>
+          </div>
+          <div class="lens-btn-group">
+            <button class="lens-btn active" data-lens="generalist">Full Spectrum</button>
+            <button class="lens-btn" data-lens="founders-office">Founder's Office</button>
+            <button class="lens-btn" data-lens="ai-pm">AI &amp; Tech PM</button>
+          </div>
+        </div>
+        <div class="lens-highlight-bar" id="lens-highlight-bar"></div>
 
         <div class="hero-grid-2col">
           <div>
             <p class="hero-bio-lead">
-              Builder with <strong>3+ years shipping 0-to-1 products and platforms</strong> inside large enterprise and fast-paced environments. I move fast in ambiguity: identifying problems, aligning stakeholders across engineering, business, and compliance, and shipping measurable outcomes at the intersection of <strong>AI agents, RAG, and core systems</strong>.
+              High-agency builder with <strong>3+ years shipping 0-to-1 products and platforms</strong> inside large enterprise and fast-paced environments. I move fast in ambiguity: translating complex business requirements into executable architectures across <strong>multi-agent AI systems, RAG pipelines, and core banking backbones</strong>.
             </p>
 
             <div class="hero-cta-actions">
-              <a href="#projects" class="btn btn-primary">
-                <span>EXPLORE 0-TO-1 BUILDS</span>
+              <a href="#flagships" class="btn btn-primary">
+                <span>INSPECT FLAGSHIPS</span>
                 <span class="btn-arrow-box">→</span>
               </a>
               <a href="#playground" class="btn btn-secondary">
@@ -102,7 +123,7 @@
           <div class="hero-spec-sheet">
             <div class="spec-sheet-header">
               <span>CANDIDATE SPEC SHEET</span>
-              <span>YB-2026</span>
+              <span class="tag-badge tag-cobalt" style="padding: 0.1rem 0.45rem;">YB-2026</span>
             </div>
             <div class="spec-row">
               <span class="spec-label">EDUCATION</span>
@@ -113,73 +134,147 @@
               <span class="spec-value">Kotak Mahindra Bank (SDE / Platform)</span>
             </div>
             <div class="spec-row">
-              <span class="spec-label">VALIDATION IMPACT</span>
-              <span class="spec-value">90% Cycle Reduction (BDD Platform)</span>
+              <span class="spec-label">VALIDATION LEVERAGE</span>
+              <span class="spec-value" style="color: var(--accent-emerald);">90% Cycle Reduction (BDD Platform)</span>
             </div>
             <div class="spec-row">
-              <span class="spec-label">RETRIEVAL GAIN</span>
-              <span class="spec-value">95% Latency Cut &bull; 99% Storage ROI</span>
+              <span class="spec-label">OPERATIONAL ROI</span>
+              <span class="spec-value" style="color: var(--accent-cobalt);">95% Latency Cut &bull; 99% Storage ROI</span>
             </div>
             <div class="spec-row">
-              <span class="spec-label">AI TRUST BENCHMARK</span>
-              <span class="spec-value">100+ DeepEval Banking Metrics</span>
+              <span class="spec-label">AI TRUST STANDARD</span>
+              <span class="spec-value" style="color: var(--accent-amber);">100+ DeepEval Banking Metrics</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Statement Banner (Inspired by Marvin Framer aesthetic) -->
-    <section class="statement-banner">
-      <div class="container">
-        <span class="statement-tag">CORE PHILOSOPHY</span>
-        <h2 class="statement-headline">
-          BUILDING HIGH-LEVERAGE SYSTEMS AT THE INTERSECTION OF AI &amp; BUSINESS VALUE
-        </h2>
-        <div class="statement-actions">
-          <a href="#projects" class="btn btn-primary" style="background: #111111; color: #ffffff;">
-            <span>VIEW CASE STUDIES</span>
-            <span class="btn-arrow-box">→</span>
-          </a>
-          <a href="#contact" class="btn btn-secondary" style="background: transparent; color: #111111; border-color: #111111;">
-            <span>GET IN TOUCH</span>
-            <span class="btn-arrow-box">✉</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured 0-to-1 Projects Section (Editorial Numbered Table) -->
-    <section class="section" id="projects">
+    <!-- Section 01: Flagship 0-to-1 Builds (The Crown Jewels) -->
+    <section class="section" id="flagships">
       <div class="container">
         <div class="section-header-editorial">
           <div>
-            <span class="spec-label">[ 01 ] // SELECTED CASE STUDIES</span>
-            <h2 class="section-title-editorial">0-TO-1 BUILDS &amp; PLATFORMS</h2>
+            <span class="section-label-chip">[ 01 ] // THE FLAGSHIPS</span>
+            <h2 class="section-title-editorial">CROWN JEWEL 0-TO-1 BUILDS</h2>
           </div>
           <p class="section-desc-editorial">
-            Click any row to inspect technical architecture, system specs, and key product decisions.
+            Two defining architectures demonstrating deep product design, schema-locked multi-agents, and high-scale financial platform delivery.
           </p>
         </div>
 
-        <!-- Role Lens Switcher -->
-        <div class="lens-box">
-          <div class="lens-box-left">
-            <span class="lens-tag-badge">LENS</span>
-            <div>
-              <strong style="font-size: 0.9rem; text-transform: uppercase;">Custom Persona Lens</strong>
-              <div style="font-size: 0.8rem; color: var(--text-secondary);">Toggle tailored highlights for your evaluation criteria</div>
+        <div class="flagship-grid">
+          <!-- Flagship 1: Legal Owl -->
+          <div class="flagship-card" data-project-target="legal-owl">
+            <div class="flagship-banner">
+              <span class="flagship-index-tag">[ FLAGSHIP 01 ]</span>
+              <span class="tag-badge tag-violet">AI AGENT PLATFORM</span>
+            </div>
+            <div class="flagship-body">
+              <h3 class="flagship-title">LEGAL OWL</h3>
+              <div class="flagship-tagline">AI-Native Legal Workflow Platform for Litigators</div>
+              <p class="flagship-summary">
+                Architected a 4-pillar legal-tech platform integrating live eCourts India APIs, automated CNR tracking, nightly event diffing, and schema-locked multi-agents with zero-hallucination source span citation ledgers.
+              </p>
+
+              <div class="flagship-metrics-box">
+                <div class="metric-row">
+                  <span class="metric-dot">■</span>
+                  <span><strong>Live Sync:</strong> eCourts India API CNR Tracking &amp; Nightly Diffing</span>
+                </div>
+                <div class="metric-row">
+                  <span class="metric-dot">■</span>
+                  <span><strong>Trust Gate:</strong> Approve-Before-Act Multi-Agent Primitive</span>
+                </div>
+                <div class="metric-row">
+                  <span class="metric-dot">■</span>
+                  <span><strong>Grounding:</strong> Zero-Hallucination Bounding-Box Citation Ledger</span>
+                </div>
+              </div>
+
+              <div class="row-tags" style="margin-bottom: 1.5rem;">
+                <span class="tag-badge tag-violet">TypeScript</span>
+                <span class="tag-badge tag-cobalt">Next.js</span>
+                <span class="tag-badge tag-emerald">Supabase pgvector</span>
+                <span class="tag-badge tag-amber">Vercel AI SDK</span>
+                <span class="tag-badge tag-coral">eCourts API</span>
+              </div>
+
+              <div class="flagship-footer">
+                <button class="btn btn-primary btn-sm">
+                  <span>INSPECT FULL SPEC</span>
+                  <span class="btn-arrow-box">→</span>
+                </button>
+                <a href="https://github.com/yb0203/LegalOwl" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" onclick="event.stopPropagation();">
+                  <span>GITHUB REPO</span>
+                  <span class="btn-arrow-box">↗</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="lens-btn-group">
-            <button class="lens-btn active" data-lens="generalist">FULL SPECTRUM</button>
-            <button class="lens-btn" data-lens="founders-office">FOUNDER'S OFFICE</button>
-            <button class="lens-btn" data-lens="ai-pm">AI &amp; TECH PM</button>
+
+          <!-- Flagship 2: Kotak Platforms -->
+          <div class="flagship-card" data-project-target="kotak-platforms">
+            <div class="flagship-banner">
+              <span class="flagship-index-tag">[ FLAGSHIP 02 ]</span>
+              <span class="tag-badge tag-cobalt">ENTERPRISE SCALE</span>
+            </div>
+            <div class="flagship-body">
+              <h3 class="flagship-title">KOTAK PLATFORM SUITE</h3>
+              <div class="flagship-tagline">High-Scale FinTech Infrastructure &amp; AI Error Triage</div>
+              <p class="flagship-summary">
+                Led product delivery for mission-critical core cash capabilities (ISO8583/FIXML), built a centralized reporting platform reducing retrieval latency by 95%, and deployed an AI agent for automated error triage.
+              </p>
+
+              <div class="flagship-metrics-box">
+                <div class="metric-row">
+                  <span class="metric-dot">■</span>
+                  <span><strong>Error Triage:</strong> 90% Manual RCA Effort Reduction via AI Agent</span>
+                </div>
+                <div class="metric-row">
+                  <span class="metric-dot">■</span>
+                  <span><strong>Data Speed:</strong> 95% Latency Cut across Cross-Team Telemetry</span>
+                </div>
+                <div class="metric-row">
+                  <span class="metric-dot">■</span>
+                  <span><strong>Storage ROI:</strong> 99% Storage Reduction via Custom Log Controls</span>
+                </div>
+              </div>
+
+              <div class="row-tags" style="margin-bottom: 1.5rem;">
+                <span class="tag-badge tag-cobalt">Java / Spring Boot</span>
+                <span class="tag-badge tag-amber">DynamoDB</span>
+                <span class="tag-badge tag-emerald">ISO8583</span>
+                <span class="tag-badge tag-coral">FIXML</span>
+                <span class="tag-badge tag-violet">DeepEval</span>
+              </div>
+
+              <div class="flagship-footer">
+                <button class="btn btn-primary btn-sm">
+                  <span>INSPECT FULL SPEC</span>
+                  <span class="btn-arrow-box">→</span>
+                </button>
+                <span class="tag-badge tag-sage">KOTAK MAHINDRA BANK</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="lens-highlight-bar" id="lens-highlight-bar"></div>
+      </div>
+    </section>
 
-        <!-- Filter Bar -->
+    <!-- Section 02: Systems Directory & Archive -->
+    <section class="section" id="directory">
+      <div class="container">
+        <div class="section-header-editorial">
+          <div>
+            <span class="section-label-chip">[ 02 ] // SYSTEMS DIRECTORY</span>
+            <h2 class="section-title-editorial">ALL ARCHITECTURES &amp; BUILDS</h2>
+          </div>
+          <p class="section-desc-editorial">
+            Complete archive of 0-to-1 products, Model Context Protocol servers, and enterprise systems.
+          </p>
+        </div>
+
         <div class="filter-tabs-bar">
           <button class="filter-tab active" data-filter="all">ALL ARCHITECTURES [ 05 ]</button>
           <button class="filter-tab" data-filter="ai-product">AI AGENT &amp; RAG [ 03 ]</button>
@@ -187,29 +282,77 @@
           <button class="filter-tab" data-filter="enterprise">ENTERPRISE PLATFORMS [ 01 ]</button>
         </div>
 
-        <!-- Numbered Editorial Table -->
-        <div class="editorial-table" id="projects-table-body">
+        <div class="editorial-table" id="directory-table-body">
           <!-- Populated by app.js -->
         </div>
       </div>
     </section>
 
-    <!-- Interactive AI & MCP Playground Simulator -->
+    <!-- Section 03: Operating Principles & Mental Models (The Founder's Office Edge) -->
+    <section class="section" id="principles">
+      <div class="container">
+        <div class="section-header-editorial">
+          <div>
+            <span class="section-label-chip">[ 03 ] // OPERATING SYSTEM</span>
+            <h2 class="section-title-editorial">HOW I THINK &amp; OPERATE</h2>
+          </div>
+          <p class="section-desc-editorial">
+            Core mental models that guide my product decisions, architectural trade-offs, and 0-to-1 execution.
+          </p>
+        </div>
+
+        <div class="principles-grid">
+          <div class="principle-card tint-emerald">
+            <span class="principle-num">[ TENET 01 ]</span>
+            <h3 class="principle-title">Zero-Hallucination Trust Primitives</h3>
+            <p class="principle-body">
+              In high-stakes domains (legal, banking, compliance), autonomous hallucination is unacceptable. Build "approve-before-act" gates and strict citation ledgers that abstain unless grounded with &gt;95% confidence.
+            </p>
+          </div>
+
+          <div class="principle-card tint-cobalt">
+            <span class="principle-num">[ TENET 02 ]</span>
+            <h3 class="principle-title">Developer Experience As A Product</h3>
+            <p class="principle-body">
+              Internal tools (BDD frameworks, CI standards, telemetry APIs) require the same discovery, UX simplicity, and adoption metrics as customer-facing SaaS. If engineers don't love it, it won't scale.
+            </p>
+          </div>
+
+          <div class="principle-card tint-amber">
+            <span class="principle-num">[ TENET 03 ]</span>
+            <h3 class="principle-title">Ruthless Marginal Infrastructure ROI</h3>
+            <p class="principle-body">
+              True platform leverage lowers the marginal cost of growth. Solved telemetry bloat at Kotak by designing custom log controls that slashed storage footprints by 99% without adding infrastructure overhead.
+            </p>
+          </div>
+
+          <div class="principle-card tint-violet">
+            <span class="principle-num">[ TENET 04 ]</span>
+            <h3 class="principle-title">Translation Over Transcription</h3>
+            <p class="principle-body">
+              Don't just take feature requests; uncover the root bottleneck. Bridge plain-language business ambiguity into executable Gherkin BDD specs and deterministic API contracts that eliminate cross-team drag.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Interactive Agent & MCP Playground Simulator -->
     <section class="section" id="playground">
       <div class="container">
         <div class="section-header-editorial">
           <div>
-            <span class="spec-label">[ 02 ] // AGENTIC SIMULATION</span>
-            <h2 class="section-title-editorial">INTERACTIVE MCP TERMINAL</h2>
+            <span class="section-label-chip">[ 04 ] // SIMULATION CONSOLE</span>
+            <h2 class="section-title-editorial">LIVE AGENT &amp; MCP TERMINAL</h2>
           </div>
           <p class="section-desc-editorial">
-            Test live simulated agent queries, inspect safety ledgers, or run the Founder's Office pitch.
+            Test live simulated agent queries, inspect safety ledgers, or run the Founder's Office pitch directly in the console.
           </p>
         </div>
 
         <div class="terminal-card-editorial">
           <div class="terminal-top-bar">
-            <span class="terminal-title-text">YASHVI@BUILDER-OS &bull; ZSH INTERACTIVE AGENT CONSOLE</span>
+            <span class="terminal-title-text">YASHVI@BUILDER-OS &bull; ZSH AGENT PLAYGROUND</span>
             <div class="terminal-chips">
               <button class="terminal-chip shortcut-chip" data-cmd="pitch --founders-office">[ PITCH ]</button>
               <button class="terminal-chip shortcut-chip" data-cmd="court-scout --status">[ COURT-SCOUT ]</button>
@@ -222,7 +365,7 @@
 
           <div class="terminal-console-body" id="terminal-body">
             <div class="terminal-line info">[ SYSTEM // YASHVI BANSAL INTERACTIVE AGENT CONSOLE INITIALIZED ]</div>
-            <div class="terminal-line output">Type 'help' or click any command bracket above to execute.</div>
+            <div class="terminal-line output">Type 'help' or click any command button above to execute.</div>
             <div class="terminal-line output">------------------------------------------------------------</div>
           </div>
 
@@ -234,16 +377,16 @@
       </div>
     </section>
 
-    <!-- Experience & Impact Milestones -->
+    <!-- Section 05: Experience & Track Record -->
     <section class="section" id="experience">
       <div class="container">
         <div class="section-header-editorial">
           <div>
-            <span class="spec-label">[ 03 ] // TRACK RECORD</span>
+            <span class="section-label-chip">[ 05 ] // TRACK RECORD</span>
             <h2 class="section-title-editorial">EXPERIENCE &amp; IMPACT</h2>
           </div>
           <p class="section-desc-editorial">
-            Proven intrapreneurial platform delivery and engineering ownership in high-scale banking.
+            High-scale financial platform delivery and engineering ownership at Kotak Mahindra Bank.
           </p>
         </div>
 
@@ -260,7 +403,10 @@
             <div class="exp-pillars-grid">
               <!-- Pillar 1 -->
               <div class="exp-pillar-box">
-                <h4 class="exp-pillar-title">[ 01 ] Core Banking Platform Delivery</h4>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                  <h4 class="exp-pillar-title" style="margin-bottom:0; border:none; padding:0;">[ 01 ] Core Banking Platform Delivery</h4>
+                  <span class="tag-badge tag-emerald">90% Faster</span>
+                </div>
                 <ul class="exp-bullets">
                   <li class="exp-bullet">
                     <strong>Led product delivery</strong> of Cash Transaction capability across Finacle &amp; TAS systems via ISO8583 and FIXML standards.
@@ -269,14 +415,17 @@
                     <strong>Product-managed internal BDD platform</strong>, reducing requirement-to-validation cycle by <strong>90%</strong>.
                   </li>
                   <li class="exp-bullet">
-                    Automated test-data prep workflows, cutting manual time by <strong>70%</strong> and scaled across <strong>5+ engineering teams</strong>.
+                    Automated test-data prep workflows, cutting manual time by <strong>70%</strong> and scaled adoption across <strong>5+ engineering teams</strong>.
                   </li>
                 </ul>
               </div>
 
               <!-- Pillar 2 -->
               <div class="exp-pillar-box">
-                <h4 class="exp-pillar-title">[ 02 ] Cross-Team Telemetry Platform</h4>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                  <h4 class="exp-pillar-title" style="margin-bottom:0; border:none; padding:0;">[ 02 ] Cross-Team Telemetry Platform</h4>
+                  <span class="tag-badge tag-cobalt">95% Latency Cut</span>
+                </div>
                 <ul class="exp-bullets">
                   <li class="exp-bullet">
                     <strong>Spearheaded 0-to-1 build</strong> of centralized reporting platform (SpringBoot, DynamoDB), cutting report retrieval time by <strong>95%</strong>.
@@ -292,7 +441,10 @@
 
               <!-- Pillar 3 -->
               <div class="exp-pillar-box">
-                <h4 class="exp-pillar-title">[ 03 ] AI Trust &amp; Safety Engineering</h4>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                  <h4 class="exp-pillar-title" style="margin-bottom:0; border:none; padding:0;">[ 03 ] AI Trust &amp; Safety Engineering</h4>
+                  <span class="tag-badge tag-violet">8+ Mitigations</span>
+                </div>
                 <ul class="exp-bullets">
                   <li class="exp-bullet">
                     Established org's first AI security standard, proactively surfacing <strong>8+ OWASP vulnerabilities</strong> in internal agents.
@@ -308,12 +460,12 @@
       </div>
     </section>
 
-    <!-- Skills Matrix Section -->
+    <!-- Section 06: Skills & Competency Matrix -->
     <section class="section" id="skills">
       <div class="container">
         <div class="section-header-editorial">
           <div>
-            <span class="spec-label">[ 04 ] // CAPABILITIES</span>
+            <span class="section-label-chip">[ 06 ] // CAPABILITIES</span>
             <h2 class="section-title-editorial">COMPETENCY MATRIX</h2>
           </div>
           <p class="section-desc-editorial">
@@ -328,13 +480,13 @@
               <span>🚀</span>
             </div>
             <div class="skill-pills-list">
-              <span class="skill-pill starred">0-to-1 Product Ownership</span>
-              <span class="skill-pill starred">Founder's Office Execution</span>
-              <span class="skill-pill">DevEx Platform Scaling</span>
-              <span class="skill-pill">Stakeholder Alignment</span>
-              <span class="skill-pill">Requirements Translation</span>
-              <span class="skill-pill">Data-Driven Prioritization</span>
-              <span class="skill-pill">Agile / Scrum Leadership</span>
+              <span class="tag-badge tag-emerald">0-to-1 Ownership</span>
+              <span class="tag-badge tag-cobalt">Founder's Office</span>
+              <span class="tag-badge tag-violet">DevEx Platforms</span>
+              <span class="tag-badge tag-amber">Stakeholder Alignment</span>
+              <span class="tag-badge tag-coral">Requirements Translation</span>
+              <span class="tag-badge tag-sage">Data-Driven Metrics</span>
+              <span class="tag-badge tag-cobalt">Agile Leadership</span>
             </div>
           </div>
 
@@ -344,14 +496,14 @@
               <span>🧠</span>
             </div>
             <div class="skill-pills-list">
-              <span class="skill-pill starred">RAG Systems</span>
-              <span class="skill-pill starred">Multi-Agent Orchestration</span>
-              <span class="skill-pill starred">Model Context Protocol (MCP)</span>
-              <span class="skill-pill">DeepEval Benchmarking</span>
-              <span class="skill-pill">Trust &amp; Safety Guardrails</span>
-              <span class="skill-pill">Citation Ledgers</span>
-              <span class="skill-pill">Pinecone / Vector DBs</span>
-              <span class="skill-pill">LangChain / OpenAI</span>
+              <span class="tag-badge tag-violet">RAG Pipelines</span>
+              <span class="tag-badge tag-emerald">Multi-Agent Systems</span>
+              <span class="tag-badge tag-cobalt">MCP Protocol</span>
+              <span class="tag-badge tag-amber">DeepEval Benchmarks</span>
+              <span class="tag-badge tag-coral">Trust &amp; Safety</span>
+              <span class="tag-badge tag-violet">Citation Ledgers</span>
+              <span class="tag-badge tag-sage">Pinecone / Vector DBs</span>
+              <span class="tag-badge tag-cobalt">LangChain / OpenAI</span>
             </div>
           </div>
 
@@ -361,13 +513,13 @@
               <span>⚙️</span>
             </div>
             <div class="skill-pills-list">
-              <span class="skill-pill">Java / Spring Boot</span>
-              <span class="skill-pill">Python</span>
-              <span class="skill-pill">TypeScript / Next.js</span>
-              <span class="skill-pill">ISO8583 / FIXML</span>
-              <span class="skill-pill">Distributed Architecture</span>
-              <span class="skill-pill">DynamoDB / PostgreSQL</span>
-              <span class="skill-pill">Docker &amp; CI/CD</span>
+              <span class="tag-badge tag-cobalt">Java / Spring Boot</span>
+              <span class="tag-badge tag-amber">Python</span>
+              <span class="tag-badge tag-violet">TypeScript / Next.js</span>
+              <span class="tag-badge tag-emerald">ISO8583 / FIXML</span>
+              <span class="tag-badge tag-coral">Distributed Systems</span>
+              <span class="tag-badge tag-sage">DynamoDB / Postgres</span>
+              <span class="tag-badge tag-cobalt">Docker &amp; CI/CD</span>
             </div>
           </div>
 
@@ -377,23 +529,23 @@
               <span>🎓</span>
             </div>
             <div class="skill-pills-list">
-              <span class="skill-pill starred">IIT BHU (B.Tech, 8.69 CGPA)</span>
-              <span class="skill-pill">Hugging Face: AI Agents</span>
-              <span class="skill-pill">Design Thinking</span>
-              <span class="skill-pill">SOLID &amp; Architecture Patterns</span>
+              <span class="tag-badge tag-emerald">IIT BHU (B.Tech 8.69)</span>
+              <span class="tag-badge tag-amber">Hugging Face AI Agents</span>
+              <span class="tag-badge tag-violet">Design Thinking</span>
+              <span class="tag-badge tag-cobalt">SOLID Architecture</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact & Action Section -->
+    <!-- Section 07: Contact & Action Section -->
     <section class="contact-section-editorial" id="contact">
       <div class="container">
         <div class="contact-box-editorial">
-          <span class="spec-label">[ 05 ] // GET IN TOUCH</span>
+          <span class="section-label-chip">[ 07 ] // GET IN TOUCH</span>
           <h2 class="contact-head-large">LET'S BUILD SOMETHING MEANINGFUL</h2>
-          <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
+          <p style="font-size: 1.15rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.7;">
             Looking for a high-agency <strong>Founder's Office operator</strong> or a <strong>Technical / AI Product Manager</strong>? Let's connect.
           </p>
 
@@ -432,6 +584,26 @@
     </section>
   </main>
 
+  <!-- Floating Quick-Action Bar -->
+  <div class="floating-action-bar">
+    <div class="floating-pill-status">
+      <span class="floating-dot-green"></span>
+      <span>AVAILABLE</span>
+    </div>
+    <button class="floating-btn-action open-resume-modal-btn">
+      <span>RESUME</span>
+      <span>↓</span>
+    </button>
+    <a href="#contact" class="floating-btn-action" style="background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border-subtle);">
+      <span>CONTACT</span>
+      <span>✉</span>
+    </a>
+    <a href="#hero" class="floating-btn-action" style="background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border-subtle);" title="Back to top">
+      <span>TOP</span>
+      <span>↑</span>
+    </a>
+  </div>
+
   <!-- Project Deep-Dive Modal Backdrop -->
   <div class="modal-backdrop" id="project-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
     <div class="modal-dialog">
@@ -461,7 +633,7 @@
       <div class="modal-body">
         <div style="border-bottom: 1px solid var(--border-line); padding-bottom: 1rem; margin-bottom: 1.5rem;">
           <h2 style="font-family: var(--font-display); font-size: 1.6rem; text-transform: uppercase;">YASHVI BANSAL</h2>
-          <p style="font-weight: 700; color: var(--text-primary);">Product-Minded Builder &amp; Technical Operator | Founder's Office &amp; Product Management</p>
+          <p style="font-weight: 700; color: var(--accent-cobalt);">Product-Minded Builder &amp; Technical Operator | Founder's Office &amp; Product Management</p>
           <p style="font-family: var(--font-mono); font-size: 0.825rem; color: var(--text-secondary); margin-top: 0.25rem;">
             bansaly0203@gmail.com &bull; +91 62831 62131 &bull; 
             <a href="https://linkedin.com/in/yb0203" target="_blank">linkedin.com/in/yb0203</a> &bull; 
