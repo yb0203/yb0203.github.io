@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "candidate": {
+    "name": "Yashvi Bansal",
+    "headline": "Product-Minded Builder & Technical Operator | Founder's Office & AI PM",
+    "email": "bansaly0203@gmail.com",
+    "phone": "+916283162131",
+    "location": "Mumbai, India",
+    "availability": "Actively seeking opportunities",
+    "openToRoles": [
+      "Founder's Office Operator",
+      "AI Product Manager",
+      "Technical Product Manager",
+      "Technical Platform Lead"
+    ],
+    "links": {
+      "portfolio": "https://yb0203.github.io/",
+      "linkedin": "https://linkedin.com/in/yb0203",
+      "github": "https://github.com/yb0203",
+      "resumeDrive": "https://drive.google.com/file/d/1XW3Y81eb1YNeL94MYwrbEYnGo0dBXUUy/view?usp=sharing",
+      "llms": "https://yb0203.github.io/llms.txt",
+      "llmsFull": "https://yb0203.github.io/llms-full.txt"
+    },
+    "education": [
+      {
+        "institution": "Indian Institute of Technology (BHU), Varanasi",
+        "degree": "Bachelor of Technology (B.Tech)",
+        "duration": "2019 - 2023",
+        "cgpa": "8.69 / 10.0"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Kotak Mahindra Bank Limited",
+        "role": "Software Development Engineer (Technical Platform Owner)",
+        "location": "Mumbai, India",
+        "startDate": "2023-08",
+        "endDate": "Present",
+        "metrics": [
+          { "name": "BDD Validation Cycle Cut", "value": "90%" },
+          { "name": "Telemetry Query Latency Reduction", "value": "95%" },
+          { "name": "Storage Footprint Reduction", "value": "99%" },
+          { "name": "AI RCA Error Triage Reduction", "value": "90%" },
+          { "name": "OWASP LLM Vulnerabilities Identified", "value": "8+" }
+        ],
+        "highlights": [
+          "Delivered Cash Transaction capabilities across Finacle and TAS systems via ISO8583/FIXML protocols.",
+          "Product-managed internal BDD framework, cutting validation cycles by 90% and test-data prep by 70%.",
+          "Engineered centralized reporting platform (SpringBoot, DynamoDB), reducing query latency by 95%.",
+          "Deployed AI error triage agent slashing root-cause-analysis time by 90%.",
+          "Established first AI security testing framework with DeepEval against 100+ compliance metrics."
+        ]
+      }
+    ],
+    "flagshipProjects": [
+      {
+        "name": "Legal Owl",
+        "tagline": "AI-Native Legal Workflow Platform for Litigators",
+        "repository": "https://github.com/yb0203/LegalOwl",
+        "techStack": ["Next.js", "TypeScript", "Supabase pgvector", "Vercel AI SDK", "eCourts India API"],
+        "keyFeatures": [
+          "eCourts India API live docket sync with automated CNR tracking and nightly event diffing",
+          "Schema-locked multi-agent legal research with approve-before-act trust gates",
+          "Zero-hallucination bounding-box source citation ledgers"
+        ]
+      },
+      {
+        "name": "GitaBae",
+        "tagline": "Retrieval-Augmented Generation Wisdom Engine",
+        "repository": "https://github.com/yb0203/GitaBae",
+        "techStack": ["Python", "LangChain", "Pinecone", "OpenAI GPT-4", "Streamlit"],
+        "keyFeatures": [
+          "Multi-turn conversational memory with semantic chunking",
+          "Verse-level grounded retrieval with strict confidence thresholding"
+        ]
+      },
+      {
+        "name": "Vibe Check MCP",
+        "tagline": "Natural Language Git Operator MCP Server",
+        "repository": "https://github.com/yb0203/vibe-check",
+        "techStack": ["Node.js", "Model Context Protocol", "Git CLI"],
+        "keyFeatures": [
+          "Model Context Protocol (MCP) server enabling autonomous agents to safely manage Git workflows",
+          "95% intent resolution accuracy with safe-mode rollback guardrails"
+        ]
+      }
+    ],
+    "skills": {
+      "product": [
+        "0-to-1 Product Delivery",
+        "DevEx & Internal Tooling",
+        "Technical PRD & API Contract Design",
+        "Gherkin BDD Specifications",
+        "Counter-Metrics & North Star Definition",
+        "Cross-Functional Stakeholder Leadership"
+      ],
+      "technical": [
+        "Multi-Agent Systems",
+        "Retrieval-Augmented Generation (RAG)",
+        "Model Context Protocol (MCP)",
+        "DeepEval LLM Evaluation",
+        "Java / Spring Boot",
+        "Python",
+        "TypeScript / Next.js",
+        "DynamoDB / SQL",
+        "ISO8583 / FIXML"
+      ]
+    }
+  }
+}

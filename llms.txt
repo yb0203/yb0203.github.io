@@ -1,0 +1,40 @@
+# Yashvi Bansal — Product-Minded Builder & Technical Operator
+
+> High-agency technical builder and platform owner with 3+ years of experience shipping 0-to-1 products, multi-agent AI systems, developer experience platforms, and high-scale core banking infrastructure.
+
+## Identity & Core Credentials
+- **Name**: Yashvi Bansal
+- **Target Roles**: Founder's Office Operator, AI Product Manager (AI PM), Technical Product Manager (TPM), Technical Platform Lead
+- **Education**: Indian Institute of Technology (BHU), Varanasi — B.Tech (CGPA: 8.69 / 10.0, 2019–2023)
+- **Current Position**: Software Development Engineer (Technical Platform Owner) at Kotak Mahindra Bank Limited (Aug 2023 – Present)
+- **Location**: Mumbai, India (Open to Remote & Global Relocation)
+- **Email**: bansaly0203@gmail.com
+- **Phone**: +91 62831 62131
+- **LinkedIn**: https://linkedin.com/in/yb0203
+- **GitHub**: https://github.com/yb0203
+- **Portfolio**: https://yb0203.github.io/
+- **Resume (PDF)**: https://drive.google.com/file/d/1XW3Y81eb1YNeL94MYwrbEYnGo0dBXUUy/view?usp=sharing
+
+## Key Proven Metrics & Track Record
+- **90% Cut in BDD Cycles**: Product-managed internal org-wide BDD framework at Kotak Mahindra Bank, cutting validation cycles by 90% and test-data prep by 70%.
+- **95% Latency Reduction**: Spearheaded centralized reporting platform using Spring Boot and DynamoDB.
+- **99% Storage ROI**: Engineered custom log retention controls saving 99% storage space without adding commercial vendor overhead.
+- **90% AI RCA Triage Reduction**: Deployed automated AI agent for error triaging and log synthesis across engineering teams.
+- **8+ OWASP AI Vulnerabilities Neutralized**: Established first AI security testing standard using DeepEval against 100+ compliance metrics.
+
+## Flagship 0-to-1 Builds & Systems
+- [Legal Owl](https://github.com/yb0203/LegalOwl): AI-native legal workflow platform for litigators. Integrates live eCourts India API CNR tracking, nightly event diffing, schema-locked multi-agents, and zero-hallucination bounding-box source citation ledgers.
+- [Kotak Platform Suite](https://yb0203.github.io/#work): Core Cash capability across Finacle & TAS via ISO8583/FIXML, org-wide DevEx test platform, and automated error triage AI agent.
+- [GitaBae](https://github.com/yb0203/GitaBae): Retrieval-Augmented Generation (RAG) system with multi-turn memory and verse-grounded semantic retrieval.
+- [Vibe Check MCP](https://github.com/yb0203/vibe-check): Natural Language Git Assistant MCP (Model Context Protocol) Server for autonomous agents with 95% intent resolution accuracy.
+
+## Operating Philosophy & Tenets
+1. **Zero-Hallucination Trust**: In high-stakes domains (legal, banking), autonomous hallucination is fatal. Use approve-before-act trust gates and strict citation ledgers.
+2. **DevEx As A Product**: Internal tools require the same UX simplicity, documentation, and adoption metrics as customer SaaS.
+3. **Ruthless Marginal ROI**: True platform leverage lowers the marginal cost of growth.
+4. **Translation Over Transcription**: Bridge plain-language business ambiguity into deterministic specifications and executable API contracts.
+
+## Full Context Document
+For comprehensive technical details, architecture specs, and full CV text, fetch:
+- https://yb0203.github.io/llms-full.txt
+- https://yb0203.github.io/profile.json
