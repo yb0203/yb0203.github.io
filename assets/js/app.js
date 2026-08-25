@@ -1,5 +1,5 @@
 /* ==========================================================================
-   YASHVI BANSAL — MAIN APPLICATION LOGIC (app.js)
+   YASHVI BANSAL — EDITORIAL BRUTALIST APP LOGIC (app.js)
    Controls Themes, Role Lenses, Modals, Filtering, Copy-To-Clipboard & Toasts
    ========================================================================== */
 
@@ -14,21 +14,21 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollSpy();
 });
 
-/* --- Theme Switcher (Dark / Light) --- */
+/* --- Theme Switcher (Warm Cream Default / Matte Obsidian Dark) --- */
 function initTheme() {
   const themeBtn = document.getElementById('theme-toggle-btn');
-  const storedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+  const storedTheme = localStorage.getItem('portfolio-theme') || 'light';
   document.documentElement.setAttribute('data-theme', storedTheme);
   updateThemeIcon(storedTheme);
 
   if (themeBtn) {
     themeBtn.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
       document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('portfolio-theme', newTheme);
       updateThemeIcon(newTheme);
-      showToast(newTheme === 'dark' ? '🌙 Dark Mode activated' : '☀️ Light Mode activated');
+      showToast(newTheme === 'dark' ? '● Dark Theme enabled' : '● Warm Cream Theme enabled');
     });
   }
 }
@@ -46,9 +46,9 @@ function initRoleLens() {
   const highlightBar = document.getElementById('lens-highlight-bar');
 
   const lensMessages = {
-    'founders-office': '🚀 <strong>Founder\'s Office Lens Active:</strong> Emphasizing 0-to-1 ownership, business-to-engineering translation, cross-functional velocity, and high-agency operational execution.',
-    'ai-pm': '🧠 <strong>AI & Technical PM Lens Active:</strong> Emphasizing RAG architectures, schema-locked multi-agents, DeepEval banking metrics, DevEx platforms, and AI trust & safety guardrails.',
-    'generalist': '⚡ <strong>Full Spectrum Lens Active:</strong> Showing complete balance of product strategy, AI engineering, and enterprise platform delivery.'
+    'founders-office': '<strong>[ FOCUS: FOUNDER\'S OFFICE ]</strong> Emphasizing 0-to-1 ownership, business-to-engineering translation, cross-functional velocity, and high-agency operational execution.',
+    'ai-pm': '<strong>[ FOCUS: AI & TECH PM ]</strong> Emphasizing RAG architectures, schema-locked multi-agents, DeepEval banking metrics, DevEx platforms, and AI trust & safety guardrails.',
+    'generalist': '<strong>[ FOCUS: FULL SPECTRUM ]</strong> Complete portfolio overview across product strategy, AI systems, and enterprise banking infrastructure.'
   };
 
   lensButtons.forEach(btn => {
@@ -61,48 +61,13 @@ function initRoleLens() {
         highlightBar.innerHTML = lensMessages[lens];
         highlightBar.classList.add('visible');
       }
-
-      // Re-filter or highlight projects
-      if (lens === 'founders-office') {
-        highlightCardsForFoundersOffice();
-      } else if (lens === 'ai-pm') {
-        highlightCardsForAIPM();
-      } else {
-        resetCardHighlights();
-      }
     });
   });
 }
 
-function highlightCardsForFoundersOffice() {
-  document.querySelectorAll('.project-card').forEach(card => {
-    card.style.borderColor = '';
-  });
-  const topPick = document.querySelector('[data-project-id="legal-owl"]') || document.querySelector('[data-project-id="kotak-platforms"]');
-  if (topPick) {
-    topPick.style.borderColor = 'var(--accent-emerald)';
-  }
-}
-
-function highlightCardsForAIPM() {
-  document.querySelectorAll('.project-card').forEach(card => {
-    card.style.borderColor = '';
-  });
-  const topPick = document.querySelector('[data-project-id="legal-owl"]') || document.querySelector('[data-project-id="gitabae"]');
-  if (topPick) {
-    topPick.style.borderColor = 'var(--accent-primary)';
-  }
-}
-
-function resetCardHighlights() {
-  document.querySelectorAll('.project-card').forEach(card => {
-    card.style.borderColor = '';
-  });
-}
-
-/* --- Project Grid Rendering --- */
+/* --- Editorial Numbered Table Projects Rendering --- */
 function renderProjects(filterCategory = 'all') {
-  const container = document.getElementById('projects-grid');
+  const container = document.getElementById('projects-table-body');
   if (!container || typeof PROJECTS_DATA === 'undefined') return;
 
   container.innerHTML = '';
@@ -111,77 +76,54 @@ function renderProjects(filterCategory = 'all') {
     ? PROJECTS_DATA
     : PROJECTS_DATA.filter(p => p.category === filterCategory);
 
-  filtered.forEach(project => {
-    const card = document.createElement('div');
-    card.className = 'project-card';
-    card.setAttribute('data-project-id', project.id);
+  filtered.forEach((project, index) => {
+    const row = document.createElement('div');
+    row.className = 'editorial-row';
+    row.setAttribute('data-project-id', project.id);
 
-    const metricsHtml = project.keyMetrics.map(m => `
-      <div class="project-highlight-item">
-        <span class="highlight-icon">✓</span>
-        <span><strong>${escapeHtml(m.label)}:</strong> ${escapeHtml(m.value)}</span>
+    const indexFormatted = `[ ${String(index + 1).padStart(2, '0')} ]`;
+    const primaryMetric = project.keyMetrics && project.keyMetrics.length > 0
+      ? project.keyMetrics[0].value
+      : '0-to-1 Platform';
+
+    row.innerHTML = `
+      <div class="row-index">${indexFormatted}</div>
+      <div class="row-title-block">
+        <h3>${escapeHtml(project.title)}</h3>
+        <p>${escapeHtml(project.tagline)}</p>
       </div>
-    `).join('');
-
-    const tagsHtml = project.tags.slice(0, 5).map(t => `
-      <span class="tech-tag">${escapeHtml(t)}</span>
-    `).join('');
-
-    card.innerHTML = `
-      <div class="project-banner">
-        <div class="project-banner-top">
-          <span class="project-category-badge">${escapeHtml(project.categoryLabel)}</span>
-          <span class="card-meta-label">${escapeHtml(project.timeframe)}</span>
-        </div>
-        <div class="project-banner-icon">${project.icon}</div>
+      <div>
+        <span class="row-metrics-chip">${escapeHtml(primaryMetric)}</span>
       </div>
-      <div class="project-body">
-        <h3 class="project-title">${escapeHtml(project.title)}</h3>
-        <p class="project-tagline">${escapeHtml(project.tagline)}</p>
-        <p class="project-summary">${escapeHtml(project.summary)}</p>
-        
-        <div class="project-highlights">
-          ${metricsHtml}
-        </div>
-
-        <div class="project-tech-stack">
-          ${tagsHtml}
-        </div>
-
-        <div class="project-footer">
-          <button class="btn btn-secondary btn-sm open-project-modal-btn" data-id="${project.id}">
-            <span>Deep Dive & Architecture</span>
-            <span>→</span>
-          </button>
-          ${project.githubUrl ? `
-            <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="View Source on GitHub">
-              <span>GitHub</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          ` : ''}
-        </div>
+      <div class="row-tags">
+        <span class="pill-badge">${escapeHtml(project.categoryLabel)}</span>
+      </div>
+      <div class="row-actions">
+        <button class="btn btn-secondary btn-sm open-project-modal-btn" data-id="${project.id}">
+          <span>VIEW SPEC</span>
+          <span class="btn-arrow-box">→</span>
+        </button>
       </div>
     `;
 
-    container.appendChild(card);
-  });
-
-  // Attach modal triggers
-  document.querySelectorAll('.open-project-modal-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const projId = btn.getAttribute('data-id');
-      openProjectModal(projId);
+    // Make whole row clickable for deep dive modal
+    row.addEventListener('click', (e) => {
+      if (!e.target.closest('a')) {
+        openProjectModal(project.id);
+      }
     });
+
+    container.appendChild(row);
   });
 }
 
 function initProjectsFilter() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const cat = btn.getAttribute('data-filter');
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const cat = tab.getAttribute('data-filter');
       renderProjects(cat);
     });
   });
@@ -189,7 +131,6 @@ function initProjectsFilter() {
 
 /* --- Modal Logic --- */
 function initModals() {
-  // Project Deep Dive Modal
   const projectModalBackdrop = document.getElementById('project-modal-backdrop');
   const projectModalClose = document.getElementById('project-modal-close');
 
@@ -229,7 +170,6 @@ function initModals() {
     });
   }
 
-  // Escape key closes modals
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       if (projectModalBackdrop) projectModalBackdrop.classList.remove('active');
@@ -249,49 +189,50 @@ function openProjectModal(projectId) {
 
   if (!modalTitle || !modalContent || !modalBackdrop) return;
 
-  modalTitle.textContent = `${project.icon} ${project.title} — Deep Dive`;
+  modalTitle.textContent = `[ SPEC // ${project.title.toUpperCase()} ]`;
 
   const decisionsHtml = project.productDecisions.map(d => `
-    <li class="timeline-bullet">${escapeHtml(d)}</li>
+    <li class="exp-bullet">${escapeHtml(d)}</li>
   `).join('');
 
   const metricsHtml = project.keyMetrics.map(m => `
-    <div class="stat-item" style="background: var(--bg-primary);">
-      <div class="stat-content">
-        <h4>${escapeHtml(m.label)}</h4>
-        <p style="color: var(--accent-emerald); font-weight: 600;">${escapeHtml(m.value)}</p>
-      </div>
+    <div class="spec-row">
+      <span class="spec-label">${escapeHtml(m.label)}</span>
+      <span class="spec-value">${escapeHtml(m.value)}</span>
     </div>
   `).join('');
 
   modalContent.innerHTML = `
-    <p style="font-size: 1.1rem; color: var(--accent-primary); font-weight: 600; margin-bottom: 1rem;">
+    <div style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.5rem;">
+      CATEGORY: ${escapeHtml(project.categoryLabel)} &bull; TIMEFRAME: ${escapeHtml(project.timeframe)}
+    </div>
+    <p style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1.25rem;">
       ${escapeHtml(project.tagline)}
     </p>
 
-    <h4 class="modal-section-title">Problem & Friction Point</h4>
-    <p>${escapeHtml(project.problemStatement)}</p>
+    <h4 class="modal-section-title">01. Problem &amp; Operational Friction</h4>
+    <p style="color: var(--text-secondary); line-height: 1.65;">${escapeHtml(project.problemStatement)}</p>
 
-    <h4 class="modal-section-title">Architectural Solution</h4>
-    <p>${escapeHtml(project.solution)}</p>
+    <h4 class="modal-section-title">02. Technical &amp; Product Architecture</h4>
+    <p style="color: var(--text-secondary); line-height: 1.65;">${escapeHtml(project.solution)}</p>
 
     <div class="modal-architecture-box">${project.architecture}</div>
 
-    <h4 class="modal-section-title">Key Product & Strategic Decisions</h4>
-    <ul class="timeline-bullets" style="margin-top: 0.5rem;">
+    <h4 class="modal-section-title">03. Key Architectural Decisions</h4>
+    <ul class="exp-bullets" style="margin-top: 0.5rem;">
       ${decisionsHtml}
     </ul>
 
-    <h4 class="modal-section-title">Impact & Proof Points</h4>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 0.5rem;">
+    <h4 class="modal-section-title">04. Quantified Metrics &amp; Benchmarks</h4>
+    <div class="hero-spec-sheet" style="margin-top: 0.5rem;">
       ${metricsHtml}
     </div>
 
     ${project.githubUrl ? `
-      <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: flex-end;">
+      <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-line); display: flex; justify-content: flex-end;">
         <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-          <span>View Source Repository</span>
-          <span>↗</span>
+          <span>SOURCE REPOSITORY</span>
+          <span class="btn-arrow-box">↗</span>
         </a>
       </div>
     ` : ''}
@@ -326,13 +267,13 @@ function initContactActions() {
 
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', () => {
-      copyToClipboard('bansaly0203@gmail.com', '📧 Email copied to clipboard: bansaly0203@gmail.com');
+      copyToClipboard('bansaly0203@gmail.com', 'COPIED EMAIL: bansaly0203@gmail.com');
     });
   }
 
   if (copyPhoneBtn) {
     copyPhoneBtn.addEventListener('click', () => {
-      copyToClipboard('+91 62831 62131', '📱 Phone number copied to clipboard: +91 62831 62131');
+      copyToClipboard('+91 62831 62131', 'COPIED PHONE: +91 62831 62131');
     });
   }
 }
@@ -360,7 +301,7 @@ function fallbackCopy(text, successMsg) {
     document.execCommand('copy');
     showToast(successMsg);
   } catch (e) {
-    showToast('Failed to copy. Please copy manually.');
+    showToast('FAILED TO COPY');
   }
   document.body.removeChild(textarea);
 }
@@ -379,16 +320,13 @@ function showToast(message) {
   toast.innerHTML = message;
   toastContainer.appendChild(toast);
 
-  // Trigger animation
   setTimeout(() => toast.classList.add('show'), 10);
-
-  // Auto dismiss
   setTimeout(() => {
     toast.classList.remove('show');
     setTimeout(() => {
       if (toast.parentNode) toast.parentNode.removeChild(toast);
-    }, 250);
-  }, 3500);
+    }, 200);
+  }, 3000);
 }
 
 /* --- ScrollSpy for Active Navbar Link --- */
