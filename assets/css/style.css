@@ -330,6 +330,45 @@ button {
   font-family: var(--font-serif);
 }
 
+.inline-photo-chip {
+  display: inline-block;
+  vertical-align: middle;
+  width: 64px;
+  height: 42px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--color-terracotta-border);
+  margin: 0 0.3em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform var(--transition-fast);
+}
+
+.inline-photo-chip:hover {
+  transform: scale(1.15) rotate(-2deg);
+}
+
+.hero-avatar-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  padding: 0.35rem 1.15rem 0.35rem 0.35rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: var(--space-6);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.hero-avatar-img {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-pill);
+  object-fit: cover;
+  object-position: center;
+  border: 1.5px solid var(--border-pill);
+}
+
 .inline-motif {
   display: inline-flex;
   align-items: center;
