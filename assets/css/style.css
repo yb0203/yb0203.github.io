@@ -1,8 +1,8 @@
 /* ==========================================================================
-   YASHVI BANSAL — MINIMALIST EDITORIAL & COLORFUL DESIGN SYSTEM
+   YASHVI BANSAL — HIGH-CONVERTING DECISION-MAKER DESIGN SYSTEM
    Featuring: Syne + Plus Jakarta Sans + JetBrains Mono,
-   Vibrant Pastel Accents (Cobalt, Sage, Amber, Coral, Lavender),
-   Refined Whitespace, Hairline Precision, and Clean Minimal Aesthetics.
+   Streamlined 4-Section Navigation, Colorful Pastel Tints,
+   Generous Whitespace, and Minimal Brutalist Precision.
    ========================================================================== */
 
 /* --- Google Fonts Import --- */
@@ -212,13 +212,13 @@ button {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.75rem;
+  gap: 2rem;
   list-style: none;
 }
 
 .nav-link {
   font-family: var(--font-sans);
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--text-secondary);
@@ -735,32 +735,21 @@ button {
   align-items: center;
 }
 
-/* --- Section 02: Systems Directory & Archive --- */
-.filter-tabs-bar {
+/* Compact Archive Shelf inside Work */
+.archive-shelf-header {
   display: flex;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0 1.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
 }
 
-.filter-tab {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
+.archive-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
   text-transform: uppercase;
-  padding: 0.45rem 0.95rem;
-  border: 1px solid var(--border-subtle);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
-  font-weight: 700;
-  border-radius: var(--radius-xs);
-  transition: all var(--transition-fast);
-}
-
-.filter-tab:hover,
-.filter-tab.active {
-  background: var(--text-primary);
-  color: var(--text-inverse);
-  border-color: var(--text-primary);
 }
 
 .editorial-table {
@@ -902,98 +891,7 @@ button {
   line-height: 1.65;
 }
 
-/* --- Section 04: Interactive Simulator --- */
-.terminal-card-editorial {
-  border: 1px solid var(--border-line);
-  background: #0d0f14;
-  color: #ede7d8;
-  border-radius: var(--radius-xs);
-  overflow: hidden;
-  font-family: var(--font-mono);
-  box-shadow: var(--shadow-card);
-}
-
-.terminal-top-bar {
-  background: #171922;
-  padding: 0.85rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #282c38;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-}
-
-.terminal-title-text {
-  font-size: 0.8rem;
-  color: #94a3b8;
-  text-transform: uppercase;
-}
-
-.terminal-chips {
-  display: flex;
-  gap: 0.45rem;
-  flex-wrap: wrap;
-}
-
-.terminal-chip {
-  font-size: 0.75rem;
-  padding: 0.25rem 0.6rem;
-  background: #242938;
-  border: 1px solid #3c445c;
-  border-radius: var(--radius-xs);
-  color: #e2e8f0;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-}
-
-.terminal-chip:hover {
-  background: var(--accent-cobalt);
-  color: #ffffff;
-  border-color: var(--accent-cobalt);
-}
-
-.terminal-console-body {
-  padding: 1.75rem;
-  min-height: 260px;
-  max-height: 380px;
-  overflow-y: auto;
-  font-size: 0.875rem;
-  line-height: 1.65;
-}
-
-.terminal-input-bar {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  padding: 0.85rem 1.4rem;
-  background: #11131a;
-  border-top: 1px solid #282c38;
-}
-
-.term-prompt {
-  color: #34d399;
-  font-weight: 700;
-}
-
-.term-input {
-  flex-grow: 1;
-  background: transparent;
-  border: none;
-  color: #f8fafc;
-  font-family: var(--font-mono);
-  font-size: 0.875rem;
-  outline: none;
-}
-
-.terminal-line { margin-bottom: 0.4rem; }
-.terminal-line.cmd { color: #38bdf8; font-weight: 700; }
-.terminal-line.output { color: #94a3b8; }
-.terminal-line.success { color: #34d399; font-weight: 700; }
-.terminal-line.info { color: #e2e8f0; }
-.terminal-line.warning { color: #fbbf24; }
-
-/* --- Section 05: Track Record & Experience --- */
+/* --- Section 04: Track Record & Experience --- */
 .experience-list {
   border: 1px solid var(--border-line);
   background: var(--bg-card);
@@ -1086,11 +984,12 @@ button {
   font-weight: 800;
 }
 
-/* --- Section 06: Skills & Competency Matrix --- */
+/* Skills Grid */
 .skills-editorial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.75rem;
+  margin-top: 2.5rem;
 }
 
 .skill-editorial-card {
@@ -1120,7 +1019,7 @@ button {
   gap: 0.45rem;
 }
 
-/* --- Section 07: Contact & Footer --- */
+/* --- Section 05: Contact & Footer --- */
 .contact-section-editorial {
   padding: 7rem 0 4rem;
   background: var(--bg-secondary);

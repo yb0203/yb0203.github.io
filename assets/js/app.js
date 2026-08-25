@@ -1,20 +1,19 @@
 /* ==========================================================================
-   YASHVI BANSAL — REFINED IA APP LOGIC (app.js)
-   Renders Directory Table, Flagship Card Triggers, Role Lens, Modals & Floating Bar
+   YASHVI BANSAL — HIGH-CONVERTING 4-SECTION APP LOGIC (app.js)
+   Renders Archive Table, Flagship Modals, Role Lens, Resume & Floating Bar
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initRoleLens();
-  renderDirectoryTable('all');
-  initDirectoryFilter();
+  renderArchiveTable();
   initModals();
   initMobileMenu();
   initContactActions();
   initScrollSpy();
 });
 
-/* --- Theme Switcher (Warm Cream Default / Matte Obsidian Dark) --- */
+/* --- Theme Switcher (Warm Silk Default / Matte Obsidian Dark) --- */
 function initTheme() {
   const themeBtn = document.getElementById('theme-toggle-btn');
   const storedTheme = localStorage.getItem('portfolio-theme') || 'light';
@@ -28,7 +27,7 @@ function initTheme() {
       document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('portfolio-theme', newTheme);
       updateThemeIcon(newTheme);
-      showToast(newTheme === 'dark' ? '● Dark Theme enabled' : '● Warm Cream Theme enabled');
+      showToast(newTheme === 'dark' ? '● Dark Theme enabled' : '● Warm Silk Theme enabled');
     });
   }
 }
@@ -65,23 +64,22 @@ function initRoleLens() {
   });
 }
 
-/* --- Directory Numbered Table Rendering --- */
-function renderDirectoryTable(filterCategory = 'all') {
+/* --- Compact Archive Table Rendering --- */
+function renderArchiveTable() {
   const container = document.getElementById('directory-table-body');
   if (!container || typeof PROJECTS_DATA === 'undefined') return;
 
   container.innerHTML = '';
 
-  const filtered = filterCategory === 'all'
-    ? PROJECTS_DATA
-    : PROJECTS_DATA.filter(p => p.category === filterCategory);
+  // Filter for secondary builds (GitaBae, Vibe Check, Madison)
+  const archiveProjects = PROJECTS_DATA.filter(p => p.id !== 'legal-owl' && p.id !== 'kotak-platforms');
 
-  filtered.forEach((project, index) => {
+  archiveProjects.forEach((project, index) => {
     const row = document.createElement('div');
     row.className = 'editorial-row';
     row.setAttribute('data-project-id', project.id);
 
-    const indexFormatted = `[ ${String(index + 1).padStart(2, '0')} ]`;
+    const indexFormatted = `[ ${String(index + 3).padStart(2, '0')} ]`;
     const primaryMetric = project.keyMetrics && project.keyMetrics.length > 0
       ? project.keyMetrics[0].value
       : '0-to-1 Build';
@@ -96,7 +94,7 @@ function renderDirectoryTable(filterCategory = 'all') {
         <span class="row-metrics-chip">${escapeHtml(primaryMetric)}</span>
       </div>
       <div class="row-tags">
-        <span class="pill-badge">${escapeHtml(project.categoryLabel)}</span>
+        <span class="tag-badge tag-cobalt">${escapeHtml(project.categoryLabel)}</span>
       </div>
       <div class="row-actions">
         <button class="btn btn-secondary btn-sm open-project-modal-btn" data-id="${project.id}">
@@ -116,24 +114,11 @@ function renderDirectoryTable(filterCategory = 'all') {
   });
 }
 
-function initDirectoryFilter() {
-  const filterTabs = document.querySelectorAll('.filter-tab');
-  filterTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      filterTabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      const cat = tab.getAttribute('data-filter');
-      renderDirectoryTable(cat);
-    });
-  });
-}
-
 /* --- Modal Logic --- */
 function initModals() {
   const projectModalBackdrop = document.getElementById('project-modal-backdrop');
   const projectModalClose = document.getElementById('project-modal-close');
 
-  // Trigger modal for any element with data-project-target
   document.querySelectorAll('[data-project-target]').forEach(elem => {
     elem.addEventListener('click', (e) => {
       e.preventDefault();
