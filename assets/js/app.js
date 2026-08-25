@@ -227,13 +227,13 @@ function initContactActions() {
 
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', () => {
-      copyToClipboard('bansaly0203@gmail.com', 'COPIED EMAIL: bansaly0203@gmail.com');
+      copyToClipboard('bansaly0203@gmail.com', 'Copied email to clipboard (bansaly0203@gmail.com) ✓');
     });
   }
 
   if (copyPhoneBtn) {
     copyPhoneBtn.addEventListener('click', () => {
-      copyToClipboard('+91 62831 62131', 'COPIED PHONE: +91 62831 62131');
+      copyToClipboard('+91 62831 62131', 'Copied phone to clipboard (+91 62831 62131) ✓');
     });
   }
 }
