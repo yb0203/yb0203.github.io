@@ -1,7 +1,10 @@
 .DS_Store
 */.DS_Store
 
-# Credentials & Tokens (OAuth runtime tokens)
+# Credentials & Tokens (OAuth runtime tokens & private keys)
+.env.keys
+tracker/.env.keys
+*.keys
 credentials.json
 tracker/credentials.json
 oauth_credentials.json
