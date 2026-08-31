@@ -15,7 +15,7 @@ This skill equips AI agents with the foundational domain knowledge, MECE classif
 Every banking institution is deterministically modeled as a unique 10-attribute Enum vector:
 $$\text{BankEntity} = \langle \text{Charter}, \text{Segment}, \text{RegTier}, \text{Jurisdiction}, \text{OperatingModel}, \text{FundingStructure}, \text{AssetClass}, \text{CapitalRegime}, \text{CoreTech}, \text{PrivacyBoundary} \rangle$$
 
-Reference the full taxonomy in [`understand_banking.md`](file:///Users/yashvi/Documents/job-prep/understand_banking.md#section-2-step-1--exhaustive-mece-bank-entity-taxonomy).
+Reference the full taxonomy in [`banking_domain.md`](file:///Users/yashvi/Documents/job-prep/interview_prep/banking_domain.md#section-2-step-1--exhaustive-mece-bank-entity-taxonomy).
 
 ### 2. Workflow State Machine (15 Lifecycle Stages)
 Every financial workflow executes across 15 sequential stages:
@@ -61,4 +61,4 @@ When executing legal, financial, or regulatory tasks within banking workflows:
 ## 📚 Master Reference Specification
 
 For full Enum space definitions, complete MECE matrices, atomic workflow execution steps, and cross-jurisdictional rules (US, CA, UK/EU, IN), inspect:
-👉 **[understand_banking.md](file:///Users/yashvi/Documents/job-prep/understand_banking.md)**
+👉 **[banking_domain.md](file:///Users/yashvi/Documents/job-prep/interview_prep/banking_domain.md)**

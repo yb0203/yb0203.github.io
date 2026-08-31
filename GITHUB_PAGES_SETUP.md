@@ -54,7 +54,7 @@ To preview the website locally on your machine at any time:
 
 - 🌓 **Dynamic Theme Switcher**: Modern Dark (Default) and Light themes with local storage persistence.
 - 🎯 **Role Lens Switcher**: Instantly re-contextualizes highlights for **Founder's Office & Strategy** vs. **AI & Technical PM**.
-- 🚀 **Interactive 0-to-1 Project Showcase**: Detailed architecture modals for *Legal Owl*, *GitaBae*, *Vibe Check*, *Kotak Platforms*, and *Madison AI OS*.
+- 🚀 **Interactive 0-to-1 Project Showcase**: Detailed architecture modals for *Legal Owl*, *GitaBae*, *Vibe Check*, and *Kotak Enterprise Platforms*.
 - ⚡ **Simulated Agent & MCP Terminal**: Live interactive terminal with commands like `pitch --founders-office`, `court-scout --status`, `git-vibe --summarize`, and `eval-safety --banking`.
 - 📄 **In-Browser Resume Viewer**: Full styled resume modal with one-click print-to-PDF.
 - 📱 **100% Mobile Responsive & Accessible**: WCAG AA color contrast, fluid layout, and glassmorphic cards.

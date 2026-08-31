@@ -1,2 +1,24 @@
 .DS_Store
 */.DS_Store
+
+# Secrets & Environment Variables
+.env
+tracker/.env
+*.env
+
+# Credentials & Tokens
+credentials.json
+tracker/credentials.json
+oauth_credentials.json
+tracker/oauth_credentials.json
+token.json
+tracker/token.json
+gmail_token.json
+tracker/gmail_token.json
+
+# Logs & Virtual Environments
+*.log
+tracker/*.log
+.venv/
+__pycache__/
+*.pyc

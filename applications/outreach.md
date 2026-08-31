@@ -1,8 +1,8 @@
 # Outreach & Networking Messages (Platform Variants)
 
-This document contains tailored outreach templates for **WhatsApp (WA)**, **LinkedIn (LI)**, and **Email (Mail)** for both bulk community sharing and direct individual outreach.
+This document contains tailored outreach templates for **WhatsApp (WA)**, **LinkedIn (LI)**, and **Email (Mail)** for both bulk community sharing, direct individual outreach, and high-velocity founder sprint pitches.
 
-The tone of these templates is **direct, professional, grounded, and reader-focused**, highlighting applied AI capabilities and business outcomes. Each template is enclosed in a copyable code block to preserve line breaks and punctuation exactly, and all templates include your complete contact details.
+The tone of these templates is **direct, professional, grounded, and founder-focused**, highlighting applied AI capabilities, tangible engineering leverage, and zero-risk trial sprints.
 
 ---
 
@@ -62,63 +62,30 @@ Contact: +91 62831 62131 | bansaly0203@gmail.com | LinkedIn: linkedin.com/in/yb0
 
 ---
 
-### 📧 1C. Mail (Email Group / Alumni list) Variant
-*Structured like a professional newsletter/forum post with a clear subject line and formatted signature.*
+## SECTION 2: 1-on-1 Direct Outreach Templates
+*Use these when reaching out directly to founders, hiring managers, or team leads.*
+
+### 🟢 2A. WhatsApp (WA) 1-on-1 Variant
+*Designed to be respectful, personal, and non-intrusive.*
 
 ```text
-Subject: Seeking Applied AI / Founder's Office Roles (IIT-BHU Alum, open to contract/full-time)
+Hi [Name]! 👋
 
-Dear Alums / Community Members,
+Hope you’re having a productive week.
 
-I hope this email finds you well.
+I’m Yashvi Bansal, an IIT-BHU alum and SDE at Kotak Mahindra Bank. I've been following [Company Name]'s recent updates and really appreciate your focus on [mention feature/space].
 
-My name is Yashvi Bansal (IIT-BHU, Class of 2023), and I am currently working as a Software Development Engineer at Kotak Mahindra Bank. I am seeking a full-time role (open to starting contractually) in Applied AI PM or Founder's Office spaces.
+I am exploring full-time opportunities in Applied AI PM or Founder's Office (and am open to starting contractually/on a trial sprint to demonstrate value).
 
-I focus on optimizing business processes using Applied AI-native workflows and agentic automation—from pre-sales journeys to customer success pipelines.
+I specialize in Applied AI workflows and agentic automation—architecting multi-agent systems, integrating live API syncs, and evaluating LLM accuracy (DeepEval).
 
-A quick summary of my profile:
-• AI Implementation: Architected multi-agent workflows integrating live API syncing, nightly event diffing, and citation leders to ensure LLM responses are traceable back to source documents.
-• Technical & Operational Impact: Built centralized reporting dashboards and testing frameworks at Kotak Bank, cutting validation cycles by 90% and database log storage cost by 99%.
-• Collaborative Execution: Experienced in managing the human, emotional, and organizational dynamics of working across multiple stakeholder teams.
+If you have any operational bottlenecks or need a high-agency builder to coordinate product specs, test AI pipelines, or unblock engineering bandwidth, I would love to support you.
 
-If your team is deploying AI features or automating processes and needs an operator to write specs, test agentic chains, or coordinate rollouts, I would love to support you.
+I know you have a packed schedule, so no rush to reply. Would be very grateful to connect whenever convenient!
 
-Thank you sincerely for your time, support, and any leads.
-
-Warm regards,
-
+Best,
 Yashvi Bansal
-B.Tech, IIT-BHU (2019-2023)
-+91 62831 62131 | bansaly0203@gmail.com | LinkedIn: linkedin.com/in/yb0203
-```
-
----
----
-
-## SECTION 2: Individual / Direct Message Templates
-*Use these when reaching out directly to specific founders, PMs, or investors.*
-
-### 🟢 2A. WhatsApp (WA) DM Variant
-*Casual, respectful, short, and highly conversational. Formatted with linebreaks between bullet points for easy mobile reading.*
-
-```text
-Hi [Name]! Hope you're doing well.
-
-I'm Yashvi Bansal, a developer at Kotak (IIT-BHU graduate). I'm currently looking for full-time opportunities in Applied AI PM or Founder's Office roles, and am open to starting contractually.
-
-I focus on designing Applied AI-native workflows and agentic processes (pre-sales, customer success, and internal team ops). I specialize in:
-
-• Building multi-agent systems that sync live APIs and automate manual tracking workflows.
-
-• Coordinating team dynamics and aligning engineering with operational goals.
-
-• Streamlining workflow automation and testing LLM safety.
-
-If your team at [Company Name] needs help drafting specs, prompt engineering, or testing agentic workflows to save team bandwidth, I'd love to help out and support you guys.
-
-No pressure at all if things are busy right now, but if you're open to it, I'd love to jump on a quick call sometime for your advice on the transition. Thank you so much! 🙌
-
-Contact: +91 62831 62131 | bansaly0203@gmail.com | LinkedIn: linkedin.com/in/yb0203
+📱 +91 62831 62131 | 📧 bansaly0203@gmail.com | 🔗 linkedin.com/in/yb0203
 ```
 
 ---
@@ -149,7 +116,7 @@ Contact: +91 62831 62131 | bansaly0203@gmail.com | LinkedIn: linkedin.com/in/yb0
 ---
 
 ### 📧 2C. Mail (Cold Email / Direct Pitch) Variant
-*Detailed, structured, and focused entirely on the recipient's business leverage. Includes a specific subject line and signature.*
+*Detailed, structured, and focused entirely on the recipient's business leverage.*
 
 ```text
 Subject: Humbly offering Applied AI & ops support for [Company Name]
@@ -177,4 +144,35 @@ Yashvi Bansal
 B.Tech, IIT-BHU
 +91 62831 62131 | bansaly0203@gmail.com | LinkedIn: linkedin.com/in/yb0203
 GitHub: github.com/yb0203
+```
+
+---
+
+## SECTION 3: Indian Founders & Small Teams (Contractual / 2-Week Sprint Pitch)
+*Use these when reaching out to early/mid-stage Indian founders, YC startups, or small teams who value high-speed execution with zero upfront hiring risk.*
+
+### ⚡ 3A. "Risk-Free 2-Week Sprint" Founder Cold Pitch
+```text
+Subject: 2-Week AI PM / Ops trial sprint for [Company Name]
+
+Hi [Founder Name],
+
+Big fan of what you're building at [Company Name]. 
+
+I know at early stage, hiring full-time PMs comes with ramp-up lag. I’m Yashvi Bansal (IIT-BHU, Kotak Bank core platform engineer), and I’m offering early-stage Indian AI/SaaS founders a risk-free 2-week trial sprint (contractual/fractional) to ship immediate deliverables:
+
+What I can deliver in sprint 1:
+1. Agentic AI Reliability: Set up DeepEval evaluation suites or coordinate-level citation ledgers (zero-hallucination verification).
+2. 0-to-1 PRDs & Specs: Unblock your engineering team by turning customer feedback into executable technical PRDs.
+3. DevEx & Ops Automation: Cut regression and manual verification cycles (reduced test cycles by 90% at Kotak Bank).
+
+Open to starting on a flexible contract / fractional basis, transitioning to full-time if the speed and impact align with your roadmap.
+
+Portfolio & builds: https://yb0203.github.io/
+
+Would you be open to a 10-minute intro chat this Thursday or Friday?
+
+Best,
+Yashvi Bansal
++91 62831 62131 | bansaly0203@gmail.com | LinkedIn: linkedin.com/in/yb0203
 ```

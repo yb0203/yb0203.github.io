@@ -166,44 +166,5 @@ const PROJECTS_DATA = [
       "Pioneered AI error triage: classified high-throughput log exceptions to immediately surface root causes for production on-call engineers.",
       "Instituted enterprise AI security evaluation using DeepEval, validating internal models against 100+ banking compliance metrics."
     ]
-  },
-  {
-    id: "madison-ai-os",
-    title: "Madison AI Operating System",
-    tagline: "Sovereign Agentic Operating System for Enterprise BFSI",
-    category: "ai-product",
-    categoryLabel: "Enterprise AI Architecture",
-    icon: "🏛️",
-    timeframe: "2026 Strategy & Architecture",
-    summary: "Comprehensive architecture for an enterprise agentic operating system in commercial banking, featuring Fed SR 11-7 compliance, private VPC harness, and human-in-the-loop co-pilot action cards.",
-    keyMetrics: [
-      { label: "Compliance", value: "Fed SR 11-7 MRM Audit Standard" },
-      { label: "Grounding", value: "Bounding Box (x,y,w,h) Verification" },
-      { label: "Target", value: "$10B–$50B+ AUM Commercial Banks" }
-    ],
-    tags: ["Agentic AI", "Lyzr ADK", "Superflow Approvals", "Enterprise Banking", "Fed SR 11-7"],
-    githubUrl: "",
-    liveDemoUrl: "",
-    problemStatement: "Commercial banking workflows (commercial lending, DSCR analysis, KYC/AML, SAR drafting) are bogged down by manual PDF verification and compliance risks, while traditional AI poses hallucination and regulatory failure risks.",
-    solution: "Constructed an enterprise agent architecture pairing human-in-the-loop decision cards with zero-hallucination PDF coordinate grounding, fully auditable under Federal Reserve SR 11-7 model risk management guidelines.",
-    architecture: `┌─────────────────────────────────────────────────────────────┐
-│                    MADISON BFSI AGENT HARNESS               │
-├─────────────────────────────────────────────────────────────┤
-│  [Bank Officer Interface] ◄──► [Interactive Action Cards]   │
-│                                         │                   │
-│                                         ▼                   │
-│  [Agentic Brain (Router)] ──► [Lyzr Enterprise ADK Engine]  │
-│                                         │                   │
-│                                         ▼                   │
-│  [Grounded Citation Viewer] ◄──► [PDF Bounding Box x,y,w,h] │
-│                                         │                   │
-│                                         ▼                   │
-│  [Fed SR 11-7 Audit Ledger] ◄── [Deterministic Tool Exec]   │
-└─────────────────────────────────────────────────────────────┘`,
-    productDecisions: [
-      "Mandated bounding box (x,y,w,h) coordinate mapping for any financial figure extracted from loan packages or credit memos.",
-      "Engineered Superflow node approvals so agents can never trigger disbursements or account modifications without officer sign-off.",
-      "Designed private VPC isolation architecture with zero outbound data leak for strict PII isolation."
-    ]
   }
 ];
