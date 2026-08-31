@@ -1,12 +1,7 @@
 .DS_Store
 */.DS_Store
 
-# Secrets & Environment Variables
-.env
-tracker/.env
-*.env
-
-# Credentials & Tokens
+# Credentials & Tokens (OAuth runtime tokens)
 credentials.json
 tracker/credentials.json
 oauth_credentials.json
