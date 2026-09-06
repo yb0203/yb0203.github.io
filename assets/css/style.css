@@ -323,18 +323,18 @@ button {
   background: var(--color-terracotta);
 }
 
-/* Standalone Photo Frame (Widened & Enlarged with Eye-Level Anchoring) */
+/* Standalone Photo Frame (Full Portrait Natural 3:4 Ratio - 100% Visible) */
 .hero-photo-frame-wrap {
   position: relative;
   width: 100%;
-  max-width: 580px;
-  height: 350px;
-  max-height: 400px;
+  max-width: 380px;
+  aspect-ratio: 3 / 4;
+  height: auto;
   border-radius: 20px;
   overflow: hidden;
   margin: 0 auto var(--space-8);
   border: 1px solid var(--border-hairline);
-  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.06);
   background: var(--bg-surface);
   transition: all var(--transition-smooth);
 }
@@ -349,8 +349,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 38%;
-  transform-origin: center 38%;
+  object-position: center center;
   transition: transform var(--transition-smooth);
 }
 
@@ -1205,8 +1204,9 @@ button {
 /* Responsive */
 @media (max-width: 860px) {
   .hero-photo-frame-wrap {
-    height: 300px;
-    max-width: 480px;
+    max-width: 320px;
+    aspect-ratio: 3 / 4;
+    height: auto;
   }
   .hero-proof-bar {
     grid-template-columns: repeat(2, 1fr);
@@ -1228,7 +1228,9 @@ button {
 
 @media (max-width: 540px) {
   .hero-photo-frame-wrap {
-    height: 260px;
+    max-width: 280px;
+    aspect-ratio: 3 / 4;
+    height: auto;
     border-radius: 16px;
     margin-bottom: var(--space-6);
   }
