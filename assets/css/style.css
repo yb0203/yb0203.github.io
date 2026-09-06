@@ -323,12 +323,12 @@ button {
   background: var(--color-terracotta);
 }
 
-/* Standalone Photo Frame (Full Portrait Natural 3:4 Ratio - 100% Visible) */
+/* Standalone Photo Frame (Landscape 4:3 Ratio - Full Scene & Body Visible) */
 .hero-photo-frame-wrap {
   position: relative;
   width: 100%;
-  max-width: 380px;
-  aspect-ratio: 3 / 4;
+  max-width: 560px;
+  aspect-ratio: 4 / 3;
   height: auto;
   border-radius: 20px;
   overflow: hidden;
@@ -1204,8 +1204,8 @@ button {
 /* Responsive */
 @media (max-width: 860px) {
   .hero-photo-frame-wrap {
-    max-width: 320px;
-    aspect-ratio: 3 / 4;
+    max-width: 460px;
+    aspect-ratio: 4 / 3;
     height: auto;
   }
   .hero-proof-bar {
@@ -1228,8 +1228,8 @@ button {
 
 @media (max-width: 540px) {
   .hero-photo-frame-wrap {
-    max-width: 280px;
-    aspect-ratio: 3 / 4;
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
     height: auto;
     border-radius: 16px;
     margin-bottom: var(--space-6);
